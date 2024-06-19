@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.12.6</Version>
+  <Author>Hemul</Author>
+ </Creator>
+ <Manufacturer>Antari</Manufacturer>
+ <Model>Z-350 Fazer</Model>
+ <Type>Hazer</Type>
+ <Channel Name="Haze Output Level">
+  <Group Byte="0">Intensity</Group>
+  <Capability Min="0" Max="4">Haze Off</Capability>
+  <Capability Min="5" Max="255">Haze Output 1 – 100%</Capability>
+ </Channel>
+ <Channel Name="Fan Output Level">
+  <Group Byte="0">Intensity</Group>
+  <Capability Min="0" Max="4">Fan 20%</Capability>
+  <Capability Min="5" Max="255">Fan 21 – 100%</Capability>
+ </Channel>
+ <Mode Name="Main">
+  <Channel Number="0" ActsOn="0">Haze Output Level</Channel>
+  <Channel Number="1" ActsOn="1">Fan Output Level</Channel>
+ </Mode>
+ <Physical>
+  <Bulb Type="" Lumens="0" ColourTemperature="0"/>
+  <Dimensions Weight="0" Width="0" Height="0" Depth="0"/>
+  <Lens Name="Other" DegreesMin="0" DegreesMax="0"/>
+  <Focus Type="Fixed" PanMax="0" TiltMax="0"/>
+  <Technical PowerConsumption="0" DmxConnector="5-pin"/>
+ </Physical>
+</FixtureDefinition>

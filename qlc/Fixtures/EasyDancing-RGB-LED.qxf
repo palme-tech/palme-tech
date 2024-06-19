@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.13.0</Version>
+  <Author>hemul</Author>
+ </Creator>
+ <Manufacturer>EasyDancing</Manufacturer>
+ <Model>RGB LED</Model>
+ <Type>Color Changer</Type>
+ <Channel Name="Brightness">
+  <Group Byte="0">Intensity</Group>
+  <Capability Min="0" Max="255"></Capability>
+ </Channel>
+ <Channel Name="Red">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Red</Colour>
+  <Capability Min="0" Max="255"></Capability>
+ </Channel>
+ <Channel Name="Green">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Green</Colour>
+  <Capability Min="0" Max="255"></Capability>
+ </Channel>
+ <Channel Name="Blue">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Blue</Colour>
+  <Capability Min="0" Max="255"></Capability>
+ </Channel>
+ <Channel Name="Strobe">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="7">none</Capability>
+  <Capability Min="8" Max="255">Flash Speeed</Capability>
+ </Channel>
+ <Channel Name="Control Mode">
+  <Group Byte="0">Intensity</Group>
+  <Capability Min="0" Max="10"></Capability>
+  <Capability Min="11" Max="60"></Capability>
+  <Capability Min="61" Max="110"></Capability>
+  <Capability Min="111" Max="160"></Capability>
+  <Capability Min="161" Max="210"></Capability>
+  <Capability Min="211" Max="255"></Capability>
+ </Channel>
+ <Channel Name="Color Selection Shade">
+  <Group Byte="0">Intensity</Group>
+  <Capability Min="0" Max="255"></Capability>
+ </Channel>
+ <Mode Name="Main">
+  <Channel Number="0" ActsOn="0">Brightness</Channel>
+  <Channel Number="1" ActsOn="1">Red</Channel>
+  <Channel Number="2" ActsOn="2">Green</Channel>
+  <Channel Number="3" ActsOn="3">Blue</Channel>
+  <Channel Number="4" ActsOn="4">Strobe</Channel>
+  <Channel Number="5" ActsOn="5">Control Mode</Channel>
+  <Channel Number="6" ActsOn="6">Color Selection Shade</Channel>
+ </Mode>
+ <Physical>
+  <Bulb Type="" Lumens="0" ColourTemperature="0"/>
+  <Dimensions Weight="0" Width="0" Height="0" Depth="0"/>
+  <Lens Name="Other" DegreesMin="0" DegreesMax="0"/>
+  <Focus Type="Fixed" PanMax="0" TiltMax="0"/>
+  <Technical PowerConsumption="0" DmxConnector="5-pin"/>
+ </Physical>
+</FixtureDefinition>
