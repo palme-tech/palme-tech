@@ -4122,10 +4122,10 @@ embedded-video=0
 #quiet-synchro=0
 
 # Key press events (boolean)
-#keyboard-events=1
+keyboard-events=0
 
 # Mouse events (boolean)
-#mouse-events=1
+mouse-events=0
 
 # Always on top (boolean)
 #video-on-top=0
@@ -4233,7 +4233,7 @@ vout=direct3d11
 #spu=1
 
 # On Screen Display (boolean)
-#osd=1
+osd=0
 
 # Text rendering module (string)
 #text-renderer=
@@ -4530,7 +4530,7 @@ vod-server=any
 #play-and-exit=0
 
 # Play and stop (boolean)
-#play-and-stop=0
+play-and-stop=1
 
 # Play and pause (boolean)
 #play-and-pause=0
@@ -4620,7 +4620,7 @@ metadata-network-access=1
 #key-leave-fullscreen=Esc
 
 # Play/Pause (string)
-#global-key-play-pause=
+global-key-play-pause=Alt+p
 
 # Play/Pause (string)
 #key-play-pause=Space
