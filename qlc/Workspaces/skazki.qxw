@@ -1198,7 +1198,7 @@
    <Step Number="57" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Шляпа">86</Step>
    <Step Number="58" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="выбегает из света, второе &quot;Пимперлэ&quot;">87</Step>
    <Step Number="59" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Занавес+, MIC ON">93</Step>
-   <Step Number="60" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Пимперлэ спрыгивает">71</Step>
+   <Step Number="60" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Танцуют снизу, спрыгивает">71</Step>
    <Step Number="61" FadeIn="1500" Hold="4294967294" FadeOut="2500" Note="Занавес-, Ася и Тамара">88</Step>
    <Step Number="62" FadeIn="2500" Hold="4294967294" FadeOut="3000" Note="Занавес+">89</Step>
    <Step Number="63" FadeIn="3000" Hold="4294967294" FadeOut="3000" Note="умерает, начинают петь">90</Step>
@@ -1480,7 +1480,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="255">
+      <Level LowLimit="0" HighLimit="255" Value="200">
        <Channel Fixture="0">0</Channel>
       </Level>
       <Playback>
@@ -1706,7 +1706,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="177">
+      <Level LowLimit="0" HighLimit="255" Value="50">
        <Channel Fixture="6">0</Channel>
       </Level>
       <Playback>
@@ -1782,7 +1782,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="177">
+      <Level LowLimit="0" HighLimit="255" Value="50">
        <Channel Fixture="9">0</Channel>
       </Level>
       <Playback>
@@ -1822,7 +1822,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="177">
+      <Level LowLimit="0" HighLimit="255" Value="105">
        <Channel Fixture="11">0</Channel>
       </Level>
       <Playback>
@@ -1918,7 +1918,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="179">
+      <Level LowLimit="0" HighLimit="255" Value="237">
        <Channel Fixture="13">0</Channel>
       </Level>
       <Playback>
@@ -1958,7 +1958,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="255">
+      <Level LowLimit="0" HighLimit="255" Value="200">
        <Channel Fixture="15">0</Channel>
       </Level>
       <Playback>
