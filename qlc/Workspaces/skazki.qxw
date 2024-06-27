@@ -1152,63 +1152,62 @@
    <Step Number="11" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="до конца, -- БЕРЕЗА 2: Занавес">34</Step>
    <Step Number="12" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Занавес-  “Ах, как гадко, как гадко”">10</Step>
    <Step Number="13" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="СТАРЫЙ ГОРШОК: скамейка, Женя слева">79</Step>
-   <Step Number="14" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="женя заканчивает">17</Step>
-   <Step Number="15" FadeIn="1500" Hold="4294967294" FadeOut="3000" Note="бабушка уходит">34</Step>
-   <Step Number="16" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="разбивается горшок">70</Step>
-   <Step Number="17" FadeIn="4000" Hold="4294967294" FadeOut="1500" Note="Розхен бросается на шею к Жану, целует его">34</Step>
-   <Step Number="18" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Луллу: “Ну, послушаем!” -- VIDEO: 3 сказки">81</Step>
-   <Step Number="19" FadeIn="3000" Hold="4294967294" FadeOut="1500" Note="“Но все-таки я ее добыла оттуда и положила ее тебе в горшок…”">34</Step>
-   <Step Number="20" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Женя разказчик заканчивает">10</Step>
-   <Step Number="21" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="ЧУДНЫЙ МАЛЬЧИК - начало, базар">65</Step>
-   <Step Number="22" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Дети уходят">66</Step>
-   <Step Number="23" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Марфа спускается по лестнице">68</Step>
-   <Step Number="24" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Рассказчик: &quot;мамка сильно захворала.&quot;">67</Step>
-   <Step Number="25" FadeIn="1500" Hold="4294967294" FadeOut="2500" Note="Марфа уходит">66</Step>
-   <Step Number="26" FadeIn="2500" Hold="4294967294" FadeOut="1500" Note="На дворе уже ночь">69</Step>
-   <Step Number="27" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="LIGHTNING then Колдунья">70</Step>
-   <Step Number="28" FadeIn="4500" Hold="4294967294" FadeOut="2500" Note="Собака, &quot;показалось солнце красное&quot;">66</Step>
-   <Step Number="29" FadeIn="2500" Hold="4294967294" FadeOut="1500" Note="Царевна спускается (слева)">71</Step>
-   <Step Number="30" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Занавес-">10</Step>
-   <Step Number="31" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="БЕРЕЗА 3: Занавес+">66</Step>
-   <Step Number="32" FadeIn="500" Hold="4294967294" FadeOut="500" Note="ураган">94</Step>
-   <Step Number="33" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="just in case">66</Step>
-   <Step Number="34" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Занавес-, АНТРАКТ">10</Step>
-   <Step Number="35" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="САПФИР: Занавес+">2</Step>
-   <Step Number="36" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="сын - Ну, что же, матушка? Сказку!">65</Step>
-   <Step Number="37" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Юра уходит">66</Step>
-   <Step Number="38" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Занавес-, ярмарка">65</Step>
-   <Step Number="39" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="царь">66</Step>
-   <Step Number="40" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Поди спроси камень">10</Step>
-   <Step Number="41" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Выходит Саша Б.">82</Step>
-   <Step Number="42" FadeIn="0" Hold="4294967294" FadeOut="0" Note="спроси у дуба">10</Step>
-   <Step Number="43" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="дуб поворачивается">82</Step>
-   <Step Number="44" FadeIn="0" Hold="4294967294" FadeOut="0" Note="спроси птицу">10</Step>
-   <Step Number="45" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="дуб уходит, на музыку">83</Step>
-   <Step Number="46" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="танец">7</Step>
-   <Step Number="47" FadeIn="0" Hold="4294967294" FadeOut="0" Note="потянуло его к любви, VIDEO: after bird">10</Step>
-   <Step Number="48" FadeIn="4000" Hold="4294967294" FadeOut="1500" Note="&quot;И вдруг проснулся он.” - TURN OFF VIDEO">66</Step>
-   <Step Number="49" FadeIn="0" Hold="4294967294" FadeOut="0" Note="уходит пастух, VIDEO: after shepherd, Женя ушел, -видео.">10</Step>
-   <Step Number="50" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Тамара выходит +свет, БЕРЕЗА 4">66</Step>
-   <Step Number="51" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Занавес-">10</Step>
-   <Step Number="52" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="ДЯДЯ ПУД: Занавес+">34</Step>
-   <Step Number="53" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="На воде">37</Step>
-   <Step Number="54" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="бросают">29</Step>
-   <Step Number="55" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="грустная музыка, шторм кончается">37</Step>
-   <Step Number="56" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="пуд падает на сундук -- до БЕРЕЗА 5">34</Step>
-   <Step Number="57" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="дети спускаются ПИМПЕРЛЕ: Занавес-, дети на лестнице">87</Step>
-   <Step Number="58" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Шляпа">86</Step>
-   <Step Number="59" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="выбегает из света, второе &quot;Пимперлэ&quot;">87</Step>
-   <Step Number="60" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Занавес+, MIC ON">93</Step>
-   <Step Number="61" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Пимперлэ спрыгивает">71</Step>
-   <Step Number="62" FadeIn="1500" Hold="4294967294" FadeOut="2500" Note="Занавес-, Ася и Тамара">88</Step>
-   <Step Number="63" FadeIn="2500" Hold="4294967294" FadeOut="3000" Note="Занавес+">89</Step>
-   <Step Number="64" FadeIn="3000" Hold="4294967294" FadeOut="3000" Note="умерает, начинают петь">90</Step>
-   <Step Number="65" FadeIn="3000" Hold="4294967294" FadeOut="1500" Note="шут спрыгивает вниз">87</Step>
-   <Step Number="66" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="&quot;Я вас люблю&quot;">2</Step>
-   <Step Number="67" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Все уходят">10</Step>
-   <Step Number="68" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="5 сек">66</Step>
-   <Step Number="69" FadeIn="2500" Hold="4294967294" FadeOut="2500" Note="спускаются">91</Step>
-   <Step Number="70" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Все уходят">10</Step>
+   <Step Number="14" FadeIn="1500" Hold="4294967294" FadeOut="3000" Note="бабушка уходит">34</Step>
+   <Step Number="15" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="разбивается горшок">70</Step>
+   <Step Number="16" FadeIn="4000" Hold="4294967294" FadeOut="1500" Note="Розхен бросается на шею к Жану, целует его">34</Step>
+   <Step Number="17" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Луллу: “Ну, послушаем!” -- VIDEO: 3 сказки">81</Step>
+   <Step Number="18" FadeIn="3000" Hold="4294967294" FadeOut="1500" Note="“Но все-таки я ее добыла оттуда и положила ее тебе в горшок…”">34</Step>
+   <Step Number="19" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Женя разказчик заканчивает">10</Step>
+   <Step Number="20" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="ЧУДНЫЙ МАЛЬЧИК - начало, базар">65</Step>
+   <Step Number="21" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Дети уходят">66</Step>
+   <Step Number="22" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Марфа спускается по лестнице">68</Step>
+   <Step Number="23" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Рассказчик: &quot;мамка сильно захворала.&quot;">67</Step>
+   <Step Number="24" FadeIn="1500" Hold="4294967294" FadeOut="2500" Note="Марфа уходит">66</Step>
+   <Step Number="25" FadeIn="2500" Hold="4294967294" FadeOut="1500" Note="На дворе уже ночь">69</Step>
+   <Step Number="26" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="LIGHTNING then Колдунья">70</Step>
+   <Step Number="27" FadeIn="4500" Hold="4294967294" FadeOut="2500" Note="Собака, &quot;показалось солнце красное&quot;">66</Step>
+   <Step Number="28" FadeIn="2500" Hold="4294967294" FadeOut="1500" Note="Царевна спускается (слева)">71</Step>
+   <Step Number="29" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Занавес-">10</Step>
+   <Step Number="30" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="БЕРЕЗА 3: Занавес+">66</Step>
+   <Step Number="31" FadeIn="500" Hold="4294967294" FadeOut="500" Note="ураган">94</Step>
+   <Step Number="32" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="just in case">66</Step>
+   <Step Number="33" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Занавес-, АНТРАКТ">10</Step>
+   <Step Number="34" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="САПФИР: Занавес+">2</Step>
+   <Step Number="35" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="сын - Ну, что же, матушка? Сказку!">65</Step>
+   <Step Number="36" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Юра уходит">66</Step>
+   <Step Number="37" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Занавес-, ярмарка">65</Step>
+   <Step Number="38" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="царь">66</Step>
+   <Step Number="39" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Поди спроси камень">10</Step>
+   <Step Number="40" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Выходит Саша Б.">82</Step>
+   <Step Number="41" FadeIn="0" Hold="4294967294" FadeOut="0" Note="спроси у дуба">10</Step>
+   <Step Number="42" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="дуб поворачивается">82</Step>
+   <Step Number="43" FadeIn="0" Hold="4294967294" FadeOut="0" Note="спроси птицу">10</Step>
+   <Step Number="44" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="дуб уходит, на музыку">83</Step>
+   <Step Number="45" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="танец">7</Step>
+   <Step Number="46" FadeIn="0" Hold="4294967294" FadeOut="0" Note="потянуло его к любви, VIDEO: after bird">10</Step>
+   <Step Number="47" FadeIn="4000" Hold="4294967294" FadeOut="1500" Note="&quot;И вдруг проснулся он.” - TURN OFF VIDEO">66</Step>
+   <Step Number="48" FadeIn="0" Hold="4294967294" FadeOut="0" Note="уходит пастух, VIDEO: after shepherd, Женя ушел, -видео.">10</Step>
+   <Step Number="49" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Тамара выходит +свет, БЕРЕЗА 4">66</Step>
+   <Step Number="50" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Занавес-">10</Step>
+   <Step Number="51" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="ДЯДЯ ПУД: Занавес+">34</Step>
+   <Step Number="52" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="На воде">37</Step>
+   <Step Number="53" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="бросают">29</Step>
+   <Step Number="54" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="грустная музыка, шторм кончается">37</Step>
+   <Step Number="55" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="пуд падает на сундук -- до БЕРЕЗА 5">34</Step>
+   <Step Number="56" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="дети спускаются ПИМПЕРЛЕ: Занавес-, дети на лестнице">87</Step>
+   <Step Number="57" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Шляпа">86</Step>
+   <Step Number="58" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="выбегает из света, второе &quot;Пимперлэ&quot;">87</Step>
+   <Step Number="59" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Занавес+, MIC ON">93</Step>
+   <Step Number="60" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Пимперлэ спрыгивает">71</Step>
+   <Step Number="61" FadeIn="1500" Hold="4294967294" FadeOut="2500" Note="Занавес-, Ася и Тамара">88</Step>
+   <Step Number="62" FadeIn="2500" Hold="4294967294" FadeOut="3000" Note="Занавес+">89</Step>
+   <Step Number="63" FadeIn="3000" Hold="4294967294" FadeOut="3000" Note="умерает, начинают петь">90</Step>
+   <Step Number="64" FadeIn="3000" Hold="4294967294" FadeOut="1500" Note="шут спрыгивает вниз">87</Step>
+   <Step Number="65" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="&quot;Я вас люблю&quot;">2</Step>
+   <Step Number="66" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Все уходят">10</Step>
+   <Step Number="67" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="5 сек">66</Step>
+   <Step Number="68" FadeIn="2500" Hold="4294967294" FadeOut="2500" Note="спускаются">91</Step>
+   <Step Number="69" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Все уходят">10</Step>
   </Function>
   <Function ID="78" Type="Scene" Name="Sides and Top" Path="Сказки/Два Ивана">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -1481,7 +1480,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="0">
+      <Level LowLimit="0" HighLimit="255" Value="255">
        <Channel Fixture="0">0</Channel>
       </Level>
       <Playback>
@@ -1511,7 +1510,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="0">
+      <Level LowLimit="0" HighLimit="255" Value="255">
        <Channel Fixture="1">0</Channel>
       </Level>
       <Playback>
@@ -1707,7 +1706,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="0">
+      <Level LowLimit="0" HighLimit="255" Value="177">
        <Channel Fixture="6">0</Channel>
       </Level>
       <Playback>
@@ -1783,7 +1782,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="0">
+      <Level LowLimit="0" HighLimit="255" Value="177">
        <Channel Fixture="9">0</Channel>
       </Level>
       <Playback>
@@ -1823,7 +1822,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="0">
+      <Level LowLimit="0" HighLimit="255" Value="177">
        <Channel Fixture="11">0</Channel>
       </Level>
       <Playback>
@@ -1919,7 +1918,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="0">
+      <Level LowLimit="0" HighLimit="255" Value="179">
        <Channel Fixture="13">0</Channel>
       </Level>
       <Playback>
@@ -1959,7 +1958,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="0">
+      <Level LowLimit="0" HighLimit="255" Value="255">
        <Channel Fixture="15">0</Channel>
       </Level>
       <Playback>
@@ -1979,7 +1978,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="0">
+      <Level LowLimit="0" HighLimit="255" Value="255">
        <Channel Fixture="14">0</Channel>
       </Level>
       <Playback>
