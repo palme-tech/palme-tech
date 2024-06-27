@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Workspace>
-<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="VirtualConsole">
+<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="FunctionManager">
  <Creator>
   <Name>Q Light Controller Plus</Name>
   <Version>4.13.0</Version>
@@ -1173,41 +1173,40 @@
    <Step Number="32" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="just in case">66</Step>
    <Step Number="33" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Занавес-, АНТРАКТ">10</Step>
    <Step Number="34" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="САПФИР: Занавес+">2</Step>
-   <Step Number="35" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="сын - Ну, что же, матушка? Сказку!">65</Step>
-   <Step Number="36" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Юра уходит">66</Step>
-   <Step Number="37" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Занавес-, ярмарка">65</Step>
-   <Step Number="38" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="царь">66</Step>
-   <Step Number="39" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Поди спроси камень">10</Step>
-   <Step Number="40" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Выходит Саша Б.">82</Step>
-   <Step Number="41" FadeIn="0" Hold="4294967294" FadeOut="0" Note="спроси у дуба">10</Step>
-   <Step Number="42" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="дуб поворачивается">82</Step>
-   <Step Number="43" FadeIn="0" Hold="4294967294" FadeOut="0" Note="спроси птицу">10</Step>
-   <Step Number="44" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="дуб уходит, на музыку">83</Step>
-   <Step Number="45" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="танец">7</Step>
-   <Step Number="46" FadeIn="0" Hold="4294967294" FadeOut="0" Note="потянуло его к любви, VIDEO: after bird">10</Step>
-   <Step Number="47" FadeIn="4000" Hold="4294967294" FadeOut="1500" Note="&quot;И вдруг проснулся он.” - TURN OFF VIDEO">66</Step>
-   <Step Number="48" FadeIn="0" Hold="4294967294" FadeOut="0" Note="уходит пастух, VIDEO: after shepherd, Женя ушел, -видео.">10</Step>
-   <Step Number="49" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Тамара выходит +свет, БЕРЕЗА 4">66</Step>
-   <Step Number="50" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Занавес-">10</Step>
-   <Step Number="51" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="ДЯДЯ ПУД: Занавес+">34</Step>
-   <Step Number="52" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="На воде">37</Step>
-   <Step Number="53" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="бросают">29</Step>
-   <Step Number="54" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="грустная музыка, шторм кончается">37</Step>
-   <Step Number="55" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="пуд падает на сундук -- до БЕРЕЗА 5">34</Step>
-   <Step Number="56" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="дети спускаются ПИМПЕРЛЕ: Занавес-, дети на лестнице">87</Step>
-   <Step Number="57" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Шляпа">86</Step>
-   <Step Number="58" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="выбегает из света, второе &quot;Пимперлэ&quot;">87</Step>
-   <Step Number="59" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Занавес+, MIC ON">93</Step>
-   <Step Number="60" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Танцуют снизу, спрыгивает">71</Step>
-   <Step Number="61" FadeIn="1500" Hold="4294967294" FadeOut="2500" Note="Занавес-, Ася и Тамара">88</Step>
-   <Step Number="62" FadeIn="2500" Hold="4294967294" FadeOut="3000" Note="Занавес+">89</Step>
-   <Step Number="63" FadeIn="3000" Hold="4294967294" FadeOut="3000" Note="умерает, начинают петь">90</Step>
-   <Step Number="64" FadeIn="3000" Hold="4294967294" FadeOut="1500" Note="шут спрыгивает вниз">87</Step>
-   <Step Number="65" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="&quot;Я вас люблю&quot;">2</Step>
-   <Step Number="66" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Все уходят">10</Step>
-   <Step Number="67" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="5 сек">66</Step>
-   <Step Number="68" FadeIn="2500" Hold="4294967294" FadeOut="2500" Note="спускаются">91</Step>
-   <Step Number="69" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Все уходят">10</Step>
+   <Step Number="35" FadeIn="2500" Hold="4294967294" FadeOut="1500" Note="сын - Ну, что же, матушка? Сказку!">71</Step>
+   <Step Number="36" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Занавес-, ярмарка">65</Step>
+   <Step Number="37" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="царь">66</Step>
+   <Step Number="38" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Поди спроси камень">10</Step>
+   <Step Number="39" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Выходит Саша Б.">82</Step>
+   <Step Number="40" FadeIn="0" Hold="4294967294" FadeOut="0" Note="спроси у дуба">10</Step>
+   <Step Number="41" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="дуб поворачивается">82</Step>
+   <Step Number="42" FadeIn="0" Hold="4294967294" FadeOut="0" Note="спроси птицу">10</Step>
+   <Step Number="43" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="дуб уходит, на музыку">83</Step>
+   <Step Number="44" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="танец">7</Step>
+   <Step Number="45" FadeIn="0" Hold="4294967294" FadeOut="0" Note="потянуло его к любви, VIDEO: after bird">10</Step>
+   <Step Number="46" FadeIn="4000" Hold="4294967294" FadeOut="1500" Note="&quot;И вдруг проснулся он.” - TURN OFF VIDEO">66</Step>
+   <Step Number="47" FadeIn="0" Hold="4294967294" FadeOut="0" Note="уходит пастух, VIDEO: after shepherd, Женя ушел, -видео.">10</Step>
+   <Step Number="48" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Тамара выходит +свет, БЕРЕЗА 4">66</Step>
+   <Step Number="49" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Занавес-">10</Step>
+   <Step Number="50" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="ДЯДЯ ПУД: Занавес+">34</Step>
+   <Step Number="51" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="На воде">37</Step>
+   <Step Number="52" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="бросают">29</Step>
+   <Step Number="53" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="грустная музыка, шторм кончается">37</Step>
+   <Step Number="54" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="пуд падает на сундук -- до БЕРЕЗА 5">34</Step>
+   <Step Number="55" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="дети спускаются ПИМПЕРЛЕ: Занавес-, дети на лестнице">87</Step>
+   <Step Number="56" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Шляпа">86</Step>
+   <Step Number="57" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="выбегает из света, второе &quot;Пимперлэ&quot;">87</Step>
+   <Step Number="58" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Занавес+, MIC ON">93</Step>
+   <Step Number="59" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Танцуют снизу, спрыгивает">71</Step>
+   <Step Number="60" FadeIn="1500" Hold="4294967294" FadeOut="2500" Note="Занавес-, Ася и Тамара">88</Step>
+   <Step Number="61" FadeIn="2500" Hold="4294967294" FadeOut="3000" Note="Занавес+">89</Step>
+   <Step Number="62" FadeIn="3000" Hold="4294967294" FadeOut="3000" Note="умерает, начинают петь">90</Step>
+   <Step Number="63" FadeIn="3000" Hold="4294967294" FadeOut="1500" Note="шут спрыгивает вниз">87</Step>
+   <Step Number="64" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="&quot;Я вас люблю&quot;">2</Step>
+   <Step Number="65" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Все уходят">10</Step>
+   <Step Number="66" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="5 сек">66</Step>
+   <Step Number="67" FadeIn="2500" Hold="4294967294" FadeOut="2500" Note="спускаются">91</Step>
+   <Step Number="68" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Все уходят">10</Step>
   </Function>
   <Function ID="78" Type="Scene" Name="Sides and Top" Path="Сказки/Два Ивана">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -1445,7 +1444,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="True" X="0" Y="0" Width="790" Height="905"/>
+    <WindowState Visible="False" X="0" Y="0" Width="790" Height="905"/>
     <AllowChildren>False</AllowChildren>
     <AllowResize>False</AllowResize>
     <ShowHeader>True</ShowHeader>
@@ -1460,7 +1459,7 @@
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <WindowState Visible="True" X="5" Y="40" Width="390" Height="430"/>
+     <WindowState Visible="False" X="5" Y="40" Width="390" Height="430"/>
      <AllowChildren>False</AllowChildren>
      <AllowResize>False</AllowResize>
      <ShowHeader>False</ShowHeader>
@@ -1468,7 +1467,7 @@
      <Collapsed>False</Collapsed>
      <Disabled>False</Disabled>
      <Slider Caption="Ch 1" ID="110" WidgetStyle="Slider" InvertedAppearance="false">
-      <WindowState Visible="True" X="5" Y="5" Width="95" Height="380"/>
+      <WindowState Visible="False" X="5" Y="5" Width="95" Height="380"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
        <ForegroundColor>4294967295</ForegroundColor>
@@ -1480,7 +1479,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="200">
+      <Level LowLimit="0" HighLimit="255" Value="0">
        <Channel Fixture="0">0</Channel>
       </Level>
       <Playback>
@@ -1488,7 +1487,7 @@
       </Playback>
      </Slider>
      <Label Caption="FR 2" ID="19">
-      <WindowState Visible="True" X="100" Y="385" Width="95" Height="40"/>
+      <WindowState Visible="False" X="100" Y="385" Width="95" Height="40"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>4294967295</ForegroundColor>
@@ -1498,7 +1497,7 @@
       </Appearance>
      </Label>
      <Slider Caption="Ch 2" ID="20" WidgetStyle="Slider" InvertedAppearance="false">
-      <WindowState Visible="True" X="100" Y="5" Width="95" Height="380"/>
+      <WindowState Visible="False" X="100" Y="5" Width="95" Height="380"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
        <ForegroundColor>4294967295</ForegroundColor>
@@ -1510,7 +1509,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="255">
+      <Level LowLimit="0" HighLimit="255" Value="0">
        <Channel Fixture="1">0</Channel>
       </Level>
       <Playback>
@@ -1518,7 +1517,7 @@
       </Playback>
      </Slider>
      <Label Caption="F Spot" ID="24">
-      <WindowState Visible="True" X="290" Y="385" Width="95" Height="40"/>
+      <WindowState Visible="False" X="290" Y="385" Width="95" Height="40"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>4294967295</ForegroundColor>
@@ -1528,7 +1527,7 @@
       </Appearance>
      </Label>
      <Label Caption="Backstage Side R" ID="25">
-      <WindowState Visible="True" X="195" Y="385" Width="95" Height="40"/>
+      <WindowState Visible="False" X="195" Y="385" Width="95" Height="40"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>4294967295</ForegroundColor>
@@ -1538,7 +1537,7 @@
       </Appearance>
      </Label>
      <Slider Caption="Ch 4" ID="26" WidgetStyle="Slider" InvertedAppearance="false">
-      <WindowState Visible="True" X="290" Y="5" Width="95" Height="380"/>
+      <WindowState Visible="False" X="290" Y="5" Width="95" Height="380"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
        <ForegroundColor>4294967295</ForegroundColor>
@@ -1558,7 +1557,7 @@
       </Playback>
      </Slider>
      <Slider Caption="Ch 3" ID="27" WidgetStyle="Slider" InvertedAppearance="false">
-      <WindowState Visible="True" X="195" Y="5" Width="95" Height="380"/>
+      <WindowState Visible="False" X="195" Y="5" Width="95" Height="380"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
        <ForegroundColor>4294967295</ForegroundColor>
@@ -1578,7 +1577,7 @@
       </Playback>
      </Slider>
      <Label Caption="FR 1" ID="35">
-      <WindowState Visible="True" X="5" Y="385" Width="95" Height="40"/>
+      <WindowState Visible="False" X="5" Y="385" Width="95" Height="40"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>4294967295</ForegroundColor>
@@ -1596,7 +1595,7 @@
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <WindowState Visible="True" X="395" Y="40" Width="390" Height="430"/>
+     <WindowState Visible="False" X="395" Y="40" Width="390" Height="430"/>
      <AllowChildren>False</AllowChildren>
      <AllowResize>False</AllowResize>
      <ShowHeader>False</ShowHeader>
@@ -1604,7 +1603,7 @@
      <Collapsed>False</Collapsed>
      <Disabled>False</Disabled>
      <Slider Caption="Ch 5" ID="52" WidgetStyle="Slider" InvertedAppearance="false">
-      <WindowState Visible="True" X="5" Y="5" Width="95" Height="380"/>
+      <WindowState Visible="False" X="5" Y="5" Width="95" Height="380"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
        <ForegroundColor>4294967295</ForegroundColor>
@@ -1624,7 +1623,7 @@
       </Playback>
      </Slider>
      <Label Caption="Wide Left" ID="53">
-      <WindowState Visible="True" X="100" Y="385" Width="95" Height="40"/>
+      <WindowState Visible="False" X="100" Y="385" Width="95" Height="40"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>4294967295</ForegroundColor>
@@ -1634,7 +1633,7 @@
       </Appearance>
      </Label>
      <Slider Caption="Ch 6" ID="54" WidgetStyle="Slider" InvertedAppearance="false">
-      <WindowState Visible="True" X="100" Y="5" Width="95" Height="380"/>
+      <WindowState Visible="False" X="100" Y="5" Width="95" Height="380"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
        <ForegroundColor>4294967295</ForegroundColor>
@@ -1654,7 +1653,7 @@
       </Playback>
      </Slider>
      <Label Caption="Fill Left" ID="56">
-      <WindowState Visible="True" X="290" Y="385" Width="95" Height="40"/>
+      <WindowState Visible="False" X="290" Y="385" Width="95" Height="40"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>4294967295</ForegroundColor>
@@ -1664,7 +1663,7 @@
       </Appearance>
      </Label>
      <Label Caption="Stage Left" ID="57">
-      <WindowState Visible="True" X="195" Y="385" Width="95" Height="40"/>
+      <WindowState Visible="False" X="195" Y="385" Width="95" Height="40"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>4294967295</ForegroundColor>
@@ -1674,7 +1673,7 @@
       </Appearance>
      </Label>
      <Slider Caption="Ch 8" ID="58" WidgetStyle="Slider" InvertedAppearance="false">
-      <WindowState Visible="True" X="290" Y="5" Width="95" Height="380"/>
+      <WindowState Visible="False" X="290" Y="5" Width="95" Height="380"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
        <ForegroundColor>4294967295</ForegroundColor>
@@ -1694,7 +1693,7 @@
       </Playback>
      </Slider>
      <Slider Caption="Ch 7" ID="59" WidgetStyle="Slider" InvertedAppearance="false">
-      <WindowState Visible="True" X="195" Y="5" Width="95" Height="380"/>
+      <WindowState Visible="False" X="195" Y="5" Width="95" Height="380"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
        <ForegroundColor>4294967295</ForegroundColor>
@@ -1706,7 +1705,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="50">
+      <Level LowLimit="0" HighLimit="255" Value="0">
        <Channel Fixture="6">0</Channel>
       </Level>
       <Playback>
@@ -1714,7 +1713,7 @@
       </Playback>
      </Slider>
      <Label Caption="Sign" ID="60">
-      <WindowState Visible="True" X="5" Y="385" Width="95" Height="40"/>
+      <WindowState Visible="False" X="5" Y="385" Width="95" Height="40"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>4294967295</ForegroundColor>
@@ -1732,7 +1731,7 @@
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <WindowState Visible="True" X="5" Y="470" Width="390" Height="430"/>
+     <WindowState Visible="False" X="5" Y="470" Width="390" Height="430"/>
      <AllowChildren>False</AllowChildren>
      <AllowResize>False</AllowResize>
      <ShowHeader>False</ShowHeader>
@@ -1740,7 +1739,7 @@
      <Collapsed>False</Collapsed>
      <Disabled>False</Disabled>
      <Slider Caption="Ch 9" ID="62" WidgetStyle="Slider" InvertedAppearance="false">
-      <WindowState Visible="True" X="5" Y="5" Width="95" Height="380"/>
+      <WindowState Visible="False" X="5" Y="5" Width="95" Height="380"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
        <ForegroundColor>4294967295</ForegroundColor>
@@ -1760,7 +1759,7 @@
       </Playback>
      </Slider>
      <Label Caption="Stage Right" ID="63">
-      <WindowState Visible="True" X="100" Y="385" Width="95" Height="40"/>
+      <WindowState Visible="False" X="100" Y="385" Width="95" Height="40"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>4294967295</ForegroundColor>
@@ -1770,7 +1769,7 @@
       </Appearance>
      </Label>
      <Slider Caption="Ch 10" ID="64" WidgetStyle="Slider" InvertedAppearance="false">
-      <WindowState Visible="True" X="100" Y="5" Width="95" Height="380"/>
+      <WindowState Visible="False" X="100" Y="5" Width="95" Height="380"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
        <ForegroundColor>4294967295</ForegroundColor>
@@ -1782,7 +1781,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="50">
+      <Level LowLimit="0" HighLimit="255" Value="0">
        <Channel Fixture="9">0</Channel>
       </Level>
       <Playback>
@@ -1790,7 +1789,7 @@
       </Playback>
      </Slider>
      <Label Caption="Stage Center" ID="65">
-      <WindowState Visible="True" X="290" Y="385" Width="95" Height="40"/>
+      <WindowState Visible="False" X="290" Y="385" Width="95" Height="40"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>4294967295</ForegroundColor>
@@ -1800,7 +1799,7 @@
       </Appearance>
      </Label>
      <Label Caption="Wide Right" ID="66">
-      <WindowState Visible="True" X="195" Y="385" Width="95" Height="40"/>
+      <WindowState Visible="False" X="195" Y="385" Width="95" Height="40"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>4294967295</ForegroundColor>
@@ -1810,7 +1809,7 @@
       </Appearance>
      </Label>
      <Slider Caption="Ch 12" ID="67" WidgetStyle="Slider" InvertedAppearance="false">
-      <WindowState Visible="True" X="290" Y="5" Width="95" Height="380"/>
+      <WindowState Visible="False" X="290" Y="5" Width="95" Height="380"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
        <ForegroundColor>4294967295</ForegroundColor>
@@ -1822,7 +1821,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="105">
+      <Level LowLimit="0" HighLimit="255" Value="0">
        <Channel Fixture="11">0</Channel>
       </Level>
       <Playback>
@@ -1830,7 +1829,7 @@
       </Playback>
      </Slider>
      <Slider Caption="Ch 11" ID="68" WidgetStyle="Slider" InvertedAppearance="false">
-      <WindowState Visible="True" X="195" Y="5" Width="95" Height="380"/>
+      <WindowState Visible="False" X="195" Y="5" Width="95" Height="380"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
        <ForegroundColor>4294967295</ForegroundColor>
@@ -1850,7 +1849,7 @@
       </Playback>
      </Slider>
      <Label Caption="Fill Right" ID="69">
-      <WindowState Visible="True" X="5" Y="385" Width="95" Height="40"/>
+      <WindowState Visible="False" X="5" Y="385" Width="95" Height="40"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>4294967295</ForegroundColor>
@@ -1868,7 +1867,7 @@
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <WindowState Visible="True" X="395" Y="470" Width="390" Height="430"/>
+     <WindowState Visible="False" X="395" Y="470" Width="390" Height="430"/>
      <AllowChildren>False</AllowChildren>
      <AllowResize>False</AllowResize>
      <ShowHeader>False</ShowHeader>
@@ -1876,7 +1875,7 @@
      <Collapsed>False</Collapsed>
      <Disabled>False</Disabled>
      <Slider Caption="Ch 13" ID="71" WidgetStyle="Slider" InvertedAppearance="false">
-      <WindowState Visible="True" X="5" Y="5" Width="95" Height="380"/>
+      <WindowState Visible="False" X="5" Y="5" Width="95" Height="380"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
        <ForegroundColor>4294967295</ForegroundColor>
@@ -1896,7 +1895,7 @@
       </Playback>
      </Slider>
      <Label Caption="Stage Curtain Top" ID="72">
-      <WindowState Visible="True" X="100" Y="385" Width="95" Height="40"/>
+      <WindowState Visible="False" X="100" Y="385" Width="95" Height="40"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>4294967295</ForegroundColor>
@@ -1906,7 +1905,7 @@
       </Appearance>
      </Label>
      <Slider Caption="Ch 14" ID="73" WidgetStyle="Slider" InvertedAppearance="false">
-      <WindowState Visible="True" X="100" Y="5" Width="95" Height="380"/>
+      <WindowState Visible="False" X="100" Y="5" Width="95" Height="380"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
        <ForegroundColor>4294967295</ForegroundColor>
@@ -1918,7 +1917,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="237">
+      <Level LowLimit="0" HighLimit="255" Value="0">
        <Channel Fixture="13">0</Channel>
       </Level>
       <Playback>
@@ -1926,7 +1925,7 @@
       </Playback>
      </Slider>
      <Label Caption="FL 2" ID="74">
-      <WindowState Visible="True" X="290" Y="385" Width="95" Height="40"/>
+      <WindowState Visible="False" X="290" Y="385" Width="95" Height="40"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>4294967295</ForegroundColor>
@@ -1936,7 +1935,7 @@
       </Appearance>
      </Label>
      <Label Caption="FL 1" ID="75">
-      <WindowState Visible="True" X="195" Y="385" Width="95" Height="40"/>
+      <WindowState Visible="False" X="195" Y="385" Width="95" Height="40"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>4294967295</ForegroundColor>
@@ -1946,7 +1945,7 @@
       </Appearance>
      </Label>
      <Slider Caption="Ch 16" ID="76" WidgetStyle="Slider" InvertedAppearance="false">
-      <WindowState Visible="True" X="290" Y="5" Width="95" Height="380"/>
+      <WindowState Visible="False" X="290" Y="5" Width="95" Height="380"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
        <ForegroundColor>4294967295</ForegroundColor>
@@ -1958,7 +1957,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="200">
+      <Level LowLimit="0" HighLimit="255" Value="0">
        <Channel Fixture="15">0</Channel>
       </Level>
       <Playback>
@@ -1966,7 +1965,7 @@
       </Playback>
      </Slider>
      <Slider Caption="Ch 15" ID="77" WidgetStyle="Slider" InvertedAppearance="false">
-      <WindowState Visible="True" X="195" Y="5" Width="95" Height="380"/>
+      <WindowState Visible="False" X="195" Y="5" Width="95" Height="380"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
        <ForegroundColor>4294967295</ForegroundColor>
@@ -1978,7 +1977,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="255">
+      <Level LowLimit="0" HighLimit="255" Value="0">
        <Channel Fixture="14">0</Channel>
       </Level>
       <Playback>
@@ -1986,7 +1985,7 @@
       </Playback>
      </Slider>
      <Label Caption="Backstage Side L" ID="78">
-      <WindowState Visible="True" X="5" Y="385" Width="95" Height="40"/>
+      <WindowState Visible="False" X="5" Y="385" Width="95" Height="40"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>4294967295</ForegroundColor>
@@ -2005,7 +2004,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="True" X="790" Y="0" Width="1440" Height="1055"/>
+    <WindowState Visible="False" X="790" Y="0" Width="1440" Height="1055"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
@@ -2762,7 +2761,7 @@
      <SlidersMode>Crossfade</SlidersMode>
     </CueList>
     <CueList Caption="Cue list" ID="5" Page="1">
-     <WindowState Visible="True" X="5" Y="40" Width="1430" Height="1010"/>
+     <WindowState Visible="False" X="5" Y="40" Width="1430" Height="1010"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2787,7 +2786,7 @@
     </CueList>
    </Frame>
    <SpeedDial Caption="Duration" ID="0">
-    <WindowState Visible="True" X="2255" Y="10" Width="45" Height="285"/>
+    <WindowState Visible="False" X="2255" Y="10" Width="45" Height="285"/>
     <Appearance>
      <FrameStyle>Sunken</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -2848,7 +2847,7 @@
     </Preset>
    </SpeedDial>
    <Button Caption="CLR" ID="9" Icon="">
-    <WindowState Visible="True" X="2240" Y="655" Width="45" Height="100"/>
+    <WindowState Visible="False" X="2240" Y="655" Width="45" Height="100"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>4294967295</ForegroundColor>
@@ -2862,7 +2861,7 @@
     <Intensity Adjust="False">100</Intensity>
    </Button>
    <Button Caption="Lightning" ID="88" Icon="">
-    <WindowState Visible="True" X="2235" Y="780" Width="100" Height="100"/>
+    <WindowState Visible="False" X="2235" Y="780" Width="100" Height="100"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>4294967295</ForegroundColor>
