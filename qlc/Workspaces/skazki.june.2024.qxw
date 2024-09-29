@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Workspace>
-<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="FunctionManager">
+<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="FixtureManager">
  <Creator>
   <Name>Q Light Controller Plus</Name>
-  <Version>4.13.0</Version>
+  <Version>4.12.6</Version>
   <Author>Hemul</Author>
  </Creator>
  <Engine>
   <InputOutputMap>
-   <BeatGenerator BeatType="Disabled" BPM="0"/>
    <Universe Name="Universe 1" ID="0">
-    <Output Plugin="DMX USB" UID="FT232R USB UART (S/N: AQ02VCGU)" Line="0">
-     <PluginParameters UniverseChannels="44"/>
-    </Output>
+    <Output Plugin="DMX USB" UID="None" Line="0"/>
    </Universe>
    <Universe Name="Universe 2" ID="1"/>
    <Universe Name="Universe 3" ID="2"/>
@@ -178,58 +175,6 @@
    <Address>15</Address>
    <Channels>1</Channels>
   </Fixture>
-  <Fixture>
-   <Manufacturer>EasyDancing</Manufacturer>
-   <Model>RGB LED</Model>
-   <Mode>Main</Mode>
-   <ID>16</ID>
-   <Name>RGB LED #1</Name>
-   <Universe>0</Universe>
-   <Address>16</Address>
-   <Channels>7</Channels>
-   <ExcludeFade>1,2,3,4,5,6</ExcludeFade>
-  </Fixture>
-  <Fixture>
-   <Manufacturer>EasyDancing</Manufacturer>
-   <Model>RGB LED</Model>
-   <Mode>Main</Mode>
-   <ID>17</ID>
-   <Name>RGB LED #3</Name>
-   <Universe>0</Universe>
-   <Address>30</Address>
-   <Channels>7</Channels>
-   <ExcludeFade>1,2,3,4,5,6</ExcludeFade>
-  </Fixture>
-  <Fixture>
-   <Manufacturer>EasyDancing</Manufacturer>
-   <Model>RGB LED</Model>
-   <Mode>Main</Mode>
-   <ID>18</ID>
-   <Name>RGB LED #2</Name>
-   <Universe>0</Universe>
-   <Address>23</Address>
-   <Channels>7</Channels>
-   <ExcludeFade>1,2,3,4,5,6</ExcludeFade>
-  </Fixture>
-  <Fixture>
-   <Manufacturer>EasyDancing</Manufacturer>
-   <Model>RGB LED</Model>
-   <Mode>Main</Mode>
-   <ID>19</ID>
-   <Name>RGB LED #4</Name>
-   <Universe>0</Universe>
-   <Address>37</Address>
-   <Channels>7</Channels>
-   <ExcludeFade>1,2,3,4,5,6</ExcludeFade>
-  </Fixture>
-  <FixtureGroup ID="0">
-   <Name>LED</Name>
-   <Size X="1" Y="1"/>
-   <Head X="0" Y="0" Fixture="19">0</Head>
-   <Head X="0" Y="1" Fixture="16">0</Head>
-   <Head X="0" Y="2" Fixture="18">0</Head>
-   <Head X="0" Y="3" Fixture="17">0</Head>
-  </FixtureGroup>
   <FixtureGroup ID="1">
    <Name>Stage Front</Name>
    <Size X="2" Y="2"/>
@@ -699,10 +644,6 @@
    <FixtureVal ID="11">0,116</FixtureVal>
    <FixtureVal ID="14">0,71</FixtureVal>
    <FixtureVal ID="15">0,71</FixtureVal>
-   <FixtureVal ID="16">0,255,1,0,2,50,3,255,4,0,5,0,6,0</FixtureVal>
-   <FixtureVal ID="18">0,255,1,0,2,50,3,255,4,0,5,0,6,0</FixtureVal>
-   <FixtureVal ID="17">0,255,1,0,2,50,3,255,4,0,5,0,6,0</FixtureVal>
-   <FixtureVal ID="19">0,255,1,0,2,50,3,255,4,0,5,0,6,0</FixtureVal>
   </Function>
   <Function ID="38" Type="Scene" Name="Top and Sides" Path="Groups">
    <Speed FadeIn="1500" FadeOut="1500" Duration="0"/>
@@ -782,31 +723,15 @@
   </Function>
   <Function ID="42" Type="Scene" Name="LED Brightness" Path="Groups/LED">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="16">0,255</FixtureVal>
-   <FixtureVal ID="17">0,255</FixtureVal>
-   <FixtureVal ID="18">0,255</FixtureVal>
-   <FixtureVal ID="19">0,255</FixtureVal>
   </Function>
   <Function ID="43" Type="Scene" Name="LED Red" Path="Groups/LED">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="16">1,255</FixtureVal>
-   <FixtureVal ID="17">1,255</FixtureVal>
-   <FixtureVal ID="18">1,255</FixtureVal>
-   <FixtureVal ID="19">1,255</FixtureVal>
   </Function>
   <Function ID="44" Type="Scene" Name="LED Blue" Path="Groups/LED">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="16">3,255</FixtureVal>
-   <FixtureVal ID="17">3,251</FixtureVal>
-   <FixtureVal ID="18">3,255</FixtureVal>
-   <FixtureVal ID="19">3,255</FixtureVal>
   </Function>
   <Function ID="45" Type="Scene" Name="LED Green" Path="Groups/LED">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="16">2,255</FixtureVal>
-   <FixtureVal ID="17">2,255</FixtureVal>
-   <FixtureVal ID="18">2,255</FixtureVal>
-   <FixtureVal ID="19">2,255</FixtureVal>
   </Function>
   <Function ID="46" Type="Scene" Name="Floor Focus" Path="Сказки/Тамара">
    <Speed FadeIn="1500" FadeOut="1500" Duration="0"/>
@@ -863,17 +788,9 @@
   </Function>
   <Function ID="51" Type="Scene" Name="Strobe White" Path="Сказки/Тамара">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="16">0,255,1,255,2,255,3,255,4,220</FixtureVal>
-   <FixtureVal ID="18">0,255,1,255,2,255,3,255,4,220</FixtureVal>
-   <FixtureVal ID="17">0,255,1,255,2,255,3,255,4,220</FixtureVal>
-   <FixtureVal ID="19">0,255,1,255,2,255,3,255,4,220</FixtureVal>
   </Function>
   <Function ID="52" Type="Scene" Name="LED Storm Strobe" Path="Сказки/Дядя Пуд/Storm">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="16">0,255,1,0,2,134,3,255,4,220</FixtureVal>
-   <FixtureVal ID="18">0,255,1,0,2,134,3,255,4,220</FixtureVal>
-   <FixtureVal ID="17">0,255,1,255,2,134,3,255,4,220</FixtureVal>
-   <FixtureVal ID="19">0,255,1,0,2,134,3,255,4,220</FixtureVal>
   </Function>
   <Function ID="53" Type="Chaser" Name="Storm Stage Effect Complex" Path="Effects">
    <Speed FadeIn="1500" FadeOut="1500" Duration="1500"/>
@@ -1421,10 +1338,6 @@
    <FxItem ID="13" XPos="2360" YPos="40"/>
    <FxItem ID="14" XPos="1678.88" YPos="1022.52"/>
    <FxItem ID="15" XPos="1362.1" YPos="1019.65"/>
-   <FxItem ID="16" XPos="958.621" YPos="634.483"/>
-   <FxItem ID="17" XPos="2655.17" YPos="600"/>
-   <FxItem ID="18" XPos="2082.76" YPos="606.897"/>
-   <FxItem ID="19" XPos="3828.25" YPos="601.901"/>
   </Monitor>
  </Engine>
  <VirtualConsole>
