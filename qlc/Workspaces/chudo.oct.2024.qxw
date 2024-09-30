@@ -4,12 +4,14 @@
  <Creator>
   <Name>Q Light Controller Plus</Name>
   <Version>4.12.6</Version>
-  <Author>Hemul</Author>
+  <Author>22bob</Author>
  </Creator>
  <Engine>
   <InputOutputMap>
    <Universe Name="Universe 1" ID="0">
-    <Output Plugin="DMX USB" UID="None" Line="0"/>
+    <Output Plugin="DMX USB" UID="FT232R USB UART (S/N: A10KPF27)" Line="0">
+     <PluginParameters UniverseChannels="16"/>
+    </Output>
    </Universe>
    <Universe Name="Universe 2" ID="1"/>
    <Universe Name="Universe 3" ID="2"/>
@@ -711,7 +713,7 @@
    <Step Number="29" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Eto on! Eto on!">7</Step>
    <Step Number="30" FadeIn="2000" Hold="4294967294" FadeOut="3000">42</Step>
    <Step Number="31" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Poem + book finish">10</Step>
-   <Step Number="32" FadeIn="4000" Hold="4294967294" FadeOut="1500" Note="Wait for bear + princess to stand in center">22</Step>
+   <Step Number="32" FadeIn="4000" Hold="4294967294" FadeOut="1500" Note="35 sec!!! Wait for bear + princess to stand in center">22</Step>
    <Step Number="33" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Dance front or svita comes out">39</Step>
    <Step Number="34" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Svita comes downstairs">41</Step>
    <Step Number="35" FadeIn="0" Hold="4294967294" FadeOut="0">10</Step>
@@ -798,16 +800,16 @@
    <FixtureVal ID="2">0,255</FixtureVal>
    <FixtureVal ID="7">0,0</FixtureVal>
    <FixtureVal ID="8">0,0</FixtureVal>
-   <FixtureVal ID="3">0,52</FixtureVal>
+   <FixtureVal ID="3">0,80</FixtureVal>
    <FixtureVal ID="5">0,0</FixtureVal>
    <FixtureVal ID="10">0,0</FixtureVal>
    <FixtureVal ID="4">0,0</FixtureVal>
    <FixtureVal ID="11">0,0</FixtureVal>
    <FixtureVal ID="13">0,0</FixtureVal>
-   <FixtureVal ID="14">0,45</FixtureVal>
+   <FixtureVal ID="14">0,60</FixtureVal>
    <FixtureVal ID="15">0,0</FixtureVal>
    <FixtureVal ID="0">0,0</FixtureVal>
-   <FixtureVal ID="1">0,45</FixtureVal>
+   <FixtureVal ID="1">0,72</FixtureVal>
    <FixtureVal ID="9">0,0</FixtureVal>
    <FixtureVal ID="6">0,0</FixtureVal>
   </Function>
@@ -896,7 +898,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="0">
+      <Level LowLimit="0" HighLimit="255" Value="90">
        <Channel Fixture="0">0</Channel>
       </Level>
       <Playback>
@@ -926,7 +928,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="0">
+      <Level LowLimit="0" HighLimit="255" Value="90">
        <Channel Fixture="1">0</Channel>
       </Level>
       <Playback>
@@ -966,7 +968,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="0">
+      <Level LowLimit="0" HighLimit="255" Value="140">
        <Channel Fixture="3">0</Channel>
       </Level>
       <Playback>
@@ -1062,7 +1064,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="0">
+      <Level LowLimit="0" HighLimit="255" Value="97">
        <Channel Fixture="5">0</Channel>
       </Level>
       <Playback>
@@ -1102,7 +1104,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="0">
+      <Level LowLimit="0" HighLimit="255" Value="145">
        <Channel Fixture="7">0</Channel>
       </Level>
       <Playback>
@@ -1168,7 +1170,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="0">
+      <Level LowLimit="0" HighLimit="255" Value="145">
        <Channel Fixture="8">0</Channel>
       </Level>
       <Playback>
@@ -1258,7 +1260,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="0">
+      <Level LowLimit="0" HighLimit="255" Value="97">
        <Channel Fixture="10">0</Channel>
       </Level>
       <Playback>
@@ -1334,7 +1336,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="0">
+      <Level LowLimit="0" HighLimit="255" Value="255">
        <Channel Fixture="13">0</Channel>
       </Level>
       <Playback>
@@ -1374,7 +1376,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="0">
+      <Level LowLimit="0" HighLimit="255" Value="90">
        <Channel Fixture="15">0</Channel>
       </Level>
       <Playback>
@@ -1394,7 +1396,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="0">
+      <Level LowLimit="0" HighLimit="255" Value="90">
        <Channel Fixture="14">0</Channel>
       </Level>
       <Playback>
