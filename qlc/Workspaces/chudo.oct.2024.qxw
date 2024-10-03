@@ -898,7 +898,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="90">
+      <Level LowLimit="0" HighLimit="255" Value="0">
        <Channel Fixture="0">0</Channel>
       </Level>
       <Playback>
@@ -928,7 +928,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="90">
+      <Level LowLimit="0" HighLimit="255" Value="0">
        <Channel Fixture="1">0</Channel>
       </Level>
       <Playback>
@@ -968,7 +968,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="140">
+      <Level LowLimit="0" HighLimit="255" Value="0">
        <Channel Fixture="3">0</Channel>
       </Level>
       <Playback>
@@ -1064,7 +1064,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="97">
+      <Level LowLimit="0" HighLimit="255" Value="0">
        <Channel Fixture="5">0</Channel>
       </Level>
       <Playback>
@@ -1104,7 +1104,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="145">
+      <Level LowLimit="0" HighLimit="255" Value="0">
        <Channel Fixture="7">0</Channel>
       </Level>
       <Playback>
@@ -1170,7 +1170,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="145">
+      <Level LowLimit="0" HighLimit="255" Value="0">
        <Channel Fixture="8">0</Channel>
       </Level>
       <Playback>
@@ -1260,7 +1260,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="97">
+      <Level LowLimit="0" HighLimit="255" Value="0">
        <Channel Fixture="10">0</Channel>
       </Level>
       <Playback>
@@ -1336,7 +1336,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="255">
+      <Level LowLimit="0" HighLimit="255" Value="0">
        <Channel Fixture="13">0</Channel>
       </Level>
       <Playback>
@@ -1376,7 +1376,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="90">
+      <Level LowLimit="0" HighLimit="255" Value="0">
        <Channel Fixture="15">0</Channel>
       </Level>
       <Playback>
@@ -1396,7 +1396,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="90">
+      <Level LowLimit="0" HighLimit="255" Value="0">
        <Channel Fixture="14">0</Channel>
       </Level>
       <Playback>
