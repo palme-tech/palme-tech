@@ -3,16 +3,13 @@
 <Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="VirtualConsole">
  <Creator>
   <Name>Q Light Controller Plus</Name>
-  <Version>4.13.0</Version>
+  <Version>4.12.6</Version>
   <Author>Hemul</Author>
  </Creator>
  <Engine>
   <InputOutputMap>
-   <BeatGenerator BeatType="Disabled" BPM="0"/>
    <Universe Name="Universe 1" ID="0">
-    <Output Plugin="DMX USB" UID="FT232R USB UART (S/N: AQ02VCGU)" Line="0">
-     <PluginParameters UniverseChannels="39"/>
-    </Output>
+    <Output Plugin="DMX USB" UID="None" Line="0"/>
    </Universe>
    <Universe Name="Universe 2" ID="1"/>
    <Universe Name="Universe 3" ID="2"/>
@@ -23,7 +20,7 @@
    <Model>Generic</Model>
    <Mode>1 Channel</Mode>
    <ID>0</ID>
-   <Name>Stage Front Right 1</Name>
+   <Name>Front Right 1</Name>
    <Universe>0</Universe>
    <Address>0</Address>
    <Channels>1</Channels>
@@ -33,7 +30,7 @@
    <Model>Generic</Model>
    <Mode>1 Channel</Mode>
    <ID>1</ID>
-   <Name>Stage Front Right 2</Name>
+   <Name>Front Right 2</Name>
    <Universe>0</Universe>
    <Address>1</Address>
    <Channels>1</Channels>
@@ -53,27 +50,27 @@
    <Model>Generic</Model>
    <Mode>1 Channel</Mode>
    <ID>3</ID>
-   <Name>Floor Spot</Name>
+   <Name>Floor Center</Name>
    <Universe>0</Universe>
-   <Address>3</Address>
+   <Address>9</Address>
    <Channels>1</Channels>
   </Fixture>
   <Fixture>
-   <Manufacturer>Generic</Manufacturer>
-   <Model>Generic</Model>
-   <Mode>1 Channel</Mode>
+   <Manufacturer>disco sfx</Manufacturer>
+   <Model>LED Snow Machine</Model>
+   <Mode>main</Mode>
    <ID>4</ID>
-   <Name>Bad Output</Name>
+   <Name>LED Snow Machine</Name>
    <Universe>0</Universe>
-   <Address>4</Address>
-   <Channels>1</Channels>
+   <Address>39</Address>
+   <Channels>2</Channels>
   </Fixture>
   <Fixture>
    <Manufacturer>Generic</Manufacturer>
    <Model>Generic</Model>
    <Mode>1 Channel</Mode>
    <ID>5</ID>
-   <Name>Floor Wide Left</Name>
+   <Name>Floor Left</Name>
    <Universe>0</Universe>
    <Address>5</Address>
    <Channels>1</Channels>
@@ -82,18 +79,8 @@
    <Manufacturer>Generic</Manufacturer>
    <Model>Generic</Model>
    <Mode>1 Channel</Mode>
-   <ID>6</ID>
-   <Name>Stage Right</Name>
-   <Universe>0</Universe>
-   <Address>6</Address>
-   <Channels>1</Channels>
-  </Fixture>
-  <Fixture>
-   <Manufacturer>Generic</Manufacturer>
-   <Model>Generic</Model>
-   <Mode>1 Channel</Mode>
    <ID>7</ID>
-   <Name>Floor Fill Left</Name>
+   <Name>Front Left 3</Name>
    <Universe>0</Universe>
    <Address>7</Address>
    <Channels>1</Channels>
@@ -103,7 +90,7 @@
    <Model>Generic</Model>
    <Mode>1 Channel</Mode>
    <ID>8</ID>
-   <Name>Floor Fill Right</Name>
+   <Name>Front Right 3</Name>
    <Universe>0</Universe>
    <Address>8</Address>
    <Channels>1</Channels>
@@ -112,30 +99,10 @@
    <Manufacturer>Generic</Manufacturer>
    <Model>Generic</Model>
    <Mode>1 Channel</Mode>
-   <ID>9</ID>
-   <Name>Stage Left</Name>
-   <Universe>0</Universe>
-   <Address>9</Address>
-   <Channels>1</Channels>
-  </Fixture>
-  <Fixture>
-   <Manufacturer>Generic</Manufacturer>
-   <Model>Generic</Model>
-   <Mode>1 Channel</Mode>
    <ID>10</ID>
-   <Name>Floor Wide Right</Name>
+   <Name>Floor Right</Name>
    <Universe>0</Universe>
    <Address>10</Address>
-   <Channels>1</Channels>
-  </Fixture>
-  <Fixture>
-   <Manufacturer>Generic</Manufacturer>
-   <Model>Generic</Model>
-   <Mode>1 Channel</Mode>
-   <ID>11</ID>
-   <Name>Stage Center</Name>
-   <Universe>0</Universe>
-   <Address>11</Address>
    <Channels>1</Channels>
   </Fixture>
   <Fixture>
@@ -155,7 +122,7 @@
    <ID>13</ID>
    <Name>Stage Curtain Top</Name>
    <Universe>0</Universe>
-   <Address>13</Address>
+   <Address>4</Address>
    <Channels>1</Channels>
   </Fixture>
   <Fixture>
@@ -163,7 +130,7 @@
    <Model>Generic</Model>
    <Mode>1 Channel</Mode>
    <ID>14</ID>
-   <Name>Stage Front Left 1</Name>
+   <Name>Front Left 2</Name>
    <Universe>0</Universe>
    <Address>14</Address>
    <Channels>1</Channels>
@@ -173,7 +140,7 @@
    <Model>Generic</Model>
    <Mode>1 Channel</Mode>
    <ID>15</ID>
-   <Name>Stage Front Left 2</Name>
+   <Name>Front Left 1</Name>
    <Universe>0</Universe>
    <Address>15</Address>
    <Channels>1</Channels>
@@ -193,7 +160,7 @@
    <Model>RGB LED</Model>
    <Mode>Main</Mode>
    <ID>17</ID>
-   <Name>RGB LED #1</Name>
+   <Name>RGB Left</Name>
    <Universe>0</Universe>
    <Address>25</Address>
    <Channels>7</Channels>
@@ -203,21 +170,27 @@
    <Model>RGB LED</Model>
    <Mode>Main</Mode>
    <ID>18</ID>
-   <Name>RGB LED #2</Name>
+   <Name>RGB Right</Name>
    <Universe>0</Universe>
    <Address>32</Address>
    <Channels>7</Channels>
   </Fixture>
+  <FixtureGroup ID="0">
+   <Name>Effects</Name>
+   <Size X="3" Y="5"/>
+   <Head X="0" Y="0" Fixture="16">0</Head>
+   <Head X="0" Y="1" Fixture="18">0</Head>
+   <Head X="0" Y="2" Fixture="17">0</Head>
+   <Head X="0" Y="3" Fixture="4">0</Head>
+  </FixtureGroup>
   <FixtureGroup ID="1">
    <Name>Stage Front</Name>
-   <Size X="2" Y="2"/>
+   <Size X="4" Y="4"/>
    <Head X="0" Y="0" Fixture="0">0</Head>
    <Head X="1" Y="0" Fixture="1">0</Head>
+   <Head X="2" Y="0" Fixture="7">0</Head>
    <Head X="0" Y="1" Fixture="14">0</Head>
    <Head X="1" Y="1" Fixture="15">0</Head>
-   <Head X="0" Y="2" Fixture="16">0</Head>
-   <Head X="1" Y="2" Fixture="17">0</Head>
-   <Head X="0" Y="3" Fixture="18">0</Head>
   </FixtureGroup>
   <FixtureGroup ID="2">
    <Name>Backstage Sides</Name>
@@ -229,123 +202,26 @@
    <Name>Floor</Name>
    <Size X="3" Y="3"/>
    <Head X="0" Y="0" Fixture="5">0</Head>
-   <Head X="1" Y="0" Fixture="7">0</Head>
-   <Head X="2" Y="0" Fixture="8">0</Head>
    <Head X="0" Y="1" Fixture="10">0</Head>
    <Head X="1" Y="1" Fixture="3">0</Head>
   </FixtureGroup>
-  <FixtureGroup ID="4">
-   <Name>Stage Fill</Name>
-   <Size X="2" Y="2"/>
-   <Head X="0" Y="0" Fixture="6">0</Head>
-   <Head X="1" Y="0" Fixture="11">0</Head>
-   <Head X="0" Y="1" Fixture="9">0</Head>
-  </FixtureGroup>
-  <Function ID="0" Type="Scene" Name="Floor" Path="Groups">
-   <Speed FadeIn="1500" FadeOut="1500" Duration="1000"/>
-   <FixtureVal ID="3">0,255</FixtureVal>
-   <FixtureVal ID="5">0,255</FixtureVal>
-   <FixtureVal ID="7">0,255</FixtureVal>
-   <FixtureVal ID="8">0,255</FixtureVal>
-   <FixtureVal ID="10">0,255</FixtureVal>
-  </Function>
-  <Function ID="1" Type="Scene" Name="Floor Spot" Path="Groups">
-   <Speed FadeIn="1500" FadeOut="1500" Duration="1000"/>
-   <FixtureVal ID="3">0,255</FixtureVal>
-  </Function>
-  <Function ID="2" Type="Scene" Name="Stage Front" Path="Groups">
-   <Speed FadeIn="1500" FadeOut="1500" Duration="1000"/>
-   <FixtureVal ID="0">0,255</FixtureVal>
-   <FixtureVal ID="1">0,255</FixtureVal>
-   <FixtureVal ID="14">0,255</FixtureVal>
-   <FixtureVal ID="15">0,255</FixtureVal>
-  </Function>
-  <Function ID="3" Type="Scene" Name="Stage Full" Path="Groups">
-   <Speed FadeIn="1500" FadeOut="1500" Duration="1000"/>
-   <FixtureVal ID="6">0,255</FixtureVal>
-   <FixtureVal ID="9">0,255</FixtureVal>
-   <FixtureVal ID="11">0,255</FixtureVal>
-  </Function>
-  <Function ID="4" Type="Scene" Name="Tavern Right" Path="Groups">
-   <Speed FadeIn="1500" FadeOut="1500" Duration="0"/>
-   <FixtureVal ID="0">0,255</FixtureVal>
-   <FixtureVal ID="1">0,0</FixtureVal>
-   <FixtureVal ID="2">0,0</FixtureVal>
-   <FixtureVal ID="3">0,0</FixtureVal>
-   <FixtureVal ID="4">0,0</FixtureVal>
-   <FixtureVal ID="5">0,255</FixtureVal>
-   <FixtureVal ID="6">0,0</FixtureVal>
-   <FixtureVal ID="7">0,0</FixtureVal>
-   <FixtureVal ID="8">0,255</FixtureVal>
-   <FixtureVal ID="9">0,0</FixtureVal>
-   <FixtureVal ID="10">0,0</FixtureVal>
-   <FixtureVal ID="11">0,0</FixtureVal>
-   <FixtureVal ID="12">0,0</FixtureVal>
-   <FixtureVal ID="13">0,0</FixtureVal>
-   <FixtureVal ID="14">0,0</FixtureVal>
-   <FixtureVal ID="15">0,0</FixtureVal>
-  </Function>
-  <Function ID="5" Type="Scene" Name="Tavern Left" Path="Groups">
-   <Speed FadeIn="1500" FadeOut="1500" Duration="0"/>
-   <FixtureVal ID="0">0,0</FixtureVal>
-   <FixtureVal ID="1">0,0</FixtureVal>
-   <FixtureVal ID="2">0,0</FixtureVal>
-   <FixtureVal ID="3">0,0</FixtureVal>
-   <FixtureVal ID="4">0,0</FixtureVal>
-   <FixtureVal ID="5">0,0</FixtureVal>
-   <FixtureVal ID="6">0,0</FixtureVal>
-   <FixtureVal ID="7">0,255</FixtureVal>
-   <FixtureVal ID="8">0,0</FixtureVal>
-   <FixtureVal ID="9">0,0</FixtureVal>
-   <FixtureVal ID="10">0,255</FixtureVal>
-   <FixtureVal ID="11">0,0</FixtureVal>
-   <FixtureVal ID="12">0,0</FixtureVal>
-   <FixtureVal ID="13">0,0</FixtureVal>
-   <FixtureVal ID="14">0,0</FixtureVal>
-   <FixtureVal ID="15">0,255</FixtureVal>
-  </Function>
-  <Function ID="6" Type="Scene" Name="Stage Front Center" Path="Groups">
-   <Speed FadeIn="1500" FadeOut="1500" Duration="1000"/>
-   <FixtureVal ID="1">0,255</FixtureVal>
-   <FixtureVal ID="14">0,255</FixtureVal>
-  </Function>
-  <Function ID="7" Type="Scene" Name="Backstage Sides" Path="Groups">
-   <Speed FadeIn="1500" FadeOut="1500" Duration="1000"/>
-   <FixtureVal ID="12">0,255</FixtureVal>
-   <FixtureVal ID="2">0,255</FixtureVal>
-  </Function>
-  <Function ID="8" Type="Chaser" Name="Act 1 princess meets bear placeholder">
+  <Function ID="8" Type="Chaser" Name="Alice">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
-   <Step Number="0" FadeIn="1750" Hold="0" FadeOut="500" Note="King">30</Step>
-   <Step Number="1" FadeIn="500" Hold="0" FadeOut="500" Note="Eye contact after bumping into each other">33</Step>
-   <Step Number="2" FadeIn="500" Hold="0" FadeOut="1750" Note="Pass each other">30</Step>
-  </Function>
-  <Function ID="9" Type="Collection" Name="Floor And Front">
-   <Step Number="0">0</Step>
-   <Step Number="1">2</Step>
   </Function>
   <Function ID="10" Type="Scene" Name="Black">
    <Speed FadeIn="1500" FadeOut="1500" Duration="0"/>
   </Function>
-  <Function ID="11" Type="Scene" Name="Stage Front Center Low" Path="Groups">
-   <Speed FadeIn="1500" FadeOut="1500" Duration="1000"/>
-   <FixtureVal ID="1">0,125</FixtureVal>
-   <FixtureVal ID="14">0,125</FixtureVal>
-  </Function>
-  <Function ID="12" Type="Scene" Name="Act 1 Low" Path="Scenes">
+  <Function ID="12" Type="Scene" Name="Act 1 Low" Path="Old/Chudo">
    <Speed FadeIn="1500" FadeOut="1500" Duration="0"/>
    <FixtureVal ID="0">0,71</FixtureVal>
    <FixtureVal ID="1">0,71</FixtureVal>
-   <FixtureVal ID="6">0,116</FixtureVal>
-   <FixtureVal ID="9">0,116</FixtureVal>
-   <FixtureVal ID="11">0,116</FixtureVal>
    <FixtureVal ID="14">0,71</FixtureVal>
    <FixtureVal ID="15">0,71</FixtureVal>
   </Function>
-  <Function ID="13" Type="Scene" Name="tavern low" Path="Scenes">
+  <Function ID="13" Type="Scene" Name="tavern low" Path="Old/Chudo">
    <Speed FadeIn="1500" FadeOut="1500" Duration="0"/>
    <FixtureVal ID="0">0,33</FixtureVal>
    <FixtureVal ID="1">0,33</FixtureVal>
@@ -357,7 +233,7 @@
    <FixtureVal ID="14">0,33</FixtureVal>
    <FixtureVal ID="15">0,33</FixtureVal>
   </Function>
-  <Function ID="14" Type="Scene" Name="tavern high" Path="Scenes">
+  <Function ID="14" Type="Scene" Name="tavern high" Path="Old/Chudo">
    <Speed FadeIn="1500" FadeOut="1500" Duration="0"/>
    <FixtureVal ID="0">0,90</FixtureVal>
    <FixtureVal ID="1">0,90</FixtureVal>
@@ -369,466 +245,237 @@
    <FixtureVal ID="14">0,90</FixtureVal>
    <FixtureVal ID="15">0,90</FixtureVal>
   </Function>
-  <Function ID="15" Type="Scene" Name="bear and princess low" Path="Scenes">
+  <Function ID="15" Type="Scene" Name="bear and princess low" Path="Old/Chudo">
    <Speed FadeIn="1500" FadeOut="1500" Duration="0"/>
    <FixtureVal ID="0">0,90</FixtureVal>
    <FixtureVal ID="1">0,90</FixtureVal>
    <FixtureVal ID="2">0,0</FixtureVal>
    <FixtureVal ID="3">0,102</FixtureVal>
-   <FixtureVal ID="4">0,0</FixtureVal>
    <FixtureVal ID="5">0,98</FixtureVal>
-   <FixtureVal ID="6">0,0</FixtureVal>
    <FixtureVal ID="7">0,36</FixtureVal>
    <FixtureVal ID="8">0,123</FixtureVal>
-   <FixtureVal ID="9">0,0</FixtureVal>
    <FixtureVal ID="10">0,36</FixtureVal>
-   <FixtureVal ID="11">0,0</FixtureVal>
    <FixtureVal ID="12">0,0</FixtureVal>
    <FixtureVal ID="13">0,0</FixtureVal>
    <FixtureVal ID="14">0,90</FixtureVal>
    <FixtureVal ID="15">0,90</FixtureVal>
   </Function>
-  <Function ID="16" Type="Scene" Name="Tavern covers" Path="Scenes">
+  <Function ID="16" Type="Scene" Name="Tavern covers" Path="Old/Chudo">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="0">0,22</FixtureVal>
    <FixtureVal ID="1">0,22</FixtureVal>
    <FixtureVal ID="2">0,0</FixtureVal>
    <FixtureVal ID="3">0,0</FixtureVal>
-   <FixtureVal ID="4">0,0</FixtureVal>
    <FixtureVal ID="5">0,24</FixtureVal>
-   <FixtureVal ID="6">0,0</FixtureVal>
    <FixtureVal ID="7">0,24</FixtureVal>
    <FixtureVal ID="8">0,24</FixtureVal>
-   <FixtureVal ID="9">0,0</FixtureVal>
    <FixtureVal ID="10">0,24</FixtureVal>
-   <FixtureVal ID="11">0,0</FixtureVal>
    <FixtureVal ID="12">0,0</FixtureVal>
    <FixtureVal ID="13">0,0</FixtureVal>
    <FixtureVal ID="14">0,22</FixtureVal>
    <FixtureVal ID="15">0,22</FixtureVal>
   </Function>
-  <Function ID="17" Type="Scene" Name="Stage Curtain Top" Path="Groups">
-   <Speed FadeIn="1500" FadeOut="1500" Duration="0"/>
-   <FixtureVal ID="0">0,0</FixtureVal>
-   <FixtureVal ID="1">0,0</FixtureVal>
-   <FixtureVal ID="2">0,0</FixtureVal>
-   <FixtureVal ID="3">0,0</FixtureVal>
-   <FixtureVal ID="4">0,0</FixtureVal>
-   <FixtureVal ID="5">0,0</FixtureVal>
-   <FixtureVal ID="6">0,0</FixtureVal>
-   <FixtureVal ID="7">0,0</FixtureVal>
-   <FixtureVal ID="8">0,0</FixtureVal>
-   <FixtureVal ID="9">0,0</FixtureVal>
-   <FixtureVal ID="10">0,0</FixtureVal>
-   <FixtureVal ID="11">0,0</FixtureVal>
-   <FixtureVal ID="12">0,0</FixtureVal>
-   <FixtureVal ID="13">0,255</FixtureVal>
-   <FixtureVal ID="14">0,0</FixtureVal>
-   <FixtureVal ID="15">0,0</FixtureVal>
-  </Function>
-  <Function ID="18" Type="Scene" Name="Fog On" Path="Groups">
-   <Speed FadeIn="1500" FadeOut="1500" Duration="0"/>
-  </Function>
-  <Function ID="19" Type="Scene" Name="Dream with Stage Front Low" Path="Scenes">
+  <Function ID="19" Type="Scene" Name="Dream with Stage Front Low" Path="Old/Chudo">
    <Speed FadeIn="1500" FadeOut="1500" Duration="0"/>
    <FixtureVal ID="0">0,0</FixtureVal>
    <FixtureVal ID="1">0,51</FixtureVal>
    <FixtureVal ID="2">0,255</FixtureVal>
    <FixtureVal ID="3">0,0</FixtureVal>
-   <FixtureVal ID="4">0,0</FixtureVal>
    <FixtureVal ID="5">0,0</FixtureVal>
-   <FixtureVal ID="6">0,0</FixtureVal>
    <FixtureVal ID="7">0,0</FixtureVal>
    <FixtureVal ID="8">0,0</FixtureVal>
-   <FixtureVal ID="9">0,0</FixtureVal>
    <FixtureVal ID="10">0,0</FixtureVal>
-   <FixtureVal ID="11">0,0</FixtureVal>
    <FixtureVal ID="12">0,255</FixtureVal>
    <FixtureVal ID="13">0,0</FixtureVal>
    <FixtureVal ID="14">0,51</FixtureVal>
    <FixtureVal ID="15">0,0</FixtureVal>
   </Function>
-  <Function ID="20" Type="Scene" Name="Dream low candle" Path="Scenes">
+  <Function ID="20" Type="Scene" Name="Dream low candle" Path="Old/Chudo">
    <Speed FadeIn="1500" FadeOut="1500" Duration="0"/>
    <FixtureVal ID="0">0,0</FixtureVal>
    <FixtureVal ID="1">0,41</FixtureVal>
    <FixtureVal ID="2">0,78</FixtureVal>
    <FixtureVal ID="3">0,0</FixtureVal>
-   <FixtureVal ID="4">0,0</FixtureVal>
    <FixtureVal ID="5">0,0</FixtureVal>
-   <FixtureVal ID="6">0,0</FixtureVal>
    <FixtureVal ID="7">0,0</FixtureVal>
    <FixtureVal ID="8">0,0</FixtureVal>
-   <FixtureVal ID="9">0,0</FixtureVal>
    <FixtureVal ID="10">0,0</FixtureVal>
-   <FixtureVal ID="11">0,0</FixtureVal>
    <FixtureVal ID="12">0,78</FixtureVal>
    <FixtureVal ID="13">0,0</FixtureVal>
    <FixtureVal ID="14">0,41</FixtureVal>
    <FixtureVal ID="15">0,0</FixtureVal>
   </Function>
-  <Function ID="21" Type="Scene" Name="Dream low left" Path="Scenes">
+  <Function ID="21" Type="Scene" Name="Dream low left" Path="Old/Chudo">
    <Speed FadeIn="1500" FadeOut="1500" Duration="0"/>
    <FixtureVal ID="0">0,0</FixtureVal>
    <FixtureVal ID="1">0,91</FixtureVal>
    <FixtureVal ID="2">0,255</FixtureVal>
    <FixtureVal ID="3">0,0</FixtureVal>
-   <FixtureVal ID="4">0,0</FixtureVal>
    <FixtureVal ID="5">0,0</FixtureVal>
-   <FixtureVal ID="6">0,0</FixtureVal>
    <FixtureVal ID="7">0,0</FixtureVal>
    <FixtureVal ID="8">0,0</FixtureVal>
-   <FixtureVal ID="9">0,0</FixtureVal>
    <FixtureVal ID="10">0,0</FixtureVal>
-   <FixtureVal ID="11">0,0</FixtureVal>
    <FixtureVal ID="12">0,255</FixtureVal>
    <FixtureVal ID="13">0,0</FixtureVal>
    <FixtureVal ID="14">0,91</FixtureVal>
    <FixtureVal ID="15">0,74</FixtureVal>
   </Function>
-  <Function ID="22" Type="Scene" Name="Final Dance" Path="Scenes">
+  <Function ID="22" Type="Scene" Name="Final Dance" Path="Old/Chudo">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="0">0,0</FixtureVal>
    <FixtureVal ID="1">0,0</FixtureVal>
    <FixtureVal ID="2">0,255</FixtureVal>
    <FixtureVal ID="3">0,0</FixtureVal>
-   <FixtureVal ID="4">0,0</FixtureVal>
    <FixtureVal ID="5">0,0</FixtureVal>
-   <FixtureVal ID="6">0,0</FixtureVal>
    <FixtureVal ID="7">0,0</FixtureVal>
    <FixtureVal ID="8">0,0</FixtureVal>
-   <FixtureVal ID="9">0,0</FixtureVal>
    <FixtureVal ID="10">0,0</FixtureVal>
-   <FixtureVal ID="11">0,0</FixtureVal>
    <FixtureVal ID="12">0,255</FixtureVal>
    <FixtureVal ID="13">0,102</FixtureVal>
    <FixtureVal ID="14">0,0</FixtureVal>
    <FixtureVal ID="15">0,0</FixtureVal>
   </Function>
-  <Function ID="23" Type="Scene" Name="Backstage Sides Half" Path="Scenes">
+  <Function ID="23" Type="Scene" Name="Backstage Sides Half" Path="Old/Chudo">
    <Speed FadeIn="1500" FadeOut="1500" Duration="0"/>
    <FixtureVal ID="12">0,126</FixtureVal>
    <FixtureVal ID="2">0,126</FixtureVal>
   </Function>
-  <Function ID="24" Type="Collection" Name="Dream Stage Front Low Left">
-   <Step Number="0">19</Step>
-   <Step Number="1">25</Step>
-  </Function>
-  <Function ID="25" Type="Scene" Name="Stage Front Left Low" Path="Groups">
-   <Speed FadeIn="1500" FadeOut="1500" Duration="0"/>
-   <FixtureVal ID="15">0,70</FixtureVal>
-  </Function>
-  <Function ID="26" Type="Scene" Name="Stage Front Right Low" Path="Groups">
-   <Speed FadeIn="1500" FadeOut="1500" Duration="0"/>
-   <FixtureVal ID="0">0,70</FixtureVal>
-  </Function>
-  <Function ID="27" Type="Collection" Name="Dream Stage Front Low Right">
-   <Step Number="0">19</Step>
-   <Step Number="1">26</Step>
-  </Function>
-  <Function ID="28" Type="Scene" Name="Backstage Sides Right Low" Path="Groups">
-   <Speed FadeIn="1500" FadeOut="1500" Duration="0"/>
-   <FixtureVal ID="2">0,50</FixtureVal>
-  </Function>
-  <Function ID="29" Type="Chaser" Name="Chudo with poems">
-   <Speed FadeIn="0" FadeOut="0" Duration="4294967294"/>
-   <Direction>Forward</Direction>
-   <RunOrder>Loop</RunOrder>
-   <SpeedModes FadeIn="PerStep" FadeOut="PerStep" Duration="Common"/>
-   <Step Number="0" FadeIn="0" Hold="4294967294" FadeOut="0">10</Step>
-   <Step Number="1" FadeIn="1750" Hold="4294967294" FadeOut="1750">12</Step>
-   <Step Number="2" FadeIn="1750" Hold="4294967294" FadeOut="500" Note="King arrives">30</Step>
-   <Step Number="3" FadeIn="1750" Hold="4294967294" FadeOut="1750" Note="Bear + everyone leaves, princess alone">12</Step>
-   <Step Number="4" FadeIn="1750" Hold="4294967294" FadeOut="1750" Note="King comes back">30</Step>
-   <Step Number="5" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Wizard ending">10</Step>
-   <Step Number="6" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Traktirshik enters">13</Step>
-   <Step Number="7" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Hunter + student">35</Step>
-   <Step Number="8" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Bear">13</Step>
-   <Step Number="9" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Kill a BEAR">14</Step>
-   <Step Number="10" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="After Fight">15</Step>
-   <Step Number="11" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Traktirshik">13</Step>
-   <Step Number="12" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Emilia comes out">36</Step>
-   <Step Number="13" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Emilia enters">13</Step>
-   <Step Number="14" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="hit the drums">14</Step>
-   <Step Number="15" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Everyone Leaves">15</Step>
-   <Step Number="16" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Papa Papa">35</Step>
-   <Step Number="17" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Bear + hunter leave">16</Step>
-   <Step Number="18" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Covers in place, intermission">10</Step>
-   <Step Number="19" FadeIn="7000" Hold="4294967294" FadeOut="3000" Note="Princess walks up steps">23</Step>
-   <Step Number="20" FadeIn="3000" Hold="4294967294" FadeOut="3000" Note="Svita comes up">7</Step>
-   <Step Number="21" FadeIn="3000" Hold="4294967294" FadeOut="3000">19</Step>
-   <Step Number="22" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Poem left">24</Step>
-   <Step Number="23" FadeIn="1500" Hold="4294967294" FadeOut="1500">19</Step>
-   <Step Number="24" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Poem right">27</Step>
-   <Step Number="25" FadeIn="1500" Hold="4294967294" FadeOut="500">19</Step>
-   <Step Number="26" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Gunshot">10</Step>
-   <Step Number="27" FadeIn="3000" Hold="4294967294" FadeOut="1500" Note="Princess alone">28</Step>
-   <Step Number="28" FadeIn="10000" Hold="4294967294" FadeOut="1500">20</Step>
-   <Step Number="29" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Princess stage left">24</Step>
-   <Step Number="30" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="from DRUZIA to Doktora, doktora!">12</Step>
-   <Step Number="31" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="princess enters">7</Step>
-   <Step Number="32" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Vam uzhe skazali, 4toya umru">32</Step>
-   <Step Number="33" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Eto on! Eto on!">7</Step>
-   <Step Number="34" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Poem + book finish">10</Step>
-   <Step Number="35" FadeIn="6000" Hold="4294967294" FadeOut="4000">31</Step>
-   <Step Number="36" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Poem + book finish">10</Step>
-   <Step Number="37" FadeIn="4000" Hold="4294967294" FadeOut="1500" Note="Wait for bear + princess to stand in center">22</Step>
-   <Step Number="38" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Dance front or svita comes out">39</Step>
-   <Step Number="39" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Svita comes downstairs">41</Step>
-   <Step Number="40" FadeIn="0" Hold="4294967294" FadeOut="0">10</Step>
-  </Function>
-  <Function ID="30" Type="Scene" Name="Act 1 high" Path="Scenes">
+  <Function ID="30" Type="Scene" Name="Act 1 high" Path="Old/Chudo">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="0">0,255</FixtureVal>
    <FixtureVal ID="1">0,255</FixtureVal>
    <FixtureVal ID="2">0,0</FixtureVal>
    <FixtureVal ID="3">0,0</FixtureVal>
-   <FixtureVal ID="4">0,0</FixtureVal>
    <FixtureVal ID="5">0,0</FixtureVal>
-   <FixtureVal ID="6">0,177</FixtureVal>
    <FixtureVal ID="7">0,0</FixtureVal>
    <FixtureVal ID="8">0,0</FixtureVal>
-   <FixtureVal ID="9">0,177</FixtureVal>
    <FixtureVal ID="10">0,0</FixtureVal>
-   <FixtureVal ID="11">0,177</FixtureVal>
    <FixtureVal ID="12">0,0</FixtureVal>
    <FixtureVal ID="13">0,179</FixtureVal>
    <FixtureVal ID="14">0,255</FixtureVal>
    <FixtureVal ID="15">0,255</FixtureVal>
   </Function>
-  <Function ID="31" Type="Scene" Name="Wizard and Hozayka End" Path="Scenes">
+  <Function ID="31" Type="Scene" Name="Wizard and Hozayka End" Path="Old/Chudo">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="0">0,0</FixtureVal>
    <FixtureVal ID="1">0,49</FixtureVal>
    <FixtureVal ID="2">0,0</FixtureVal>
    <FixtureVal ID="3">0,65</FixtureVal>
-   <FixtureVal ID="4">0,0</FixtureVal>
    <FixtureVal ID="5">0,0</FixtureVal>
-   <FixtureVal ID="6">0,0</FixtureVal>
    <FixtureVal ID="7">0,0</FixtureVal>
    <FixtureVal ID="8">0,0</FixtureVal>
-   <FixtureVal ID="9">0,0</FixtureVal>
    <FixtureVal ID="10">0,0</FixtureVal>
-   <FixtureVal ID="11">0,0</FixtureVal>
    <FixtureVal ID="12">0,0</FixtureVal>
    <FixtureVal ID="13">0,0</FixtureVal>
    <FixtureVal ID="14">0,40</FixtureVal>
    <FixtureVal ID="15">0,0</FixtureVal>
   </Function>
-  <Function ID="32" Type="Scene" Name="Dance Sides and Front" Path="Scenes">
+  <Function ID="32" Type="Scene" Name="Dance Sides and Front" Path="Old/Chudo">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="0">0,65</FixtureVal>
    <FixtureVal ID="1">0,65</FixtureVal>
    <FixtureVal ID="2">0,255</FixtureVal>
    <FixtureVal ID="3">0,0</FixtureVal>
-   <FixtureVal ID="4">0,0</FixtureVal>
    <FixtureVal ID="5">0,0</FixtureVal>
-   <FixtureVal ID="6">0,0</FixtureVal>
    <FixtureVal ID="7">0,0</FixtureVal>
    <FixtureVal ID="8">0,0</FixtureVal>
-   <FixtureVal ID="9">0,0</FixtureVal>
    <FixtureVal ID="10">0,0</FixtureVal>
-   <FixtureVal ID="11">0,0</FixtureVal>
    <FixtureVal ID="12">0,255</FixtureVal>
    <FixtureVal ID="13">0,0</FixtureVal>
    <FixtureVal ID="14">0,65</FixtureVal>
    <FixtureVal ID="15">0,65</FixtureVal>
   </Function>
-  <Function ID="33" Type="Scene" Name="Act 1 Princess Bear Meet" Path="Scenes">
+  <Function ID="33" Type="Scene" Name="Act 1 Princess Bear Meet" Path="Old/Chudo">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="0">0,0</FixtureVal>
    <FixtureVal ID="1">0,0</FixtureVal>
    <FixtureVal ID="2">0,255</FixtureVal>
    <FixtureVal ID="3">0,0</FixtureVal>
-   <FixtureVal ID="4">0,0</FixtureVal>
    <FixtureVal ID="5">0,0</FixtureVal>
-   <FixtureVal ID="6">0,0</FixtureVal>
    <FixtureVal ID="7">0,0</FixtureVal>
    <FixtureVal ID="8">0,0</FixtureVal>
-   <FixtureVal ID="9">0,0</FixtureVal>
    <FixtureVal ID="10">0,0</FixtureVal>
-   <FixtureVal ID="11">0,0</FixtureVal>
    <FixtureVal ID="12">0,255</FixtureVal>
    <FixtureVal ID="13">0,143</FixtureVal>
    <FixtureVal ID="14">0,0</FixtureVal>
    <FixtureVal ID="15">0,0</FixtureVal>
   </Function>
-  <Function ID="34" Type="Scene" Name="Sign" Path="Groups">
-   <Speed FadeIn="1500" FadeOut="1500" Duration="0"/>
-   <FixtureVal ID="0">0,0</FixtureVal>
-   <FixtureVal ID="1">0,0</FixtureVal>
-   <FixtureVal ID="2">0,0</FixtureVal>
-   <FixtureVal ID="3">0,0</FixtureVal>
-   <FixtureVal ID="4">0,121</FixtureVal>
-   <FixtureVal ID="5">0,0</FixtureVal>
-   <FixtureVal ID="6">0,0</FixtureVal>
-   <FixtureVal ID="7">0,0</FixtureVal>
-   <FixtureVal ID="8">0,0</FixtureVal>
-   <FixtureVal ID="9">0,0</FixtureVal>
-   <FixtureVal ID="10">0,0</FixtureVal>
-   <FixtureVal ID="11">0,0</FixtureVal>
-   <FixtureVal ID="12">0,0</FixtureVal>
-   <FixtureVal ID="13">0,0</FixtureVal>
-   <FixtureVal ID="14">0,0</FixtureVal>
-   <FixtureVal ID="15">0,0</FixtureVal>
-  </Function>
-  <Function ID="35" Type="Scene" Name="Tavern mid" Path="Scenes">
+  <Function ID="35" Type="Scene" Name="Tavern mid" Path="Old/Chudo">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="0">0,71</FixtureVal>
    <FixtureVal ID="1">0,71</FixtureVal>
    <FixtureVal ID="2">0,0</FixtureVal>
    <FixtureVal ID="3">0,110</FixtureVal>
-   <FixtureVal ID="4">0,0</FixtureVal>
    <FixtureVal ID="5">0,100</FixtureVal>
-   <FixtureVal ID="6">0,0</FixtureVal>
    <FixtureVal ID="7">0,125</FixtureVal>
    <FixtureVal ID="8">0,85</FixtureVal>
-   <FixtureVal ID="9">0,0</FixtureVal>
    <FixtureVal ID="10">0,76</FixtureVal>
-   <FixtureVal ID="11">0,0</FixtureVal>
    <FixtureVal ID="12">0,0</FixtureVal>
    <FixtureVal ID="13">0,0</FixtureVal>
    <FixtureVal ID="14">0,71</FixtureVal>
    <FixtureVal ID="15">0,71</FixtureVal>
   </Function>
-  <Function ID="36" Type="Scene" Name="Emil Emilia" Path="Scenes">
+  <Function ID="36" Type="Scene" Name="Emil Emilia" Path="Old/Chudo">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="0">0,25</FixtureVal>
    <FixtureVal ID="1">0,25</FixtureVal>
    <FixtureVal ID="2">0,0</FixtureVal>
    <FixtureVal ID="3">0,57</FixtureVal>
-   <FixtureVal ID="4">0,0</FixtureVal>
    <FixtureVal ID="5">0,57</FixtureVal>
-   <FixtureVal ID="6">0,0</FixtureVal>
    <FixtureVal ID="7">0,57</FixtureVal>
    <FixtureVal ID="8">0,57</FixtureVal>
-   <FixtureVal ID="9">0,0</FixtureVal>
    <FixtureVal ID="10">0,57</FixtureVal>
-   <FixtureVal ID="11">0,0</FixtureVal>
    <FixtureVal ID="12">0,0</FixtureVal>
    <FixtureVal ID="13">0,0</FixtureVal>
    <FixtureVal ID="14">0,25</FixtureVal>
    <FixtureVal ID="15">0,25</FixtureVal>
   </Function>
-  <Function ID="37" Type="Chaser" Name="Chudo">
-   <Speed FadeIn="0" FadeOut="0" Duration="4294967294"/>
-   <Direction>Forward</Direction>
-   <RunOrder>Loop</RunOrder>
-   <SpeedModes FadeIn="PerStep" FadeOut="PerStep" Duration="Common"/>
-   <Step Number="0" FadeIn="0" Hold="4294967294" FadeOut="0">10</Step>
-   <Step Number="1" FadeIn="1750" Hold="4294967294" FadeOut="1750">12</Step>
-   <Step Number="2" FadeIn="1750" Hold="4294967294" FadeOut="500" Note="King arrives">30</Step>
-   <Step Number="3" FadeIn="1750" Hold="4294967294" FadeOut="1750" Note="Bear + everyone leaves, princess alone">12</Step>
-   <Step Number="4" FadeIn="1750" Hold="4294967294" FadeOut="1750" Note="King comes back">30</Step>
-   <Step Number="5" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Wizard ending">10</Step>
-   <Step Number="6" FadeIn="2500" Hold="4294967294" FadeOut="1500" Note="Traktirshik enters">13</Step>
-   <Step Number="7" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Hunter + student">35</Step>
-   <Step Number="8" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Bear">13</Step>
-   <Step Number="9" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Kill a BEAR">14</Step>
-   <Step Number="10" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="After Fight">15</Step>
-   <Step Number="11" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Traktirshik">13</Step>
-   <Step Number="12" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Emilia comes out">36</Step>
-   <Step Number="13" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Emilia enters">13</Step>
-   <Step Number="14" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="hit the drums">14</Step>
-   <Step Number="15" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Everyone Leaves">15</Step>
-   <Step Number="16" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Papa Papa">35</Step>
-   <Step Number="17" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Bear + hunter leave">16</Step>
-   <Step Number="18" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Covers in place, intermission">10</Step>
-   <Step Number="19" FadeIn="7000" Hold="4294967294" FadeOut="3000" Note="Princess walks up steps">23</Step>
-   <Step Number="20" FadeIn="3000" Hold="4294967294" FadeOut="3000" Note="Svita comes up">7</Step>
-   <Step Number="21" FadeIn="3000" Hold="4294967294" FadeOut="500" Note="Princess stage left">24</Step>
-   <Step Number="22" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Gunshot">10</Step>
-   <Step Number="23" FadeIn="3000" Hold="4294967294" FadeOut="1500" Note="Princess alone">28</Step>
-   <Step Number="24" FadeIn="7000" Hold="4294967294" FadeOut="1500">20</Step>
-   <Step Number="25" FadeIn="3000" Hold="4294967294" FadeOut="1500" Note="Princess stage left">24</Step>
-   <Step Number="26" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="from DRUZIA to Doktora, doktora!">12</Step>
-   <Step Number="27" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="princess enters">7</Step>
-   <Step Number="28" FadeIn="2500" Hold="4294967294" FadeOut="1500" Note="Vam uzhe skazali, 4toya umru">32</Step>
-   <Step Number="29" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Eto on! Eto on!">7</Step>
-   <Step Number="30" FadeIn="2000" Hold="4294967294" FadeOut="3000">42</Step>
-   <Step Number="31" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Poem + book finish">10</Step>
-   <Step Number="32" FadeIn="4000" Hold="4294967294" FadeOut="1500" Note="35 sec!!! Wait for bear + princess to stand in center">22</Step>
-   <Step Number="33" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Dance front or svita comes out">39</Step>
-   <Step Number="34" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Svita comes downstairs">41</Step>
-   <Step Number="35" FadeIn="0" Hold="4294967294" FadeOut="0">10</Step>
-  </Function>
-  <Function ID="38" Type="Scene" Name="Top and Sides" Path="Groups">
-   <Speed FadeIn="1500" FadeOut="1500" Duration="0"/>
-   <FixtureVal ID="0">0,0</FixtureVal>
-   <FixtureVal ID="1">0,0</FixtureVal>
-   <FixtureVal ID="2">0,255</FixtureVal>
-   <FixtureVal ID="3">0,0</FixtureVal>
-   <FixtureVal ID="4">0,0</FixtureVal>
-   <FixtureVal ID="5">0,0</FixtureVal>
-   <FixtureVal ID="6">0,0</FixtureVal>
-   <FixtureVal ID="7">0,0</FixtureVal>
-   <FixtureVal ID="8">0,0</FixtureVal>
-   <FixtureVal ID="9">0,0</FixtureVal>
-   <FixtureVal ID="10">0,0</FixtureVal>
-   <FixtureVal ID="11">0,0</FixtureVal>
-   <FixtureVal ID="12">0,255</FixtureVal>
-   <FixtureVal ID="13">0,255</FixtureVal>
-   <FixtureVal ID="14">0,0</FixtureVal>
-   <FixtureVal ID="15">0,0</FixtureVal>
-  </Function>
-  <Function ID="39" Type="Scene" Name="Dance Top Sides and Front" Path="Scenes">
+  <Function ID="39" Type="Scene" Name="Dance Top Sides and Front" Path="Old/Chudo">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="0">0,65</FixtureVal>
    <FixtureVal ID="1">0,65</FixtureVal>
    <FixtureVal ID="2">0,255</FixtureVal>
    <FixtureVal ID="3">0,0</FixtureVal>
-   <FixtureVal ID="4">0,0</FixtureVal>
    <FixtureVal ID="5">0,0</FixtureVal>
-   <FixtureVal ID="6">0,0</FixtureVal>
    <FixtureVal ID="7">0,0</FixtureVal>
    <FixtureVal ID="8">0,0</FixtureVal>
-   <FixtureVal ID="9">0,0</FixtureVal>
    <FixtureVal ID="10">0,0</FixtureVal>
-   <FixtureVal ID="11">0,0</FixtureVal>
    <FixtureVal ID="12">0,255</FixtureVal>
    <FixtureVal ID="13">0,255</FixtureVal>
    <FixtureVal ID="14">0,65</FixtureVal>
    <FixtureVal ID="15">0,65</FixtureVal>
   </Function>
-  <Function ID="40" Type="Scene" Name="Stage Sides and Top Dance" Path="Scenes">
+  <Function ID="40" Type="Scene" Name="Stage Sides and Top Dance" Path="Old/Chudo">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="0">0,0</FixtureVal>
    <FixtureVal ID="1">0,0</FixtureVal>
    <FixtureVal ID="2">0,255</FixtureVal>
    <FixtureVal ID="3">0,0</FixtureVal>
-   <FixtureVal ID="4">0,0</FixtureVal>
    <FixtureVal ID="5">0,0</FixtureVal>
-   <FixtureVal ID="6">0,0</FixtureVal>
    <FixtureVal ID="7">0,0</FixtureVal>
    <FixtureVal ID="8">0,0</FixtureVal>
-   <FixtureVal ID="9">0,0</FixtureVal>
    <FixtureVal ID="10">0,0</FixtureVal>
-   <FixtureVal ID="11">0,0</FixtureVal>
    <FixtureVal ID="12">0,255</FixtureVal>
    <FixtureVal ID="13">0,255</FixtureVal>
    <FixtureVal ID="14">0,0</FixtureVal>
    <FixtureVal ID="15">0,0</FixtureVal>
   </Function>
-  <Function ID="41" Type="Scene" Name="Ending Bow" Path="Scenes">
+  <Function ID="41" Type="Scene" Name="Ending Bow" Path="Old/Chudo">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="0">0,90</FixtureVal>
    <FixtureVal ID="1">0,90</FixtureVal>
    <FixtureVal ID="2">0,0</FixtureVal>
    <FixtureVal ID="3">0,140</FixtureVal>
-   <FixtureVal ID="4">0,0</FixtureVal>
    <FixtureVal ID="5">0,97</FixtureVal>
-   <FixtureVal ID="6">0,0</FixtureVal>
    <FixtureVal ID="7">0,145</FixtureVal>
    <FixtureVal ID="8">0,145</FixtureVal>
-   <FixtureVal ID="9">0,0</FixtureVal>
    <FixtureVal ID="10">0,97</FixtureVal>
-   <FixtureVal ID="11">0,0</FixtureVal>
    <FixtureVal ID="12">0,0</FixtureVal>
    <FixtureVal ID="13">0,255</FixtureVal>
    <FixtureVal ID="14">0,90</FixtureVal>
    <FixtureVal ID="15">0,90</FixtureVal>
   </Function>
-  <Function ID="42" Type="Scene" Name="Backstage Sides + wizard" Path="Scenes">
+  <Function ID="42" Type="Scene" Name="Backstage Sides + wizard" Path="Old/Chudo">
    <Speed FadeIn="1500" FadeOut="1500" Duration="1000"/>
    <FixtureVal ID="12">0,255</FixtureVal>
    <FixtureVal ID="2">0,255</FixtureVal>
@@ -837,47 +484,38 @@
    <FixtureVal ID="3">0,80</FixtureVal>
    <FixtureVal ID="5">0,0</FixtureVal>
    <FixtureVal ID="10">0,0</FixtureVal>
-   <FixtureVal ID="4">0,0</FixtureVal>
-   <FixtureVal ID="11">0,0</FixtureVal>
    <FixtureVal ID="13">0,0</FixtureVal>
    <FixtureVal ID="14">0,60</FixtureVal>
    <FixtureVal ID="15">0,0</FixtureVal>
    <FixtureVal ID="0">0,0</FixtureVal>
    <FixtureVal ID="1">0,72</FixtureVal>
-   <FixtureVal ID="9">0,0</FixtureVal>
-   <FixtureVal ID="6">0,0</FixtureVal>
   </Function>
   <Function ID="43" Type="Chaser" Name="Lights Test">
    <Speed FadeIn="500" FadeOut="500" Duration="4294967294"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
-   <Step Number="0" FadeIn="500" Hold="4294967294" FadeOut="500">0</Step>
-   <Step Number="1" FadeIn="500" Hold="4294967294" FadeOut="500">3</Step>
-   <Step Number="2" FadeIn="500" Hold="4294967294" FadeOut="500">2</Step>
-   <Step Number="3" FadeIn="500" Hold="4294967294" FadeOut="500">7</Step>
-   <Step Number="4" FadeIn="500" Hold="4294967294" FadeOut="500">17</Step>
   </Function>
-  <Monitor DisplayMode="1" ShowLabels="0">
+  <Monitor DisplayMode="1" ShowLabels="1">
    <Font>Arial,9,-1,5,50,0,0,0,0,0</Font>
    <ChannelStyle>0</ChannelStyle>
    <ValueStyle>0</ValueStyle>
    <Grid Width="5" Height="3" Depth="4" Units="0"/>
-   <FxItem ID="0" XPos="3333.09" YPos="1009.69"/>
-   <FxItem ID="1" XPos="3019.43" YPos="1003.34"/>
+   <FxItem ID="0" XPos="3516.1" YPos="1011.66"/>
+   <FxItem ID="1" XPos="3192.36" YPos="1010.86"/>
    <FxItem ID="2" XPos="4014" YPos="0"/>
-   <FxItem ID="3" XPos="2336.51" YPos="3021.1"/>
-   <FxItem ID="5" XPos="1359.43" YPos="2366.01"/>
-   <FxItem ID="6" XPos="1673.41" YPos="2368.41"/>
-   <FxItem ID="7" XPos="1689.97" YPos="1722.29"/>
-   <FxItem ID="8" XPos="3013.57" YPos="1705.94"/>
-   <FxItem ID="9" XPos="3353.69" YPos="2394.39"/>
-   <FxItem ID="10" XPos="3667.39" YPos="2393.07"/>
-   <FxItem ID="11" XPos="3053.83" YPos="2394.24"/>
+   <FxItem ID="3" XPos="2422" YPos="2882.98"/>
+   <FxItem ID="5" XPos="1329.35" YPos="2366.01"/>
+   <FxItem ID="7" XPos="2207.27" YPos="1010.48"/>
+   <FxItem ID="8" XPos="2553.05" YPos="1009.83"/>
+   <FxItem ID="10" XPos="3617.39" YPos="2378.78"/>
    <FxItem ID="12" XPos="676.456" YPos="21.5054"/>
    <FxItem ID="13" XPos="2360" YPos="40"/>
-   <FxItem ID="14" XPos="1678.88" YPos="1022.52"/>
-   <FxItem ID="15" XPos="1362.1" YPos="1019.65"/>
+   <FxItem ID="14" XPos="1633.77" YPos="1015"/>
+   <FxItem ID="15" XPos="1310.45" YPos="1019.65"/>
+   <FxItem ID="16" XPos="2441.19" YPos="1959.73"/>
+   <FxItem ID="17" XPos="854.47" YPos="1008.1"/>
+   <FxItem ID="18" XPos="4039.52" YPos="1001.63"/>
   </Monitor>
  </Engine>
  <VirtualConsole>
@@ -889,7 +527,7 @@
     <BackgroundImage>None</BackgroundImage>
     <Font>Default</Font>
    </Appearance>
-   <Frame Caption="Dimmers" ID="55">
+   <Frame Caption="Monitor" ID="55">
     <Appearance>
      <FrameStyle>Sunken</FrameStyle>
      <ForegroundColor>4294967295</ForegroundColor>
@@ -898,12 +536,16 @@
      <Font>Default</Font>
     </Appearance>
     <WindowState Visible="True" X="0" Y="0" Width="790" Height="905"/>
-    <AllowChildren>False</AllowChildren>
-    <AllowResize>False</AllowResize>
+    <AllowChildren>True</AllowChildren>
+    <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
     <ShowEnableButton>True</ShowEnableButton>
     <Collapsed>False</Collapsed>
     <Disabled>False</Disabled>
+    <Multipage PagesNum="2" CurrentPage="1"/>
+    <Shortcut Page="0" Name="Dimmers"/>
+    <Shortcut Page="1" Name="Spacial"/>
+    <PagesLoop>False</PagesLoop>
     <Frame Caption="dimmer" ID="114">
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
@@ -912,7 +554,7 @@
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <WindowState Visible="True" X="5" Y="40" Width="390" Height="430"/>
+     <WindowState Visible="False" X="5" Y="40" Width="390" Height="430"/>
      <AllowChildren>False</AllowChildren>
      <AllowResize>False</AllowResize>
      <ShowHeader>False</ShowHeader>
@@ -920,7 +562,7 @@
      <Collapsed>False</Collapsed>
      <Disabled>False</Disabled>
      <Slider Caption="Ch 1" ID="110" WidgetStyle="Slider" InvertedAppearance="false">
-      <WindowState Visible="True" X="5" Y="5" Width="95" Height="380"/>
+      <WindowState Visible="False" X="5" Y="5" Width="95" Height="380"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
        <ForegroundColor>4294967295</ForegroundColor>
@@ -939,8 +581,8 @@
        <Function>4294967295</Function>
       </Playback>
      </Slider>
-     <Label Caption="FR 2" ID="19">
-      <WindowState Visible="True" X="100" Y="385" Width="95" Height="40"/>
+     <Label Caption="Front Right 2" ID="19">
+      <WindowState Visible="False" X="100" Y="385" Width="95" Height="40"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>4294967295</ForegroundColor>
@@ -950,7 +592,7 @@
       </Appearance>
      </Label>
      <Slider Caption="Ch 2" ID="20" WidgetStyle="Slider" InvertedAppearance="false">
-      <WindowState Visible="True" X="100" Y="5" Width="95" Height="380"/>
+      <WindowState Visible="False" X="100" Y="5" Width="95" Height="380"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
        <ForegroundColor>4294967295</ForegroundColor>
@@ -969,8 +611,8 @@
        <Function>4294967295</Function>
       </Playback>
      </Slider>
-     <Label Caption="F Spot" ID="24">
-      <WindowState Visible="True" X="290" Y="385" Width="95" Height="40"/>
+     <Label Caption="None" ID="24">
+      <WindowState Visible="False" X="290" Y="385" Width="95" Height="40"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>4294967295</ForegroundColor>
@@ -980,7 +622,7 @@
       </Appearance>
      </Label>
      <Label Caption="Backstage Side R" ID="25">
-      <WindowState Visible="True" X="195" Y="385" Width="95" Height="40"/>
+      <WindowState Visible="False" X="195" Y="385" Width="95" Height="40"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>4294967295</ForegroundColor>
@@ -990,7 +632,7 @@
       </Appearance>
      </Label>
      <Slider Caption="Ch 4" ID="26" WidgetStyle="Slider" InvertedAppearance="false">
-      <WindowState Visible="True" X="290" Y="5" Width="95" Height="380"/>
+      <WindowState Visible="False" X="290" Y="5" Width="95" Height="380"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
        <ForegroundColor>4294967295</ForegroundColor>
@@ -1002,15 +644,13 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="0">
-       <Channel Fixture="3">0</Channel>
-      </Level>
+      <Level LowLimit="0" HighLimit="255" Value="0"/>
       <Playback>
        <Function>4294967295</Function>
       </Playback>
      </Slider>
      <Slider Caption="Ch 3" ID="27" WidgetStyle="Slider" InvertedAppearance="false">
-      <WindowState Visible="True" X="195" Y="5" Width="95" Height="380"/>
+      <WindowState Visible="False" X="195" Y="5" Width="95" Height="380"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
        <ForegroundColor>4294967295</ForegroundColor>
@@ -1029,8 +669,8 @@
        <Function>4294967295</Function>
       </Playback>
      </Slider>
-     <Label Caption="FR 1" ID="35">
-      <WindowState Visible="True" X="5" Y="385" Width="95" Height="40"/>
+     <Label Caption="Front Right 1" ID="35">
+      <WindowState Visible="False" X="5" Y="385" Width="95" Height="40"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>4294967295</ForegroundColor>
@@ -1048,7 +688,7 @@
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <WindowState Visible="True" X="395" Y="40" Width="390" Height="430"/>
+     <WindowState Visible="False" X="395" Y="40" Width="390" Height="430"/>
      <AllowChildren>False</AllowChildren>
      <AllowResize>False</AllowResize>
      <ShowHeader>False</ShowHeader>
@@ -1056,7 +696,7 @@
      <Collapsed>False</Collapsed>
      <Disabled>False</Disabled>
      <Slider Caption="Ch 5" ID="52" WidgetStyle="Slider" InvertedAppearance="false">
-      <WindowState Visible="True" X="5" Y="5" Width="95" Height="380"/>
+      <WindowState Visible="False" X="5" Y="5" Width="95" Height="380"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
        <ForegroundColor>4294967295</ForegroundColor>
@@ -1069,14 +709,14 @@
        <Key>Q</Key>
       </Reset>
       <Level LowLimit="0" HighLimit="255" Value="0">
-       <Channel Fixture="4">0</Channel>
+       <Channel Fixture="13">0</Channel>
       </Level>
       <Playback>
        <Function>4294967295</Function>
       </Playback>
      </Slider>
-     <Label Caption="Wide Left" ID="53">
-      <WindowState Visible="True" X="100" Y="385" Width="95" Height="40"/>
+     <Label Caption="Floor Left" ID="53">
+      <WindowState Visible="False" X="100" Y="385" Width="95" Height="40"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>4294967295</ForegroundColor>
@@ -1086,7 +726,7 @@
       </Appearance>
      </Label>
      <Slider Caption="Ch 6" ID="54" WidgetStyle="Slider" InvertedAppearance="false">
-      <WindowState Visible="True" X="100" Y="5" Width="95" Height="380"/>
+      <WindowState Visible="False" X="100" Y="5" Width="95" Height="380"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
        <ForegroundColor>4294967295</ForegroundColor>
@@ -1105,8 +745,8 @@
        <Function>4294967295</Function>
       </Playback>
      </Slider>
-     <Label Caption="Fill Left" ID="56">
-      <WindowState Visible="True" X="290" Y="385" Width="95" Height="40"/>
+     <Label Caption="Front Left 3" ID="56">
+      <WindowState Visible="False" X="290" Y="385" Width="95" Height="40"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>4294967295</ForegroundColor>
@@ -1115,8 +755,8 @@
        <Font>Default</Font>
       </Appearance>
      </Label>
-     <Label Caption="Stage Left" ID="57">
-      <WindowState Visible="True" X="195" Y="385" Width="95" Height="40"/>
+     <Label Caption="None" ID="57">
+      <WindowState Visible="False" X="195" Y="385" Width="95" Height="40"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>4294967295</ForegroundColor>
@@ -1126,7 +766,7 @@
       </Appearance>
      </Label>
      <Slider Caption="Ch 8" ID="58" WidgetStyle="Slider" InvertedAppearance="false">
-      <WindowState Visible="True" X="290" Y="5" Width="95" Height="380"/>
+      <WindowState Visible="False" X="290" Y="5" Width="95" Height="380"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
        <ForegroundColor>4294967295</ForegroundColor>
@@ -1146,7 +786,7 @@
       </Playback>
      </Slider>
      <Slider Caption="Ch 7" ID="59" WidgetStyle="Slider" InvertedAppearance="false">
-      <WindowState Visible="True" X="195" Y="5" Width="95" Height="380"/>
+      <WindowState Visible="False" X="195" Y="5" Width="95" Height="380"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
        <ForegroundColor>4294967295</ForegroundColor>
@@ -1158,15 +798,13 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="0">
-       <Channel Fixture="6">0</Channel>
-      </Level>
+      <Level LowLimit="0" HighLimit="255" Value="0"/>
       <Playback>
        <Function>4294967295</Function>
       </Playback>
      </Slider>
-     <Label Caption="None" ID="60">
-      <WindowState Visible="True" X="5" Y="385" Width="95" Height="40"/>
+     <Label Caption="Stage Curtain Top" ID="60">
+      <WindowState Visible="False" X="5" Y="385" Width="95" Height="40"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>4294967295</ForegroundColor>
@@ -1184,7 +822,7 @@
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <WindowState Visible="True" X="5" Y="470" Width="390" Height="430"/>
+     <WindowState Visible="False" X="5" Y="470" Width="390" Height="430"/>
      <AllowChildren>False</AllowChildren>
      <AllowResize>False</AllowResize>
      <ShowHeader>False</ShowHeader>
@@ -1192,7 +830,7 @@
      <Collapsed>False</Collapsed>
      <Disabled>False</Disabled>
      <Slider Caption="Ch 9" ID="62" WidgetStyle="Slider" InvertedAppearance="false">
-      <WindowState Visible="True" X="5" Y="5" Width="95" Height="380"/>
+      <WindowState Visible="False" X="5" Y="5" Width="95" Height="380"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
        <ForegroundColor>4294967295</ForegroundColor>
@@ -1211,8 +849,8 @@
        <Function>4294967295</Function>
       </Playback>
      </Slider>
-     <Label Caption="Stage Right" ID="63">
-      <WindowState Visible="True" X="100" Y="385" Width="95" Height="40"/>
+     <Label Caption="Floor Center" ID="63">
+      <WindowState Visible="False" X="100" Y="385" Width="95" Height="40"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>4294967295</ForegroundColor>
@@ -1222,7 +860,7 @@
       </Appearance>
      </Label>
      <Slider Caption="Ch 10" ID="64" WidgetStyle="Slider" InvertedAppearance="false">
-      <WindowState Visible="True" X="100" Y="5" Width="95" Height="380"/>
+      <WindowState Visible="False" X="100" Y="5" Width="95" Height="380"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
        <ForegroundColor>4294967295</ForegroundColor>
@@ -1235,14 +873,14 @@
        <Key>Q</Key>
       </Reset>
       <Level LowLimit="0" HighLimit="255" Value="0">
-       <Channel Fixture="9">0</Channel>
+       <Channel Fixture="3">0</Channel>
       </Level>
       <Playback>
        <Function>4294967295</Function>
       </Playback>
      </Slider>
-     <Label Caption="Stage Center" ID="65">
-      <WindowState Visible="True" X="290" Y="385" Width="95" Height="40"/>
+     <Label Caption="None" ID="65">
+      <WindowState Visible="False" X="290" Y="385" Width="95" Height="40"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>4294967295</ForegroundColor>
@@ -1251,8 +889,8 @@
        <Font>Default</Font>
       </Appearance>
      </Label>
-     <Label Caption="Wide Right" ID="66">
-      <WindowState Visible="True" X="195" Y="385" Width="95" Height="40"/>
+     <Label Caption="Floor Right" ID="66">
+      <WindowState Visible="False" X="195" Y="385" Width="95" Height="40"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>4294967295</ForegroundColor>
@@ -1262,7 +900,7 @@
       </Appearance>
      </Label>
      <Slider Caption="Ch 12" ID="67" WidgetStyle="Slider" InvertedAppearance="false">
-      <WindowState Visible="True" X="290" Y="5" Width="95" Height="380"/>
+      <WindowState Visible="False" X="290" Y="5" Width="95" Height="380"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
        <ForegroundColor>4294967295</ForegroundColor>
@@ -1274,15 +912,13 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="0">
-       <Channel Fixture="11">0</Channel>
-      </Level>
+      <Level LowLimit="0" HighLimit="255" Value="0"/>
       <Playback>
        <Function>4294967295</Function>
       </Playback>
      </Slider>
      <Slider Caption="Ch 11" ID="68" WidgetStyle="Slider" InvertedAppearance="false">
-      <WindowState Visible="True" X="195" Y="5" Width="95" Height="380"/>
+      <WindowState Visible="False" X="195" Y="5" Width="95" Height="380"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
        <ForegroundColor>4294967295</ForegroundColor>
@@ -1301,8 +937,8 @@
        <Function>4294967295</Function>
       </Playback>
      </Slider>
-     <Label Caption="Fill Right" ID="69">
-      <WindowState Visible="True" X="5" Y="385" Width="95" Height="40"/>
+     <Label Caption="Front Right 3" ID="69">
+      <WindowState Visible="False" X="5" Y="385" Width="95" Height="40"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>4294967295</ForegroundColor>
@@ -1320,7 +956,7 @@
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <WindowState Visible="True" X="395" Y="470" Width="390" Height="430"/>
+     <WindowState Visible="False" X="395" Y="470" Width="390" Height="430"/>
      <AllowChildren>False</AllowChildren>
      <AllowResize>False</AllowResize>
      <ShowHeader>False</ShowHeader>
@@ -1328,7 +964,7 @@
      <Collapsed>False</Collapsed>
      <Disabled>False</Disabled>
      <Slider Caption="Ch 13" ID="71" WidgetStyle="Slider" InvertedAppearance="false">
-      <WindowState Visible="True" X="5" Y="5" Width="95" Height="380"/>
+      <WindowState Visible="False" X="5" Y="5" Width="95" Height="380"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
        <ForegroundColor>4294967295</ForegroundColor>
@@ -1347,8 +983,8 @@
        <Function>4294967295</Function>
       </Playback>
      </Slider>
-     <Label Caption="Stage Curtain Top" ID="72">
-      <WindowState Visible="True" X="100" Y="385" Width="95" Height="40"/>
+     <Label Caption="None" ID="72">
+      <WindowState Visible="False" X="100" Y="385" Width="95" Height="40"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>4294967295</ForegroundColor>
@@ -1358,7 +994,7 @@
       </Appearance>
      </Label>
      <Slider Caption="Ch 14" ID="73" WidgetStyle="Slider" InvertedAppearance="false">
-      <WindowState Visible="True" X="100" Y="5" Width="95" Height="380"/>
+      <WindowState Visible="False" X="100" Y="5" Width="95" Height="380"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
        <ForegroundColor>4294967295</ForegroundColor>
@@ -1370,15 +1006,13 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="0">
-       <Channel Fixture="13">0</Channel>
-      </Level>
+      <Level LowLimit="0" HighLimit="255" Value="0"/>
       <Playback>
        <Function>4294967295</Function>
       </Playback>
      </Slider>
-     <Label Caption="FL 2" ID="74">
-      <WindowState Visible="True" X="290" Y="385" Width="95" Height="40"/>
+     <Label Caption="Front Left 1" ID="74">
+      <WindowState Visible="False" X="290" Y="385" Width="95" Height="40"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>4294967295</ForegroundColor>
@@ -1387,8 +1021,8 @@
        <Font>Default</Font>
       </Appearance>
      </Label>
-     <Label Caption="FL 1" ID="75">
-      <WindowState Visible="True" X="195" Y="385" Width="95" Height="40"/>
+     <Label Caption="Front Left 2" ID="75">
+      <WindowState Visible="False" X="195" Y="385" Width="95" Height="40"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>4294967295</ForegroundColor>
@@ -1398,7 +1032,7 @@
       </Appearance>
      </Label>
      <Slider Caption="Ch 16" ID="76" WidgetStyle="Slider" InvertedAppearance="false">
-      <WindowState Visible="True" X="290" Y="5" Width="95" Height="380"/>
+      <WindowState Visible="False" X="290" Y="5" Width="95" Height="380"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
        <ForegroundColor>4294967295</ForegroundColor>
@@ -1418,7 +1052,7 @@
       </Playback>
      </Slider>
      <Slider Caption="Ch 15" ID="77" WidgetStyle="Slider" InvertedAppearance="false">
-      <WindowState Visible="True" X="195" Y="5" Width="95" Height="380"/>
+      <WindowState Visible="False" X="195" Y="5" Width="95" Height="380"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
        <ForegroundColor>4294967295</ForegroundColor>
@@ -1438,7 +1072,534 @@
       </Playback>
      </Slider>
      <Label Caption="Backstage Side L" ID="78">
-      <WindowState Visible="True" X="5" Y="385" Width="95" Height="40"/>
+      <WindowState Visible="False" X="5" Y="385" Width="95" Height="40"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>4294967295</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+     </Label>
+    </Frame>
+    <Frame Caption="" ID="40" Page="1">
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <WindowState Visible="True" X="475" Y="330" Width="310" Height="275"/>
+     <AllowChildren>True</AllowChildren>
+     <AllowResize>True</AllowResize>
+     <ShowHeader>False</ShowHeader>
+     <ShowEnableButton>False</ShowEnableButton>
+     <Collapsed>False</Collapsed>
+     <Disabled>False</Disabled>
+     <Slider Caption="Ch 1" ID="87" WidgetStyle="Slider" InvertedAppearance="false">
+      <WindowState Visible="True" X="155" Y="5" Width="75" Height="230"/>
+      <Appearance>
+       <FrameStyle>Sunken</FrameStyle>
+       <ForegroundColor>4294967295</ForegroundColor>
+       <BackgroundColor>4280559675</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="true">Level</SliderMode>
+      <Reset>
+       <Key>Q</Key>
+      </Reset>
+      <Level LowLimit="0" HighLimit="255" Value="0">
+       <Channel Fixture="0">0</Channel>
+      </Level>
+      <Playback>
+       <Function>4294967295</Function>
+      </Playback>
+     </Slider>
+     <Slider Caption="Ch 2" ID="88" WidgetStyle="Slider" InvertedAppearance="false">
+      <WindowState Visible="True" X="80" Y="5" Width="75" Height="230"/>
+      <Appearance>
+       <FrameStyle>Sunken</FrameStyle>
+       <ForegroundColor>4294967295</ForegroundColor>
+       <BackgroundColor>4280559675</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="true">Level</SliderMode>
+      <Reset>
+       <Key>Q</Key>
+      </Reset>
+      <Level LowLimit="0" HighLimit="255" Value="0">
+       <Channel Fixture="1">0</Channel>
+      </Level>
+      <Playback>
+       <Function>4294967295</Function>
+      </Playback>
+     </Slider>
+     <Slider Caption="Ch 9" ID="89" WidgetStyle="Slider" InvertedAppearance="false">
+      <WindowState Visible="True" X="5" Y="5" Width="75" Height="230"/>
+      <Appearance>
+       <FrameStyle>Sunken</FrameStyle>
+       <ForegroundColor>4294967295</ForegroundColor>
+       <BackgroundColor>4280559675</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="true">Level</SliderMode>
+      <Reset>
+       <Key>Q</Key>
+      </Reset>
+      <Level LowLimit="0" HighLimit="255" Value="0">
+       <Channel Fixture="8">0</Channel>
+      </Level>
+      <Playback>
+       <Function>4294967295</Function>
+      </Playback>
+     </Slider>
+     <Label Caption="Front Right 3" ID="90">
+      <WindowState Visible="True" X="5" Y="235" Width="75" Height="35"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>4294967295</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+     </Label>
+     <Label Caption="Front Right 2" ID="91">
+      <WindowState Visible="True" X="80" Y="235" Width="75" Height="35"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>4294967295</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+     </Label>
+     <Label Caption="Front Right 1" ID="92">
+      <WindowState Visible="True" X="155" Y="235" Width="75" Height="35"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>4294967295</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+     </Label>
+     <Slider Caption="" ID="93" WidgetStyle="Slider" InvertedAppearance="false">
+      <WindowState Visible="True" X="230" Y="5" Width="75" Height="230"/>
+      <Appearance>
+       <FrameStyle>Sunken</FrameStyle>
+       <ForegroundColor>4294967295</ForegroundColor>
+       <BackgroundColor>4280559675</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="true">Level</SliderMode>
+      <Reset>
+       <Key>Q</Key>
+      </Reset>
+      <Level LowLimit="0" HighLimit="255" Value="0">
+       <Channel Fixture="18">0</Channel>
+       <Channel Fixture="18">1</Channel>
+       <Channel Fixture="18">2</Channel>
+       <Channel Fixture="18">3</Channel>
+       <Channel Fixture="18">4</Channel>
+       <Channel Fixture="18">5</Channel>
+       <Channel Fixture="18">6</Channel>
+      </Level>
+      <Playback>
+       <Function>4294967295</Function>
+      </Playback>
+     </Slider>
+     <Label Caption="RGB Right" ID="94">
+      <WindowState Visible="True" X="230" Y="235" Width="75" Height="35"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>4294967295</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+     </Label>
+    </Frame>
+    <Frame Caption="" ID="103" Page="1">
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <WindowState Visible="True" X="5" Y="330" Width="310" Height="275"/>
+     <AllowChildren>True</AllowChildren>
+     <AllowResize>True</AllowResize>
+     <ShowHeader>False</ShowHeader>
+     <ShowEnableButton>False</ShowEnableButton>
+     <Collapsed>False</Collapsed>
+     <Disabled>False</Disabled>
+     <Slider Caption="Ch 15" ID="95" WidgetStyle="Slider" InvertedAppearance="false">
+      <WindowState Visible="True" X="155" Y="5" Width="75" Height="230"/>
+      <Appearance>
+       <FrameStyle>Sunken</FrameStyle>
+       <ForegroundColor>4294967295</ForegroundColor>
+       <BackgroundColor>4280559675</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="true">Level</SliderMode>
+      <Reset>
+       <Key>Q</Key>
+      </Reset>
+      <Level LowLimit="0" HighLimit="255" Value="0">
+       <Channel Fixture="14">0</Channel>
+      </Level>
+      <Playback>
+       <Function>4294967295</Function>
+      </Playback>
+     </Slider>
+     <Slider Caption="Ch 16" ID="96" WidgetStyle="Slider" InvertedAppearance="false">
+      <WindowState Visible="True" X="80" Y="5" Width="75" Height="230"/>
+      <Appearance>
+       <FrameStyle>Sunken</FrameStyle>
+       <ForegroundColor>4294967295</ForegroundColor>
+       <BackgroundColor>4280559675</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="true">Level</SliderMode>
+      <Reset>
+       <Key>Q</Key>
+      </Reset>
+      <Level LowLimit="0" HighLimit="255" Value="0">
+       <Channel Fixture="15">0</Channel>
+      </Level>
+      <Playback>
+       <Function>4294967295</Function>
+      </Playback>
+     </Slider>
+     <Slider Caption="" ID="97" WidgetStyle="Slider" InvertedAppearance="false">
+      <WindowState Visible="True" X="5" Y="5" Width="75" Height="230"/>
+      <Appearance>
+       <FrameStyle>Sunken</FrameStyle>
+       <ForegroundColor>4294967295</ForegroundColor>
+       <BackgroundColor>4280559675</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="true">Level</SliderMode>
+      <Reset>
+       <Key>Q</Key>
+      </Reset>
+      <Level LowLimit="0" HighLimit="255" Value="0">
+       <Channel Fixture="17">0</Channel>
+       <Channel Fixture="17">1</Channel>
+       <Channel Fixture="17">2</Channel>
+       <Channel Fixture="17">3</Channel>
+       <Channel Fixture="17">4</Channel>
+       <Channel Fixture="17">5</Channel>
+       <Channel Fixture="17">6</Channel>
+      </Level>
+      <Playback>
+       <Function>4294967295</Function>
+      </Playback>
+     </Slider>
+     <Label Caption="RGB Left" ID="98">
+      <WindowState Visible="True" X="5" Y="235" Width="75" Height="35"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>4294967295</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+     </Label>
+     <Label Caption="Front Left 1" ID="99">
+      <WindowState Visible="True" X="80" Y="235" Width="75" Height="35"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>4294967295</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+     </Label>
+     <Label Caption="Front Left 2" ID="100">
+      <WindowState Visible="True" X="155" Y="235" Width="75" Height="35"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>4294967295</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+     </Label>
+     <Slider Caption="Ch 8" ID="101" WidgetStyle="Slider" InvertedAppearance="false">
+      <WindowState Visible="True" X="230" Y="5" Width="75" Height="230"/>
+      <Appearance>
+       <FrameStyle>Sunken</FrameStyle>
+       <ForegroundColor>4294967295</ForegroundColor>
+       <BackgroundColor>4280559675</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="true">Level</SliderMode>
+      <Reset>
+       <Key>Q</Key>
+      </Reset>
+      <Level LowLimit="0" HighLimit="255" Value="0">
+       <Channel Fixture="7">0</Channel>
+      </Level>
+      <Playback>
+       <Function>4294967295</Function>
+      </Playback>
+     </Slider>
+     <Label Caption="Front Left 3" ID="102">
+      <WindowState Visible="True" X="230" Y="235" Width="75" Height="35"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>4294967295</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+     </Label>
+    </Frame>
+    <Frame Caption="" ID="115" Page="1">
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <WindowState Visible="True" X="245" Y="625" Width="310" Height="275"/>
+     <AllowChildren>True</AllowChildren>
+     <AllowResize>True</AllowResize>
+     <ShowHeader>False</ShowHeader>
+     <ShowEnableButton>False</ShowEnableButton>
+     <Collapsed>False</Collapsed>
+     <Disabled>False</Disabled>
+     <Slider Caption="Ch 9" ID="105" WidgetStyle="Slider" InvertedAppearance="false">
+      <WindowState Visible="True" X="155" Y="5" Width="75" Height="230"/>
+      <Appearance>
+       <FrameStyle>Sunken</FrameStyle>
+       <ForegroundColor>4294967295</ForegroundColor>
+       <BackgroundColor>4280559675</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="true">Level</SliderMode>
+      <Reset>
+       <Key>Q</Key>
+      </Reset>
+      <Level LowLimit="0" HighLimit="255" Value="0">
+       <Channel Fixture="10">0</Channel>
+      </Level>
+      <Playback>
+       <Function>4294967295</Function>
+      </Playback>
+     </Slider>
+     <Slider Caption="Ch 10" ID="106" WidgetStyle="Slider" InvertedAppearance="false">
+      <WindowState Visible="True" X="80" Y="5" Width="75" Height="230"/>
+      <Appearance>
+       <FrameStyle>Sunken</FrameStyle>
+       <ForegroundColor>4294967295</ForegroundColor>
+       <BackgroundColor>4280559675</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="true">Level</SliderMode>
+      <Reset>
+       <Key>Q</Key>
+      </Reset>
+      <Level LowLimit="0" HighLimit="255" Value="0">
+       <Channel Fixture="3">0</Channel>
+      </Level>
+      <Playback>
+       <Function>4294967295</Function>
+      </Playback>
+     </Slider>
+     <Slider Caption="Ch 6" ID="107" WidgetStyle="Slider" InvertedAppearance="false">
+      <WindowState Visible="True" X="5" Y="5" Width="75" Height="230"/>
+      <Appearance>
+       <FrameStyle>Sunken</FrameStyle>
+       <ForegroundColor>4294967295</ForegroundColor>
+       <BackgroundColor>4280559675</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="true">Level</SliderMode>
+      <Reset>
+       <Key>Q</Key>
+      </Reset>
+      <Level LowLimit="0" HighLimit="255" Value="0">
+       <Channel Fixture="5">0</Channel>
+      </Level>
+      <Playback>
+       <Function>4294967295</Function>
+      </Playback>
+     </Slider>
+     <Label Caption="Floor Left" ID="108">
+      <WindowState Visible="True" X="5" Y="235" Width="75" Height="35"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>4294967295</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+     </Label>
+     <Label Caption="Floor Center" ID="109">
+      <WindowState Visible="True" X="80" Y="235" Width="75" Height="35"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>4294967295</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+     </Label>
+     <Label Caption="Floor Right" ID="111">
+      <WindowState Visible="True" X="155" Y="235" Width="75" Height="35"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>4294967295</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+     </Label>
+     <Label Caption="Laser" ID="123">
+      <WindowState Visible="True" X="230" Y="235" Width="75" Height="35"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>4294967295</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+     </Label>
+     <Slider Caption="" ID="124" WidgetStyle="Slider" InvertedAppearance="false">
+      <WindowState Visible="True" X="230" Y="5" Width="75" Height="230"/>
+      <Appearance>
+       <FrameStyle>Sunken</FrameStyle>
+       <ForegroundColor>4294967295</ForegroundColor>
+       <BackgroundColor>4280559675</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="true">Level</SliderMode>
+      <Reset>
+       <Key>Q</Key>
+      </Reset>
+      <Level LowLimit="0" HighLimit="255" Value="0">
+       <Channel Fixture="10">0</Channel>
+      </Level>
+      <Playback>
+       <Function>4294967295</Function>
+      </Playback>
+     </Slider>
+    </Frame>
+    <Frame Caption="" ID="133" Page="1">
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <WindowState Visible="True" X="275" Y="35" Width="235" Height="275"/>
+     <AllowChildren>True</AllowChildren>
+     <AllowResize>True</AllowResize>
+     <ShowHeader>False</ShowHeader>
+     <ShowEnableButton>False</ShowEnableButton>
+     <Collapsed>False</Collapsed>
+     <Disabled>False</Disabled>
+     <Slider Caption="Ch 15" ID="125" WidgetStyle="Slider" InvertedAppearance="false">
+      <WindowState Visible="True" X="80" Y="5" Width="75" Height="230"/>
+      <Appearance>
+       <FrameStyle>Sunken</FrameStyle>
+       <ForegroundColor>4294967295</ForegroundColor>
+       <BackgroundColor>4280559675</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="true">Level</SliderMode>
+      <Reset>
+       <Key>Q</Key>
+      </Reset>
+      <Level LowLimit="0" HighLimit="255" Value="0">
+       <Channel Fixture="14">0</Channel>
+      </Level>
+      <Playback>
+       <Function>4294967295</Function>
+      </Playback>
+     </Slider>
+     <Slider Caption="Ch 13" ID="126" WidgetStyle="Slider" InvertedAppearance="false">
+      <WindowState Visible="True" X="5" Y="5" Width="75" Height="230"/>
+      <Appearance>
+       <FrameStyle>Sunken</FrameStyle>
+       <ForegroundColor>4294967295</ForegroundColor>
+       <BackgroundColor>4280559675</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="true">Level</SliderMode>
+      <Reset>
+       <Key>Q</Key>
+      </Reset>
+      <Level LowLimit="0" HighLimit="255" Value="0">
+       <Channel Fixture="12">0</Channel>
+       <Channel Fixture="15">0</Channel>
+      </Level>
+      <Playback>
+       <Function>4294967295</Function>
+      </Playback>
+     </Slider>
+     <Label Caption="Backstage L" ID="129">
+      <WindowState Visible="True" X="5" Y="235" Width="75" Height="35"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>4294967295</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+     </Label>
+     <Label Caption="Curtain Top" ID="130">
+      <WindowState Visible="True" X="80" Y="235" Width="75" Height="35"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>4294967295</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+     </Label>
+     <Slider Caption="Ch 3" ID="131" WidgetStyle="Slider" InvertedAppearance="false">
+      <WindowState Visible="True" X="155" Y="5" Width="75" Height="230"/>
+      <Appearance>
+       <FrameStyle>Sunken</FrameStyle>
+       <ForegroundColor>4294967295</ForegroundColor>
+       <BackgroundColor>4280559675</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="true">Level</SliderMode>
+      <Reset>
+       <Key>Q</Key>
+      </Reset>
+      <Level LowLimit="0" HighLimit="255" Value="0">
+       <Channel Fixture="2">0</Channel>
+      </Level>
+      <Playback>
+       <Function>4294967295</Function>
+      </Playback>
+     </Slider>
+     <Label Caption="Backstage R" ID="132">
+      <WindowState Visible="True" X="155" Y="235" Width="75" Height="35"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>4294967295</ForegroundColor>
@@ -1497,7 +1658,7 @@
        <BackgroundImage>None</BackgroundImage>
        <Font>Default</Font>
       </Appearance>
-      <Function ID="3"/>
+      <Function ID="4294967295"/>
       <Action>Toggle</Action>
       <Key>1</Key>
       <Intensity Adjust="False">100</Intensity>
@@ -1511,7 +1672,7 @@
        <BackgroundImage>None</BackgroundImage>
        <Font>Default</Font>
       </Appearance>
-      <Function ID="6"/>
+      <Function ID="4294967295"/>
       <Action>Toggle</Action>
       <Key>3</Key>
       <Intensity Adjust="False">100</Intensity>
@@ -1525,7 +1686,7 @@
        <BackgroundImage>None</BackgroundImage>
        <Font>Default</Font>
       </Appearance>
-      <Function ID="2"/>
+      <Function ID="4294967295"/>
       <Action>Toggle</Action>
       <Key>2</Key>
       <Intensity Adjust="False">100</Intensity>
@@ -1542,7 +1703,7 @@
       <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None">Playback</SliderMode>
       <Level LowLimit="0" HighLimit="255" Value="0"/>
       <Playback>
-       <Function>2</Function>
+       <Function>4294967295</Function>
       </Playback>
      </Slider>
      <Slider Caption="SF Center" ID="17" WidgetStyle="Slider" InvertedAppearance="false">
@@ -1557,7 +1718,7 @@
       <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None">Playback</SliderMode>
       <Level LowLimit="0" HighLimit="255" Value="0"/>
       <Playback>
-       <Function>6</Function>
+       <Function>4294967295</Function>
       </Playback>
      </Slider>
      <Slider Caption="Stage Full" ID="18" WidgetStyle="Slider" InvertedAppearance="false">
@@ -1572,7 +1733,7 @@
       <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None">Playback</SliderMode>
       <Level LowLimit="0" HighLimit="255" Value="0"/>
       <Playback>
-       <Function>3</Function>
+       <Function>4294967295</Function>
       </Playback>
      </Slider>
      <Button Caption="(4) Floor" ID="14" Icon="">
@@ -1584,7 +1745,7 @@
        <BackgroundImage>None</BackgroundImage>
        <Font>Default</Font>
       </Appearance>
-      <Function ID="0"/>
+      <Function ID="4294967295"/>
       <Action>Toggle</Action>
       <Key>4</Key>
       <Intensity Adjust="False">100</Intensity>
@@ -1598,7 +1759,7 @@
        <BackgroundImage>None</BackgroundImage>
        <Font>Default</Font>
       </Appearance>
-      <Function ID="1"/>
+      <Function ID="4294967295"/>
       <Action>Toggle</Action>
       <Key>5</Key>
       <Intensity Adjust="False">100</Intensity>
@@ -1612,7 +1773,7 @@
        <BackgroundImage>None</BackgroundImage>
        <Font>Default</Font>
       </Appearance>
-      <Function ID="7"/>
+      <Function ID="4294967295"/>
       <Action>Toggle</Action>
       <Key>6</Key>
       <Intensity Adjust="False">100</Intensity>
@@ -1629,7 +1790,7 @@
       <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None">Playback</SliderMode>
       <Level LowLimit="0" HighLimit="255" Value="0"/>
       <Playback>
-       <Function>7</Function>
+       <Function>4294967295</Function>
       </Playback>
      </Slider>
      <Slider Caption="Floor Spot" ID="47" WidgetStyle="Slider" InvertedAppearance="false">
@@ -1644,7 +1805,7 @@
       <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None">Playback</SliderMode>
       <Level LowLimit="0" HighLimit="255" Value="0"/>
       <Playback>
-       <Function>1</Function>
+       <Function>4294967295</Function>
       </Playback>
      </Slider>
      <Slider Caption="Floor" ID="48" WidgetStyle="Slider" InvertedAppearance="false">
@@ -1659,7 +1820,7 @@
       <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None">Playback</SliderMode>
       <Level LowLimit="0" HighLimit="255" Value="0"/>
       <Playback>
-       <Function>0</Function>
+       <Function>4294967295</Function>
       </Playback>
      </Slider>
      <Button Caption="Tavern Right" ID="1" Icon="">
@@ -1671,7 +1832,7 @@
        <BackgroundImage>None</BackgroundImage>
        <Font>Default</Font>
       </Appearance>
-      <Function ID="4"/>
+      <Function ID="4294967295"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
      </Button>
@@ -1687,7 +1848,7 @@
       <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None">Playback</SliderMode>
       <Level LowLimit="0" HighLimit="255" Value="0"/>
       <Playback>
-       <Function>4</Function>
+       <Function>4294967295</Function>
       </Playback>
      </Slider>
      <Button Caption="Tavern Left" ID="3" Icon="">
@@ -1699,7 +1860,7 @@
        <BackgroundImage>None</BackgroundImage>
        <Font>Default</Font>
       </Appearance>
-      <Function ID="5"/>
+      <Function ID="4294967295"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
      </Button>
@@ -1715,7 +1876,7 @@
       <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None">Playback</SliderMode>
       <Level LowLimit="0" HighLimit="255" Value="0"/>
       <Playback>
-       <Function>5</Function>
+       <Function>4294967295</Function>
       </Playback>
      </Slider>
      <Button Caption="Stage Curtain Top" ID="6" Icon="">
@@ -1727,7 +1888,7 @@
        <BackgroundImage>None</BackgroundImage>
        <Font>Default</Font>
       </Appearance>
-      <Function ID="17"/>
+      <Function ID="4294967295"/>
       <Action>Toggle</Action>
       <Key>6</Key>
       <Intensity Adjust="False">100</Intensity>
@@ -1744,7 +1905,7 @@
       <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None">Playback</SliderMode>
       <Level LowLimit="0" HighLimit="255" Value="0"/>
       <Playback>
-       <Function>17</Function>
+       <Function>4294967295</Function>
       </Playback>
      </Slider>
     </Frame>
@@ -1923,7 +2084,7 @@
        <BackgroundImage>None</BackgroundImage>
        <Font>Default</Font>
       </Appearance>
-      <Function ID="38"/>
+      <Function ID="4294967295"/>
       <Action>Toggle</Action>
       <Key>6</Key>
       <Intensity Adjust="False">100</Intensity>
@@ -1985,7 +2146,7 @@
       <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None">Playback</SliderMode>
       <Level LowLimit="0" HighLimit="255" Value="0"/>
       <Playback>
-       <Function>38</Function>
+       <Function>4294967295</Function>
       </Playback>
      </Slider>
     </Frame>
@@ -1998,7 +2159,7 @@
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <Chaser>37</Chaser>
+     <Chaser>4294967295</Chaser>
      <PlaybackLayout>1</PlaybackLayout>
      <NextPrevBehavior>0</NextPrevBehavior>
      <Next>
@@ -2054,33 +2215,14 @@
     <Visibility>0</Visibility>
     <AbsoluteValue Minimum="0" Maximum="10000"/>
     <Time>1500</Time>
-    <Function FadeIn="6" FadeOut="6" Duration="0">38</Function>
-    <Function FadeIn="6" FadeOut="6" Duration="0">4</Function>
     <Function FadeIn="6" FadeOut="6" Duration="0">13</Function>
-    <Function FadeIn="6" FadeOut="6" Duration="0">5</Function>
     <Function FadeIn="6" FadeOut="6" Duration="0">14</Function>
-    <Function FadeIn="6" FadeOut="6" Duration="0">3</Function>
-    <Function FadeIn="6" FadeOut="6" Duration="0">26</Function>
-    <Function FadeIn="6" FadeOut="6" Duration="0">25</Function>
-    <Function FadeIn="6" FadeOut="6" Duration="0">11</Function>
-    <Function FadeIn="6" FadeOut="6" Duration="0">6</Function>
-    <Function FadeIn="6" FadeOut="6" Duration="0">2</Function>
-    <Function FadeIn="6" FadeOut="6" Duration="0">17</Function>
-    <Function FadeIn="6" FadeOut="6" Duration="0">34</Function>
-    <Function FadeIn="6" FadeOut="6" Duration="0">18</Function>
-    <Function FadeIn="6" FadeOut="6" Duration="0">1</Function>
-    <Function FadeIn="6" FadeOut="6" Duration="0">9</Function>
-    <Function FadeIn="6" FadeOut="6" Duration="0">0</Function>
     <Function FadeIn="6" FadeOut="6" Duration="0">19</Function>
-    <Function FadeIn="6" FadeOut="6" Duration="0">27</Function>
-    <Function FadeIn="6" FadeOut="6" Duration="0">24</Function>
     <Function FadeIn="6" FadeOut="6" Duration="0">21</Function>
     <Function FadeIn="6" FadeOut="6" Duration="0">20</Function>
     <Function FadeIn="6" FadeOut="6" Duration="0">10</Function>
     <Function FadeIn="6" FadeOut="6" Duration="0">15</Function>
-    <Function FadeIn="6" FadeOut="6" Duration="0">28</Function>
     <Function FadeIn="6" FadeOut="6" Duration="0">23</Function>
-    <Function FadeIn="6" FadeOut="6" Duration="0">7</Function>
     <Function FadeIn="6" FadeOut="6" Duration="0">12</Function>
     <Preset ID="18">
      <Name>0.5s</Name>

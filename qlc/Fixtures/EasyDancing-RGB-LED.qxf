@@ -3,7 +3,7 @@
 <FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
  <Creator>
   <Name>Q Light Controller Plus</Name>
-  <Version>4.13.0</Version>
+  <Version>4.12.6</Version>
   <Author>hemul</Author>
  </Creator>
  <Manufacturer>EasyDancing</Manufacturer>
@@ -34,7 +34,7 @@
   <Capability Min="8" Max="255">Flash Speeed</Capability>
  </Channel>
  <Channel Name="Control Mode">
-  <Group Byte="0">Intensity</Group>
+  <Group Byte="0">Effect</Group>
   <Capability Min="0" Max="10"></Capability>
   <Capability Min="11" Max="60"></Capability>
   <Capability Min="61" Max="110"></Capability>
@@ -43,7 +43,7 @@
   <Capability Min="211" Max="255"></Capability>
  </Channel>
  <Channel Name="Color Selection Shade">
-  <Group Byte="0">Intensity</Group>
+  <Group Byte="0">Effect</Group>
   <Capability Min="0" Max="255"></Capability>
  </Channel>
  <Mode Name="Main">
