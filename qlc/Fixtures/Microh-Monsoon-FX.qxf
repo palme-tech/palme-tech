@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.13.0</Version>
+  <Author>Hemul</Author>
+ </Creator>
+ <Manufacturer>Microh</Manufacturer>
+ <Model>Monsoon FX</Model>
+ <Type>Effect</Type>
+ <Channel Name="Mode" Default="221">
+  <Group Byte="0">Maintenance</Group>
+  <Capability Min="0" Max="9">Black</Capability>
+  <Capability Min="10" Max="24">Auto</Capability>
+  <Capability Min="25" Max="39">Auto1</Capability>
+  <Capability Min="40" Max="54">Auto2</Capability>
+  <Capability Min="55" Max="69">Auto3</Capability>
+  <Capability Min="70" Max="84">Auto4</Capability>
+  <Capability Min="85" Max="99">Auto5</Capability>
+  <Capability Min="100" Max="114">Auto6</Capability>
+  <Capability Min="115" Max="129"></Capability>
+  <Capability Min="130" Max="144"></Capability>
+  <Capability Min="145" Max="159"></Capability>
+  <Capability Min="160" Max="174"></Capability>
+  <Capability Min="175" Max="189"></Capability>
+  <Capability Min="190" Max="204"></Capability>
+  <Capability Min="205" Max="220"></Capability>
+  <Capability Min="221" Max="255">DMX</Capability>
+ </Channel>
+ <Channel Name="LED">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="255"></Capability>
+ </Channel>
+ <Channel Name="Speed">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="1">Auto</Capability>
+  <Capability Min="2" Max="255"></Capability>
+ </Channel>
+ <Channel Name="LED Strobe">
+  <Group Byte="0">Intensity</Group>
+  <Capability Min="0" Max="4">None</Capability>
+  <Capability Min="5" Max="254">Manual</Capability>
+  <Capability Min="255" Max="255">Sound</Capability>
+ </Channel>
+ <Channel Name="White LED">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="9">Black</Capability>
+  <Capability Min="10" Max="109">Effects</Capability>
+  <Capability Min="110" Max="255">On</Capability>
+ </Channel>
+ <Channel Name="Laser">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="9">Black</Capability>
+  <Capability Min="10" Max="49">Blue</Capability>
+  <Capability Min="50" Max="89">Green</Capability>
+  <Capability Min="90" Max="129">Blue + Green</Capability>
+  <Capability Min="130" Max="169">Green + Blue Strobe</Capability>
+ </Channel>
+ <Channel Name="Laser Strobe">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="4">None</Capability>
+  <Capability Min="5" Max="254">Strobe</Capability>
+  <Capability Min="255" Max="255">Sound</Capability>
+ </Channel>
+ <Channel Name="Moto LED">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="4">Stop</Capability>
+  <Capability Min="5" Max="127">Clockwise</Capability>
+  <Capability Min="128" Max="133">Stop</Capability>
+  <Capability Min="134" Max="255">Counter Clockwise</Capability>
+ </Channel>
+ <Channel Name="Moto Laser">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="4">Stop</Capability>
+  <Capability Min="5" Max="127">Clockwise</Capability>
+  <Capability Min="128" Max="133">Stop</Capability>
+  <Capability Min="134" Max="255">Counter Clockwise</Capability>
+ </Channel>
+ <Mode Name="Manual">
+  <Channel Number="0" ActsOn="0">Mode</Channel>
+  <Channel Number="1" ActsOn="1">LED</Channel>
+  <Channel Number="2" ActsOn="2">Speed</Channel>
+  <Channel Number="3" ActsOn="3">LED Strobe</Channel>
+  <Channel Number="4" ActsOn="4">White LED</Channel>
+  <Channel Number="5" ActsOn="5">Laser</Channel>
+  <Channel Number="6" ActsOn="6">Laser Strobe</Channel>
+  <Channel Number="7" ActsOn="7">Moto LED</Channel>
+  <Channel Number="8" ActsOn="8">Moto Laser</Channel>
+ </Mode>
+ <Physical>
+  <Bulb Type="" Lumens="0" ColourTemperature="0"/>
+  <Dimensions Weight="0" Width="0" Height="0" Depth="0"/>
+  <Lens Name="Other" DegreesMin="0" DegreesMax="0"/>
+  <Focus Type="Fixed" PanMax="0" TiltMax="0"/>
+  <Technical PowerConsumption="0" DmxConnector="5-pin"/>
+ </Physical>
+</FixtureDefinition>
