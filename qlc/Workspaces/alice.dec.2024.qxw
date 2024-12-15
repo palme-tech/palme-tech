@@ -259,34 +259,41 @@
    <RunOrder>SingleShot</RunOrder>
    <SpeedModes FadeIn="PerStep" FadeOut="PerStep" Duration="Common"/>
    <Step Number="0" FadeIn="0" Hold="0" FadeOut="0">10</Step>
-   <Step Number="1" FadeIn="1500" Hold="4294967294" FadeOut="1500">37</Step>
+   <Step Number="1" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Сцена 1">37</Step>
    <Step Number="2" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Занавес+">38</Step>
-   <Step Number="3" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Дискотека+">44</Step>
+   <Step Number="3" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Дискотека+">57</Step>
    <Step Number="4" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Дискотека-">45</Step>
    <Step Number="5" FadeIn="1500" Hold="4294967294" FadeOut="500">37</Step>
    <Step Number="6" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Алиса прыгает - ЗТМ">10</Step>
    <Step Number="7" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Сцена 3, после ЗТМ">38</Step>
    <Step Number="8" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Сцена 4">37</Step>
-   <Step Number="9" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Сцена 6. Гусиница">46</Step>
-   <Step Number="10" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Сцена 7">45</Step>
-   <Step Number="11" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Кот появляется">53</Step>
-   <Step Number="12" FadeIn="1500" Hold="4294967294" FadeOut="1500">45</Step>
-   <Step Number="13" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Кот исчезает">53</Step>
-   <Step Number="14" FadeIn="0" Hold="0" FadeOut="0">10</Step>
-   <Step Number="15" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Занавес-">37</Step>
-   <Step Number="16" FadeIn="0" Hold="4294967294" FadeOut="0">10</Step>
-   <Step Number="17" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Сцена 8">48</Step>
-   <Step Number="18" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Сцена 9">37</Step>
-   <Step Number="19" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Кот-">10</Step>
-   <Step Number="20" FadeIn="1500" Hold="4294967294" FadeOut="1500">37</Step>
-   <Step Number="21" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Дискотека">10</Step>
-   <Step Number="22" FadeIn="1500" Hold="4294967294" FadeOut="1500">37</Step>
-   <Step Number="23" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Сцена 10">38</Step>
-   <Step Number="24" FadeIn="0" Hold="4294967294" FadeOut="0">50</Step>
+   <Step Number="9" FadeIn="0" Hold="4294967294" FadeOut="0">10</Step>
+   <Step Number="10" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Сцена 6. Гусиница">46</Step>
+   <Step Number="11" FadeIn="0" Hold="4294967294" FadeOut="0">59</Step>
+   <Step Number="12" FadeIn="0" Hold="4294967294" FadeOut="0">10</Step>
+   <Step Number="13" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Сцена 7">45</Step>
+   <Step Number="14" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Кот появляется">53</Step>
+   <Step Number="15" FadeIn="1500" Hold="4294967294" FadeOut="1500">45</Step>
+   <Step Number="16" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Кот исчезает">53</Step>
+   <Step Number="17" FadeIn="0" Hold="0" FadeOut="0">10</Step>
+   <Step Number="18" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Занавес-">37</Step>
+   <Step Number="19" FadeIn="0" Hold="4294967294" FadeOut="0">10</Step>
+   <Step Number="20" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Сцена 8">48</Step>
+   <Step Number="21" FadeIn="0" Hold="4294967294" FadeOut="0">10</Step>
+   <Step Number="22" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Сцена 9">37</Step>
+   <Step Number="23" FadeIn="0" Hold="4294967294" FadeOut="0">53</Step>
+   <Step Number="24" FadeIn="0" Hold="4294967294" FadeOut="0">10</Step>
    <Step Number="25" FadeIn="1500" Hold="4294967294" FadeOut="1500">37</Step>
-   <Step Number="26" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Тотальная Дискотека">10</Step>
+   <Step Number="26" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Дискотека">10</Step>
    <Step Number="27" FadeIn="1500" Hold="4294967294" FadeOut="1500">37</Step>
-   <Step Number="28" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Тотальная Дискотека">10</Step>
+   <Step Number="28" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Сцена 10">38</Step>
+   <Step Number="29" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Рубите ей голову! ">50</Step>
+   <Step Number="30" FadeIn="0" Hold="4294967294" FadeOut="0">10</Step>
+   <Step Number="31" FadeIn="1500" Hold="4294967294" FadeOut="1500">37</Step>
+   <Step Number="32" FadeIn="0" Hold="4294967294" FadeOut="0">57</Step>
+   <Step Number="33" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Тотальная Дискотека">10</Step>
+   <Step Number="34" FadeIn="1500" Hold="4294967294" FadeOut="1500">37</Step>
+   <Step Number="35" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Тотальная Дискотека">10</Step>
   </Function>
   <Function ID="9" Type="Scene" Name="Monsoon Off" Path="Effects/Monsoon">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -696,6 +703,41 @@
    <Step Number="0">6</Step>
    <Step Number="1">52</Step>
   </Function>
+  <Function ID="55" Type="Scene" Name="Stage Low" Path="Alice">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="13">0,80</FixtureVal>
+   <FixtureVal ID="12">0,80</FixtureVal>
+   <FixtureVal ID="2">0,80</FixtureVal>
+   <FixtureVal ID="15">0,60</FixtureVal>
+   <FixtureVal ID="14">0,60</FixtureVal>
+   <FixtureVal ID="7">0,60</FixtureVal>
+   <FixtureVal ID="0">0,60</FixtureVal>
+   <FixtureVal ID="1">0,60</FixtureVal>
+   <FixtureVal ID="8">0,60</FixtureVal>
+  </Function>
+  <Function ID="57" Type="Collection" Name="Тотальная дискотека">
+   <Step Number="0">27</Step>
+   <Step Number="1">55</Step>
+   <Step Number="2">5</Step>
+  </Function>
+  <Function ID="58" Type="Scene" Name="Stage Front Low" Path="Alice">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="15">0,80</FixtureVal>
+   <FixtureVal ID="14">0,80</FixtureVal>
+   <FixtureVal ID="7">0,80</FixtureVal>
+   <FixtureVal ID="0">0,80</FixtureVal>
+   <FixtureVal ID="1">0,80</FixtureVal>
+   <FixtureVal ID="8">0,80</FixtureVal>
+  </Function>
+  <Function ID="59" Type="Collection" Name="Гусиница">
+   <Step Number="0">47</Step>
+   <Step Number="1">5</Step>
+   <Step Number="2">58</Step>
+  </Function>
+  <Function ID="60" Type="Collection" Name="Обший + зд (Copy)">
+   <Step Number="0">5</Step>
+   <Step Number="1">29</Step>
+  </Function>
   <Monitor DisplayMode="1" ShowLabels="1">
    <Font>Arial,9,-1,5,50,0,0,0,0,0</Font>
    <ChannelStyle>0</ChannelStyle>
@@ -773,7 +815,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="0">
+      <Level LowLimit="0" HighLimit="255" Value="255">
        <Channel Fixture="0">0</Channel>
       </Level>
       <Playback>
@@ -803,7 +845,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="0">
+      <Level LowLimit="0" HighLimit="255" Value="255">
        <Channel Fixture="1">0</Channel>
       </Level>
       <Playback>
@@ -977,7 +1019,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="0">
+      <Level LowLimit="0" HighLimit="255" Value="255">
        <Channel Fixture="7">0</Channel>
       </Level>
       <Playback>
@@ -1041,7 +1083,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="0">
+      <Level LowLimit="0" HighLimit="255" Value="255">
        <Channel Fixture="8">0</Channel>
       </Level>
       <Playback>
@@ -1175,7 +1217,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="0">
+      <Level LowLimit="0" HighLimit="255" Value="255">
        <Channel Fixture="14">0</Channel>
       </Level>
       <Playback>
@@ -1205,7 +1247,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="0">
+      <Level LowLimit="0" HighLimit="255" Value="255">
        <Channel Fixture="15">0</Channel>
       </Level>
       <Playback>
@@ -1309,7 +1351,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="0">
+      <Level LowLimit="0" HighLimit="255" Value="255">
        <Channel Fixture="0">0</Channel>
       </Level>
       <Playback>
@@ -1329,7 +1371,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="0">
+      <Level LowLimit="0" HighLimit="255" Value="255">
        <Channel Fixture="1">0</Channel>
       </Level>
       <Playback>
@@ -1349,7 +1391,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="0">
+      <Level LowLimit="0" HighLimit="255" Value="255">
        <Channel Fixture="8">0</Channel>
       </Level>
       <Playback>
@@ -1451,7 +1493,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="0">
+      <Level LowLimit="0" HighLimit="255" Value="255">
        <Channel Fixture="14">0</Channel>
       </Level>
       <Playback>
@@ -1471,7 +1513,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="0">
+      <Level LowLimit="0" HighLimit="255" Value="255">
        <Channel Fixture="15">0</Channel>
       </Level>
       <Playback>
@@ -1547,7 +1589,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="0">
+      <Level LowLimit="0" HighLimit="255" Value="255">
        <Channel Fixture="7">0</Channel>
       </Level>
       <Playback>
@@ -1973,7 +2015,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="True" X="790" Y="5" Width="1070" Height="1020"/>
+    <WindowState Visible="True" X="790" Y="5" Width="1070" Height="1255"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
@@ -2022,7 +2064,7 @@
      <Disabled>False</Disabled>
     </Frame>
     <CueList Caption="Cue list" ID="5" Page="1">
-     <WindowState Visible="True" X="5" Y="40" Width="1060" Height="975"/>
+     <WindowState Visible="True" X="5" Y="40" Width="1060" Height="1210"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
