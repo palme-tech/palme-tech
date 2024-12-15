@@ -10,7 +10,9 @@
   <InputOutputMap>
    <BeatGenerator BeatType="Disabled" BPM="0"/>
    <Universe Name="Universe 1" ID="0">
-    <Output Plugin="DMX USB" UID="None" Line="0"/>
+    <Output Plugin="DMX USB" UID="FT232R USB UART (S/N: AQ02VCGU)" Line="0">
+     <PluginParameters UniverseChannels="41"/>
+    </Output>
    </Universe>
    <Universe Name="Universe 2" ID="1"/>
    <Universe Name="Universe 3" ID="2"/>
@@ -239,10 +241,10 @@
    <FixtureVal ID="17">0,255,1,255,2,187,3,62</FixtureVal>
    <FixtureVal ID="18">0,255,1,255,2,187,3,62</FixtureVal>
   </Function>
-  <Function ID="5" Type="Scene" Name="RGB Tree Green" Path="Groups">
+  <Function ID="5" Type="Scene" Name="RGB Tree Green" Path="Effects/RGB">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="17">0,255,1,60,2,255,3,0</FixtureVal>
-   <FixtureVal ID="18">0,255,1,60,2,254,3,0</FixtureVal>
+   <FixtureVal ID="17">0,255,1,60,2,255,3,0,4,0,5,0,6,0</FixtureVal>
+   <FixtureVal ID="18">0,255,1,60,2,254,3,0,4,0,5,0,6,0</FixtureVal>
   </Function>
   <Function ID="6" Type="Collection" Name="RGB White Strobe" Path="Effects">
    <Step Number="0">3</Step>
@@ -267,17 +269,20 @@
    <Step Number="8" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Сцена 4">37</Step>
    <Step Number="9" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Сцена 6. Гусиница">38</Step>
    <Step Number="10" FadeIn="0" Hold="0" FadeOut="0">10</Step>
-   <Step Number="11" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Сцена 8">48</Step>
-   <Step Number="12" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Сцена 9">37</Step>
-   <Step Number="13" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Кот-">10</Step>
-   <Step Number="14" FadeIn="1500" Hold="4294967294" FadeOut="1500">37</Step>
-   <Step Number="15" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Дискотека">10</Step>
+   <Step Number="11" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Сцена 4">37</Step>
+   <Step Number="12" FadeIn="0" Hold="4294967294" FadeOut="0">10</Step>
+   <Step Number="13" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Сцена 8">48</Step>
+   <Step Number="14" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Сцена 9">37</Step>
+   <Step Number="15" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Кот-">10</Step>
    <Step Number="16" FadeIn="1500" Hold="4294967294" FadeOut="1500">37</Step>
-   <Step Number="17" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Сцена 10">38</Step>
+   <Step Number="17" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Дискотека">10</Step>
    <Step Number="18" FadeIn="1500" Hold="4294967294" FadeOut="1500">37</Step>
-   <Step Number="19" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Тотальная Дискотека">10</Step>
-   <Step Number="20" FadeIn="1500" Hold="4294967294" FadeOut="1500">37</Step>
-   <Step Number="21" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Тотальная Дискотека">10</Step>
+   <Step Number="19" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Сцена 10">38</Step>
+   <Step Number="20" FadeIn="0" Hold="4294967294" FadeOut="0">50</Step>
+   <Step Number="21" FadeIn="1500" Hold="4294967294" FadeOut="1500">37</Step>
+   <Step Number="22" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Тотальная Дискотека">10</Step>
+   <Step Number="23" FadeIn="1500" Hold="4294967294" FadeOut="1500">37</Step>
+   <Step Number="24" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Тотальная Дискотека">10</Step>
   </Function>
   <Function ID="9" Type="Scene" Name="Monsoon Off" Path="Effects/Monsoon">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -565,11 +570,11 @@
    <FixtureVal ID="14">0,25</FixtureVal>
    <FixtureVal ID="15">0,25</FixtureVal>
   </Function>
-  <Function ID="37" Type="Collection" Name="Обший + зеленые деревья">
+  <Function ID="37" Type="Collection" Name="Обший + зд">
    <Step Number="0">5</Step>
    <Step Number="1">29</Step>
   </Function>
-  <Function ID="38" Type="Collection" Name="Боковой + зеленые деревья">
+  <Function ID="38" Type="Collection" Name="Боковой + зд">
    <Step Number="0">5</Step>
    <Step Number="1">34</Step>
   </Function>
@@ -642,26 +647,26 @@
    <Step Number="1" FadeIn="500" Hold="4294967294" FadeOut="500">1</Step>
    <Step Number="2" FadeIn="500" Hold="4294967294" FadeOut="500">0</Step>
   </Function>
-  <Function ID="44" Type="Collection" Name="Боковой + дискотека + зеленые деревья">
+  <Function ID="44" Type="Collection" Name="Боковой + дискотека + зд">
    <Step Number="0">34</Step>
    <Step Number="1">27</Step>
    <Step Number="2">5</Step>
   </Function>
-  <Function ID="45" Type="Collection" Name="Боковой + monsoon off + зеленые деревья">
+  <Function ID="45" Type="Collection" Name="Боковой + monsoon off + зд">
    <Step Number="0">34</Step>
    <Step Number="1">9</Step>
    <Step Number="2">5</Step>
   </Function>
-  <Function ID="46" Type="Collection" Name="Боковой + медленные лазеры + зеленые деревья">
+  <Function ID="46" Type="Collection" Name="Боковой + медленные лазеры + зд">
    <Step Number="0">5</Step>
    <Step Number="1">34</Step>
    <Step Number="2">47</Step>
   </Function>
   <Function ID="47" Type="Scene" Name="Monsoon Slow Laser" Path="Effects/Monsoon">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="16">0,221,1,0,2,0,3,0,4,0,5,190,6,0,7,0,8,150</FixtureVal>
+   <FixtureVal ID="16">0,221,1,0,2,0,3,0,4,0,5,190,6,0,7,0,8,125</FixtureVal>
   </Function>
-  <Function ID="48" Type="Collection" Name="Боковой + верхний + зеленые деревья">
+  <Function ID="48" Type="Collection" Name="Боковой + верхний + зд">
    <Step Number="0">5</Step>
    <Step Number="1">34</Step>
    <Step Number="2">49</Step>
@@ -669,6 +674,10 @@
   <Function ID="49" Type="Scene" Name="Верхний" Path="Alice">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="13">0,255</FixtureVal>
+  </Function>
+  <Function ID="50" Type="Collection" Name="Верхний + стробоскоп">
+   <Step Number="0">49</Step>
+   <Step Number="1">6</Step>
   </Function>
   <Monitor DisplayMode="1" ShowLabels="1">
    <Font>Arial,9,-1,5,50,0,0,0,0,0</Font>
@@ -1775,7 +1784,6 @@
      </Appearance>
      <Function ID="2"/>
      <Action>Toggle</Action>
-     <Key>6</Key>
      <Intensity Adjust="False">100</Intensity>
     </Button>
     <Button Caption="Floor" ID="3" Page="1" Icon="">
@@ -1789,7 +1797,6 @@
      </Appearance>
      <Function ID="1"/>
      <Action>Toggle</Action>
-     <Key>4</Key>
      <Intensity Adjust="False">100</Intensity>
     </Button>
     <Slider Caption="Stage Front" ID="4" Page="1" WidgetStyle="Slider" InvertedAppearance="false">
@@ -1949,7 +1956,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="True" X="790" Y="5" Width="970" Height="990"/>
+    <WindowState Visible="True" X="790" Y="5" Width="1070" Height="1020"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
@@ -1998,7 +2005,7 @@
      <Disabled>False</Disabled>
     </Frame>
     <CueList Caption="Cue list" ID="5" Page="1">
-     <WindowState Visible="True" X="5" Y="40" Width="960" Height="945"/>
+     <WindowState Visible="True" X="5" Y="40" Width="1060" Height="975"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2047,7 +2054,7 @@
     </CueList>
    </Frame>
    <SpeedDial Caption="Duration" ID="0">
-    <WindowState Visible="True" X="1765" Y="5" Width="45" Height="285"/>
+    <WindowState Visible="True" X="1865" Y="5" Width="45" Height="285"/>
     <Appearance>
      <FrameStyle>Sunken</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -2092,7 +2099,7 @@
     </Preset>
    </SpeedDial>
    <Button Caption="CLR" ID="9" Icon="">
-    <WindowState Visible="True" X="1765" Y="320" Width="45" Height="100"/>
+    <WindowState Visible="True" X="1865" Y="290" Width="45" Height="100"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>4294967295</ForegroundColor>
