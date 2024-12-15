@@ -267,22 +267,26 @@
    <Step Number="6" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Алиса прыгает - ЗТМ">10</Step>
    <Step Number="7" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Сцена 3, после ЗТМ">38</Step>
    <Step Number="8" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Сцена 4">37</Step>
-   <Step Number="9" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Сцена 6. Гусиница">38</Step>
-   <Step Number="10" FadeIn="0" Hold="0" FadeOut="0">10</Step>
-   <Step Number="11" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Сцена 4">37</Step>
-   <Step Number="12" FadeIn="0" Hold="4294967294" FadeOut="0">10</Step>
-   <Step Number="13" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Сцена 8">48</Step>
-   <Step Number="14" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Сцена 9">37</Step>
-   <Step Number="15" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Кот-">10</Step>
-   <Step Number="16" FadeIn="1500" Hold="4294967294" FadeOut="1500">37</Step>
-   <Step Number="17" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Дискотека">10</Step>
-   <Step Number="18" FadeIn="1500" Hold="4294967294" FadeOut="1500">37</Step>
-   <Step Number="19" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Сцена 10">38</Step>
-   <Step Number="20" FadeIn="0" Hold="4294967294" FadeOut="0">50</Step>
-   <Step Number="21" FadeIn="1500" Hold="4294967294" FadeOut="1500">37</Step>
-   <Step Number="22" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Тотальная Дискотека">10</Step>
-   <Step Number="23" FadeIn="1500" Hold="4294967294" FadeOut="1500">37</Step>
-   <Step Number="24" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Тотальная Дискотека">10</Step>
+   <Step Number="9" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Сцена 6. Гусиница">46</Step>
+   <Step Number="10" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Сцена 7">45</Step>
+   <Step Number="11" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Кот появляется">53</Step>
+   <Step Number="12" FadeIn="1500" Hold="4294967294" FadeOut="1500">45</Step>
+   <Step Number="13" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Кот исчезает">53</Step>
+   <Step Number="14" FadeIn="0" Hold="0" FadeOut="0">10</Step>
+   <Step Number="15" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Занавес-">37</Step>
+   <Step Number="16" FadeIn="0" Hold="4294967294" FadeOut="0">10</Step>
+   <Step Number="17" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Сцена 8">48</Step>
+   <Step Number="18" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Сцена 9">37</Step>
+   <Step Number="19" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Кот-">10</Step>
+   <Step Number="20" FadeIn="1500" Hold="4294967294" FadeOut="1500">37</Step>
+   <Step Number="21" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Дискотека">10</Step>
+   <Step Number="22" FadeIn="1500" Hold="4294967294" FadeOut="1500">37</Step>
+   <Step Number="23" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Сцена 10">38</Step>
+   <Step Number="24" FadeIn="0" Hold="4294967294" FadeOut="0">50</Step>
+   <Step Number="25" FadeIn="1500" Hold="4294967294" FadeOut="1500">37</Step>
+   <Step Number="26" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Тотальная Дискотека">10</Step>
+   <Step Number="27" FadeIn="1500" Hold="4294967294" FadeOut="1500">37</Step>
+   <Step Number="28" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Тотальная Дискотека">10</Step>
   </Function>
   <Function ID="9" Type="Scene" Name="Monsoon Off" Path="Effects/Monsoon">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -678,6 +682,19 @@
   <Function ID="50" Type="Collection" Name="Верхний + стробоскоп">
    <Step Number="0">49</Step>
    <Step Number="1">6</Step>
+  </Function>
+  <Function ID="51" Type="Collection" Name="Боковой + лазер + зд">
+   <Step Number="0">5</Step>
+   <Step Number="1">34</Step>
+   <Step Number="2">47</Step>
+  </Function>
+  <Function ID="52" Type="Scene" Name="Monsoon Fast Laser" Path="Effects/Monsoon">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="16">0,221,1,0,2,0,3,0,4,0,5,169,6,0,7,0,8,255</FixtureVal>
+  </Function>
+  <Function ID="53" Type="Collection" Name="Кот (Стробоскоп + лазер)">
+   <Step Number="0">6</Step>
+   <Step Number="1">52</Step>
   </Function>
   <Monitor DisplayMode="1" ShowLabels="1">
    <Font>Arial,9,-1,5,50,0,0,0,0,0</Font>
@@ -2043,9 +2060,7 @@
      <PlaybackLayout>1</PlaybackLayout>
      <NextPrevBehavior>0</NextPrevBehavior>
      <Next/>
-     <Previous>
-      <Key>Shift+Space</Key>
-     </Previous>
+     <Previous/>
      <Playback/>
      <Stop>
       <Key>Q</Key>
