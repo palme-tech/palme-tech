@@ -238,7 +238,7 @@
    <FixtureVal ID="17">0,255,1,255,2,187,3,62</FixtureVal>
    <FixtureVal ID="18">0,255,1,255,2,187,3,62</FixtureVal>
   </Function>
-  <Function ID="5" Type="Scene" Name="RGB Tree Green" Path="Effects/RGB">
+  <Function ID="5" Type="Scene" Name="RGB Tree Green" Path="Groups">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="17">0,255,1,60,2,255,3,0</FixtureVal>
    <FixtureVal ID="18">0,255,1,60,2,254,3,0</FixtureVal>
@@ -256,10 +256,27 @@
    <RunOrder>SingleShot</RunOrder>
    <SpeedModes FadeIn="PerStep" FadeOut="PerStep" Duration="Common"/>
    <Step Number="0" FadeIn="0" Hold="0" FadeOut="0">10</Step>
-   <Step Number="1" FadeIn="0" Hold="4294967294" FadeOut="0">6</Step>
-   <Step Number="2" FadeIn="0" Hold="4294967294" FadeOut="0">10</Step>
-   <Step Number="3" FadeIn="0" Hold="4294967294" FadeOut="0">27</Step>
-   <Step Number="4" FadeIn="0" Hold="0" FadeOut="0">10</Step>
+   <Step Number="1" FadeIn="1500" Hold="4294967294" FadeOut="1500">37</Step>
+   <Step Number="2" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Занавес+">38</Step>
+   <Step Number="3" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Дискотека+">44</Step>
+   <Step Number="4" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Дискотека-">45</Step>
+   <Step Number="5" FadeIn="1500" Hold="4294967294" FadeOut="500">37</Step>
+   <Step Number="6" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Алиса прыгает - ЗТМ">10</Step>
+   <Step Number="7" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Сцена 3, после ЗТМ">38</Step>
+   <Step Number="8" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Сцена 4">37</Step>
+   <Step Number="9" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Сцена 6. Гусиница">38</Step>
+   <Step Number="10" FadeIn="0" Hold="0" FadeOut="0">10</Step>
+   <Step Number="11" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Сцена 8">48</Step>
+   <Step Number="12" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Сцена 9">37</Step>
+   <Step Number="13" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Кот-">10</Step>
+   <Step Number="14" FadeIn="1500" Hold="4294967294" FadeOut="1500">37</Step>
+   <Step Number="15" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Дискотека">10</Step>
+   <Step Number="16" FadeIn="1500" Hold="4294967294" FadeOut="1500">37</Step>
+   <Step Number="17" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Сцена 10">38</Step>
+   <Step Number="18" FadeIn="1500" Hold="4294967294" FadeOut="1500">37</Step>
+   <Step Number="19" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Тотальная Дискотека">10</Step>
+   <Step Number="20" FadeIn="1500" Hold="4294967294" FadeOut="1500">37</Step>
+   <Step Number="21" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Тотальная Дискотека">10</Step>
   </Function>
   <Function ID="9" Type="Scene" Name="Monsoon Off" Path="Effects/Monsoon">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -443,6 +460,15 @@
    <FixtureVal ID="17">0,0,1,0,2,0,3,0,4,0,5,0,6,0</FixtureVal>
    <FixtureVal ID="18">0,0,1,0,2,0,3,0,4,0,5,0,6,0</FixtureVal>
   </Function>
+  <Function ID="29" Type="Scene" Name="Общий" Path="Alice">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="15">0,255</FixtureVal>
+   <FixtureVal ID="14">0,255</FixtureVal>
+   <FixtureVal ID="7">0,255</FixtureVal>
+   <FixtureVal ID="0">0,255</FixtureVal>
+   <FixtureVal ID="1">0,255</FixtureVal>
+   <FixtureVal ID="8">0,255</FixtureVal>
+  </Function>
   <Function ID="30" Type="Scene" Name="Act 1 high" Path="Old/Chudo">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="0">0,255</FixtureVal>
@@ -503,6 +529,11 @@
    <FixtureVal ID="14">0,0</FixtureVal>
    <FixtureVal ID="15">0,0</FixtureVal>
   </Function>
+  <Function ID="34" Type="Scene" Name="Боковой" Path="Alice">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="12">0,255</FixtureVal>
+   <FixtureVal ID="2">0,255</FixtureVal>
+  </Function>
   <Function ID="35" Type="Scene" Name="Tavern mid" Path="Old/Chudo">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="0">0,71</FixtureVal>
@@ -532,6 +563,14 @@
    <FixtureVal ID="13">0,0</FixtureVal>
    <FixtureVal ID="14">0,25</FixtureVal>
    <FixtureVal ID="15">0,25</FixtureVal>
+  </Function>
+  <Function ID="37" Type="Collection" Name="Обший + зеленые деревья">
+   <Step Number="0">5</Step>
+   <Step Number="1">29</Step>
+  </Function>
+  <Function ID="38" Type="Collection" Name="Боковой + зеленые деревья">
+   <Step Number="0">5</Step>
+   <Step Number="1">34</Step>
   </Function>
   <Function ID="39" Type="Scene" Name="Dance Top Sides and Front" Path="Old/Chudo">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -602,7 +641,35 @@
    <Step Number="1" FadeIn="500" Hold="4294967294" FadeOut="500">1</Step>
    <Step Number="2" FadeIn="500" Hold="4294967294" FadeOut="500">0</Step>
   </Function>
-  <Monitor DisplayMode="0" ShowLabels="1">
+  <Function ID="44" Type="Collection" Name="Боковой + дискотека + зеленые деревья">
+   <Step Number="0">34</Step>
+   <Step Number="1">27</Step>
+   <Step Number="2">5</Step>
+  </Function>
+  <Function ID="45" Type="Collection" Name="Боковой + monsoon off + зеленые деревья">
+   <Step Number="0">34</Step>
+   <Step Number="1">9</Step>
+   <Step Number="2">5</Step>
+  </Function>
+  <Function ID="46" Type="Collection" Name="Боковой + медленные лазеры + зеленые деревья">
+   <Step Number="0">5</Step>
+   <Step Number="1">34</Step>
+   <Step Number="2">47</Step>
+  </Function>
+  <Function ID="47" Type="Scene" Name="Monsoon Slow Laser" Path="Effects/Monsoon">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="16">0,221,1,0,2,0,3,0,4,0,5,190,6,0,7,0,8,150</FixtureVal>
+  </Function>
+  <Function ID="48" Type="Collection" Name="Боковой + верхний + зеленые деревья">
+   <Step Number="0">5</Step>
+   <Step Number="1">34</Step>
+   <Step Number="2">49</Step>
+  </Function>
+  <Function ID="49" Type="Scene" Name="Верхний" Path="Alice">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="13">0,255</FixtureVal>
+  </Function>
+  <Monitor DisplayMode="1" ShowLabels="1">
    <Font>Arial,9,-1,5,50,0,0,0,0,0</Font>
    <ChannelStyle>0</ChannelStyle>
    <ValueStyle>0</ValueStyle>
@@ -1777,7 +1844,7 @@
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <WindowState Visible="True" X="5" Y="745" Width="95" Height="155"/>
+     <WindowState Visible="True" X="5" Y="680" Width="95" Height="220"/>
      <AllowChildren>True</AllowChildren>
      <AllowResize>True</AllowResize>
      <ShowHeader>False</ShowHeader>
@@ -1800,7 +1867,7 @@
       <Intensity Adjust="False">100</Intensity>
      </Button>
      <Button Caption="FX Off" ID="12" Icon="">
-      <WindowState Visible="True" X="5" Y="80" Width="85" Height="70"/>
+      <WindowState Visible="True" X="5" Y="145" Width="85" Height="70"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>4294967295</ForegroundColor>
@@ -1813,21 +1880,65 @@
       <Key>Q</Key>
       <Intensity Adjust="False">100</Intensity>
      </Button>
+     <Button Caption="Slow Laser" ID="14" Icon="">
+      <WindowState Visible="True" X="5" Y="75" Width="85" Height="70"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>4294967295</ForegroundColor>
+       <BackgroundColor>4280559675</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="47"/>
+      <Action>Toggle</Action>
+      <Key>4</Key>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
     </SoloFrame>
-    <Button Caption="RGB Off" ID="13" Page="1" Icon="">
-     <WindowState Visible="True" X="105" Y="825" Width="85" Height="70"/>
+    <SoloFrame Caption="Effects" ID="18" Page="1">
      <Appearance>
-      <FrameStyle>None</FrameStyle>
-      <ForegroundColor>4294967295</ForegroundColor>
-      <BackgroundColor>4280559675</BackgroundColor>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <Function ID="28"/>
-     <Action>Toggle</Action>
-     <Key>Q</Key>
-     <Intensity Adjust="False">100</Intensity>
-    </Button>
+     <WindowState Visible="True" X="105" Y="680" Width="95" Height="220"/>
+     <AllowChildren>True</AllowChildren>
+     <AllowResize>True</AllowResize>
+     <ShowHeader>False</ShowHeader>
+     <ShowEnableButton>False</ShowEnableButton>
+     <Mixing>False</Mixing>
+     <Collapsed>False</Collapsed>
+     <Disabled>False</Disabled>
+     <Button Caption="RGB Off" ID="13" Icon="">
+      <WindowState Visible="True" X="5" Y="145" Width="85" Height="70"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>4294967295</ForegroundColor>
+       <BackgroundColor>4280559675</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="28"/>
+      <Action>Toggle</Action>
+      <Key>Q</Key>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="RGB White Strobe" ID="21" Icon="">
+      <WindowState Visible="True" X="5" Y="5" Width="85" Height="70"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>4294967295</ForegroundColor>
+       <BackgroundColor>4280559675</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="6"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+    </SoloFrame>
    </Frame>
    <Frame Caption="Scenes" ID="163">
     <Appearance>
