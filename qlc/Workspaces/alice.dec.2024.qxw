@@ -10,7 +10,7 @@
   <InputOutputMap>
    <BeatGenerator BeatType="Disabled" BPM="0"/>
    <Universe Name="Universe 1" ID="0">
-    <Output Plugin="DMX USB" UID="FT232R USB UART (S/N: AQ02VCGU)" Line="0">
+    <Output Plugin="DMX USB" UID=" (S/N: )" Line="0">
      <PluginParameters UniverseChannels="41"/>
     </Output>
    </Universe>
@@ -261,7 +261,7 @@
    <SpeedModes FadeIn="PerStep" FadeOut="PerStep" Duration="Common"/>
    <Step Number="0" FadeIn="0" Hold="0" FadeOut="0">10</Step>
    <Step Number="1" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Сцена 1">37</Step>
-   <Step Number="2" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Занавес+">38</Step>
+   <Step Number="2" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Занавес+">45</Step>
    <Step Number="3" FadeIn="400" Hold="4294967294" FadeOut="400" Note="Дискотека+">57</Step>
    <Step Number="4" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Дискотека-">45</Step>
    <Step Number="5" FadeIn="1500" Hold="4294967294" FadeOut="500" Note="Занавес-">37</Step>
@@ -281,17 +281,19 @@
    <Step Number="19" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Сцена 8">48</Step>
    <Step Number="20" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Сцена 9">37</Step>
    <Step Number="21" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Король и Королева идут! Король! И Королева!">65</Step>
-   <Step Number="22" FadeIn="1500" Hold="4294967294" FadeOut="1500">37</Step>
+   <Step Number="22" FadeIn="1500" Hold="4294967294" FadeOut="1500">60</Step>
    <Step Number="23" FadeIn="400" Hold="4294967294" FadeOut="400">57</Step>
    <Step Number="24" FadeIn="1500" Hold="4294967294" FadeOut="1500">60</Step>
    <Step Number="25" FadeIn="1500" Hold="4294967294" FadeOut="400" Note="Сцена 10">45</Step>
    <Step Number="26" FadeIn="400" Hold="4294967294" FadeOut="500" Note="Рубите ей голову! ">50</Step>
    <Step Number="27" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Тени-">10</Step>
-   <Step Number="28" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Занавес-, Сцена 11">37</Step>
+   <Step Number="28" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Занавес-, Сцена 11">60</Step>
    <Step Number="29" FadeIn="400" Hold="4294967294" FadeOut="400" Note="Новый год встречай! Улыбайся!">57</Step>
    <Step Number="30" FadeIn="0" Hold="4294967294" FadeOut="0">10</Step>
    <Step Number="31" FadeIn="1500" Hold="4294967294" FadeOut="1500">37</Step>
    <Step Number="32" FadeIn="0" Hold="4294967294" FadeOut="0">10</Step>
+   <Step Number="33" FadeIn="1500" Hold="4294967294" FadeOut="1500">68</Step>
+   <Step Number="34" FadeIn="0" Hold="4294967294" FadeOut="0">10</Step>
   </Function>
   <Function ID="9" Type="Scene" Name="Monsoon Off" Path="Effects/Monsoon">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -796,6 +798,25 @@
    <FixtureVal ID="1">0,80</FixtureVal>
    <FixtureVal ID="8">0,80</FixtureVal>
   </Function>
+  <Function ID="67" Type="Scene" Name="Ded moroze">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">0,255</FixtureVal>
+   <FixtureVal ID="5">0,255</FixtureVal>
+   <FixtureVal ID="10">0,255</FixtureVal>
+   <FixtureVal ID="15">0,255</FixtureVal>
+   <FixtureVal ID="14">0,255</FixtureVal>
+   <FixtureVal ID="7">0,255</FixtureVal>
+   <FixtureVal ID="0">0,255</FixtureVal>
+   <FixtureVal ID="1">0,255</FixtureVal>
+   <FixtureVal ID="8">0,255</FixtureVal>
+   <FixtureVal ID="13">0,255</FixtureVal>
+   <FixtureVal ID="12">0,255</FixtureVal>
+   <FixtureVal ID="2">0,255</FixtureVal>
+  </Function>
+  <Function ID="68" Type="Collection" Name="Ded Moroze">
+   <Step Number="0">67</Step>
+   <Step Number="1">4</Step>
+  </Function>
   <Monitor DisplayMode="1" ShowLabels="0">
    <Font>Arial,9,-1,5,50,0,0,0,0,0</Font>
    <ChannelStyle>0</ChannelStyle>
@@ -834,7 +855,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="True" X="0" Y="5" Width="790" Height="905"/>
+    <WindowState Visible="True" X="0" Y="0" Width="790" Height="905"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
@@ -873,7 +894,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="255">
+      <Level LowLimit="0" HighLimit="255" Value="0">
        <Channel Fixture="0">0</Channel>
       </Level>
       <Playback>
@@ -903,7 +924,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="255">
+      <Level LowLimit="0" HighLimit="255" Value="0">
        <Channel Fixture="1">0</Channel>
       </Level>
       <Playback>
@@ -1077,7 +1098,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="255">
+      <Level LowLimit="0" HighLimit="255" Value="0">
        <Channel Fixture="7">0</Channel>
       </Level>
       <Playback>
@@ -1141,7 +1162,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="255">
+      <Level LowLimit="0" HighLimit="255" Value="0">
        <Channel Fixture="8">0</Channel>
       </Level>
       <Playback>
@@ -1275,7 +1296,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="255">
+      <Level LowLimit="0" HighLimit="255" Value="0">
        <Channel Fixture="14">0</Channel>
       </Level>
       <Playback>
@@ -1305,7 +1326,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="255">
+      <Level LowLimit="0" HighLimit="255" Value="0">
        <Channel Fixture="15">0</Channel>
       </Level>
       <Playback>
@@ -1407,7 +1428,7 @@
       </Appearance>
       <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="true">Level</SliderMode>
       <Reset/>
-      <Level LowLimit="0" HighLimit="255" Value="255">
+      <Level LowLimit="0" HighLimit="255" Value="0">
        <Channel Fixture="1">0</Channel>
       </Level>
       <Playback>
@@ -1425,7 +1446,7 @@
       </Appearance>
       <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="true">Level</SliderMode>
       <Reset/>
-      <Level LowLimit="0" HighLimit="255" Value="255">
+      <Level LowLimit="0" HighLimit="255" Value="0">
        <Channel Fixture="0">0</Channel>
       </Level>
       <Playback>
@@ -1445,7 +1466,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="255">
+      <Level LowLimit="0" HighLimit="255" Value="0">
        <Channel Fixture="0">0</Channel>
        <Channel Fixture="1">0</Channel>
       </Level>
@@ -1482,7 +1503,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="255">
+      <Level LowLimit="0" HighLimit="255" Value="0">
        <Channel Fixture="15">0</Channel>
       </Level>
       <Playback>
@@ -1500,7 +1521,7 @@
       </Appearance>
       <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="true">Level</SliderMode>
       <Reset/>
-      <Level LowLimit="0" HighLimit="255" Value="255">
+      <Level LowLimit="0" HighLimit="255" Value="0">
        <Channel Fixture="14">0</Channel>
       </Level>
       <Playback>
@@ -1520,7 +1541,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="255">
+      <Level LowLimit="0" HighLimit="255" Value="0">
        <Channel Fixture="14">0</Channel>
        <Channel Fixture="15">0</Channel>
       </Level>
@@ -1805,7 +1826,7 @@
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <WindowState Visible="True" X="5" Y="680" Width="95" Height="220"/>
+     <WindowState Visible="True" X="0" Y="625" Width="95" Height="275"/>
      <AllowChildren>True</AllowChildren>
      <AllowResize>True</AllowResize>
      <ShowHeader>False</ShowHeader>
@@ -1828,7 +1849,7 @@
       <Intensity Adjust="False">100</Intensity>
      </Button>
      <Button Caption="FX Off" ID="12" Icon="">
-      <WindowState Visible="True" X="5" Y="145" Width="85" Height="70"/>
+      <WindowState Visible="True" X="5" Y="200" Width="85" Height="70"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>4294967295</ForegroundColor>
@@ -1864,7 +1885,7 @@
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <WindowState Visible="True" X="105" Y="680" Width="95" Height="220"/>
+     <WindowState Visible="True" X="100" Y="625" Width="95" Height="275"/>
      <AllowChildren>True</AllowChildren>
      <AllowResize>True</AllowResize>
      <ShowHeader>False</ShowHeader>
@@ -1873,7 +1894,7 @@
      <Collapsed>False</Collapsed>
      <Disabled>False</Disabled>
      <Button Caption="RGB Off" ID="13" Icon="">
-      <WindowState Visible="True" X="5" Y="145" Width="85" Height="70"/>
+      <WindowState Visible="True" X="5" Y="200" Width="85" Height="70"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>4294967295</ForegroundColor>
@@ -1928,7 +1949,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="255">
+      <Level LowLimit="0" HighLimit="255" Value="0">
        <Channel Fixture="7">0</Channel>
        <Channel Fixture="8">0</Channel>
       </Level>
@@ -1949,7 +1970,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="255">
+      <Level LowLimit="0" HighLimit="255" Value="0">
        <Channel Fixture="7">0</Channel>
       </Level>
       <Playback>
@@ -1967,7 +1988,7 @@
       </Appearance>
       <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="true">Level</SliderMode>
       <Reset/>
-      <Level LowLimit="0" HighLimit="255" Value="255">
+      <Level LowLimit="0" HighLimit="255" Value="0">
        <Channel Fixture="8">0</Channel>
       </Level>
       <Playback>
