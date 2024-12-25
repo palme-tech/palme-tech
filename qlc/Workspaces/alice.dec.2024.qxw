@@ -275,24 +275,22 @@
    <Step Number="13" FadeIn="0" Hold="4294967294" FadeOut="0">10</Step>
    <Step Number="14" FadeIn="0" Hold="4294967294" FadeOut="0">53</Step>
    <Step Number="15" FadeIn="1000" Hold="4294967294" FadeOut="2000">45</Step>
-   <Step Number="16" FadeIn="0" Hold="0" FadeOut="0">10</Step>
-   <Step Number="17" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Занавес-">37</Step>
-   <Step Number="18" FadeIn="0" Hold="4294967294" FadeOut="0">10</Step>
-   <Step Number="19" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Сцена 8">48</Step>
-   <Step Number="20" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Сцена 9">37</Step>
-   <Step Number="21" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Король и Королева идут! Король! И Королева!">65</Step>
+   <Step Number="16" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Занавес-">37</Step>
+   <Step Number="17" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Сцена 8 Чаепитие">48</Step>
+   <Step Number="18" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Сцена 9">37</Step>
+   <Step Number="19" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Король и Королева идут! Король! И Королева!">65</Step>
+   <Step Number="20" FadeIn="1500" Hold="4294967294" FadeOut="1500">60</Step>
+   <Step Number="21" FadeIn="400" Hold="4294967294" FadeOut="400">57</Step>
    <Step Number="22" FadeIn="1500" Hold="4294967294" FadeOut="1500">60</Step>
-   <Step Number="23" FadeIn="400" Hold="4294967294" FadeOut="400">57</Step>
-   <Step Number="24" FadeIn="1500" Hold="4294967294" FadeOut="1500">60</Step>
-   <Step Number="25" FadeIn="1500" Hold="4294967294" FadeOut="400" Note="Сцена 10">45</Step>
-   <Step Number="26" FadeIn="400" Hold="4294967294" FadeOut="500" Note="Рубите ей голову! ">50</Step>
-   <Step Number="27" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Тени-">10</Step>
-   <Step Number="28" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Занавес-, Сцена 11">60</Step>
-   <Step Number="29" FadeIn="400" Hold="4294967294" FadeOut="400" Note="Новый год встречай! Улыбайся!">57</Step>
-   <Step Number="30" FadeIn="1500" Hold="4294967294" FadeOut="1500">37</Step>
+   <Step Number="23" FadeIn="1500" Hold="4294967294" FadeOut="400" Note="Сцена 10">45</Step>
+   <Step Number="24" FadeIn="400" Hold="4294967294" FadeOut="500" Note="Рубите ей голову! ">50</Step>
+   <Step Number="25" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Тени-">10</Step>
+   <Step Number="26" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Занавес-, Сцена 11">60</Step>
+   <Step Number="27" FadeIn="400" Hold="4294967294" FadeOut="400" Note="Новый год встречай! Улыбайся!">57</Step>
+   <Step Number="28" FadeIn="1500" Hold="4294967294" FadeOut="1500">37</Step>
+   <Step Number="29" FadeIn="0" Hold="4294967294" FadeOut="0">10</Step>
+   <Step Number="30" FadeIn="1500" Hold="4294967294" FadeOut="1500">68</Step>
    <Step Number="31" FadeIn="0" Hold="4294967294" FadeOut="0">10</Step>
-   <Step Number="32" FadeIn="1500" Hold="4294967294" FadeOut="1500">68</Step>
-   <Step Number="33" FadeIn="0" Hold="4294967294" FadeOut="0">10</Step>
   </Function>
   <Function ID="9" Type="Scene" Name="Monsoon Off" Path="Effects/Monsoon">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -897,7 +895,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="255">
+      <Level LowLimit="0" HighLimit="255" Value="80">
        <Channel Fixture="0">0</Channel>
       </Level>
       <Playback>
@@ -927,7 +925,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="255">
+      <Level LowLimit="0" HighLimit="255" Value="80">
        <Channel Fixture="1">0</Channel>
       </Level>
       <Playback>
@@ -1061,7 +1059,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="255">
+      <Level LowLimit="0" HighLimit="255" Value="0">
        <Channel Fixture="5">0</Channel>
       </Level>
       <Playback>
@@ -1101,7 +1099,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="255">
+      <Level LowLimit="0" HighLimit="255" Value="80">
        <Channel Fixture="7">0</Channel>
       </Level>
       <Playback>
@@ -1165,7 +1163,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="255">
+      <Level LowLimit="0" HighLimit="255" Value="80">
        <Channel Fixture="8">0</Channel>
       </Level>
       <Playback>
@@ -1195,7 +1193,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="255">
+      <Level LowLimit="0" HighLimit="255" Value="0">
        <Channel Fixture="3">0</Channel>
       </Level>
       <Playback>
@@ -1253,7 +1251,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="255">
+      <Level LowLimit="0" HighLimit="255" Value="0">
        <Channel Fixture="10">0</Channel>
       </Level>
       <Playback>
@@ -1299,7 +1297,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="255">
+      <Level LowLimit="0" HighLimit="255" Value="80">
        <Channel Fixture="14">0</Channel>
       </Level>
       <Playback>
@@ -1329,7 +1327,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="255">
+      <Level LowLimit="0" HighLimit="255" Value="80">
        <Channel Fixture="15">0</Channel>
       </Level>
       <Playback>
@@ -1431,7 +1429,7 @@
       </Appearance>
       <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="true">Level</SliderMode>
       <Reset/>
-      <Level LowLimit="0" HighLimit="255" Value="255">
+      <Level LowLimit="0" HighLimit="255" Value="80">
        <Channel Fixture="1">0</Channel>
       </Level>
       <Playback>
@@ -1449,7 +1447,7 @@
       </Appearance>
       <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="true">Level</SliderMode>
       <Reset/>
-      <Level LowLimit="0" HighLimit="255" Value="255">
+      <Level LowLimit="0" HighLimit="255" Value="80">
        <Channel Fixture="0">0</Channel>
       </Level>
       <Playback>
@@ -1469,7 +1467,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="255">
+      <Level LowLimit="0" HighLimit="255" Value="80">
        <Channel Fixture="0">0</Channel>
        <Channel Fixture="1">0</Channel>
       </Level>
@@ -1506,7 +1504,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="255">
+      <Level LowLimit="0" HighLimit="255" Value="80">
        <Channel Fixture="15">0</Channel>
       </Level>
       <Playback>
@@ -1524,7 +1522,7 @@
       </Appearance>
       <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="true">Level</SliderMode>
       <Reset/>
-      <Level LowLimit="0" HighLimit="255" Value="255">
+      <Level LowLimit="0" HighLimit="255" Value="80">
        <Channel Fixture="14">0</Channel>
       </Level>
       <Playback>
@@ -1544,7 +1542,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="255">
+      <Level LowLimit="0" HighLimit="255" Value="80">
        <Channel Fixture="14">0</Channel>
        <Channel Fixture="15">0</Channel>
       </Level>
@@ -1581,7 +1579,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="255">
+      <Level LowLimit="0" HighLimit="255" Value="0">
        <Channel Fixture="10">0</Channel>
       </Level>
       <Playback>
@@ -1601,7 +1599,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="255">
+      <Level LowLimit="0" HighLimit="255" Value="0">
        <Channel Fixture="3">0</Channel>
       </Level>
       <Playback>
@@ -1621,7 +1619,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="255">
+      <Level LowLimit="0" HighLimit="255" Value="0">
        <Channel Fixture="5">0</Channel>
       </Level>
       <Playback>
@@ -1939,7 +1937,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="255">
+      <Level LowLimit="0" HighLimit="255" Value="80">
        <Channel Fixture="7">0</Channel>
        <Channel Fixture="8">0</Channel>
       </Level>
@@ -1960,7 +1958,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="255">
+      <Level LowLimit="0" HighLimit="255" Value="80">
        <Channel Fixture="7">0</Channel>
       </Level>
       <Playback>
@@ -1978,7 +1976,7 @@
       </Appearance>
       <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="true">Level</SliderMode>
       <Reset/>
-      <Level LowLimit="0" HighLimit="255" Value="255">
+      <Level LowLimit="0" HighLimit="255" Value="80">
        <Channel Fixture="8">0</Channel>
       </Level>
       <Playback>
