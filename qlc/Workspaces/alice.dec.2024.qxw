@@ -3,13 +3,16 @@
 <Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="VirtualConsole">
  <Creator>
   <Name>Q Light Controller Plus</Name>
-  <Version>4.12.6</Version>
+  <Version>4.13.0</Version>
   <Author>Hemul</Author>
  </Creator>
  <Engine>
   <InputOutputMap>
+   <BeatGenerator BeatType="Disabled" BPM="0"/>
    <Universe Name="Universe 1" ID="0">
-    <Output Plugin="DMX USB" UID="None" Line="0"/>
+    <Output Plugin="DMX USB" UID="FT232R USB UART (S/N: AQ02VCGU)" Line="0">
+     <PluginParameters UniverseChannels="47"/>
+    </Output>
    </Universe>
    <Universe Name="Universe 2" ID="1"/>
    <Universe Name="Universe 3" ID="2"/>
@@ -246,8 +249,8 @@
   </Function>
   <Function ID="5" Type="Scene" Name="RGB Tree Green" Path="Effects/RGB">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="17">0,255,1,60,2,255,3,0,4,0,5,0,6,0</FixtureVal>
-   <FixtureVal ID="18">0,255,1,60,2,254,3,0,4,0,5,0,6,0</FixtureVal>
+   <FixtureVal ID="17">0,255,1,50,2,255,3,0,4,0,5,0,6,0</FixtureVal>
+   <FixtureVal ID="18">0,255,1,50,2,254,3,0,4,0,5,0,6,0</FixtureVal>
   </Function>
   <Function ID="6" Type="Collection" Name="White Strobe" Path="Effects">
    <Step Number="0">3</Step>
@@ -265,37 +268,39 @@
    <Step Number="0" FadeIn="0" Hold="0" FadeOut="0">10</Step>
    <Step Number="1" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Сцена 1">37</Step>
    <Step Number="2" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Занавес+">45</Step>
-   <Step Number="3" FadeIn="400" Hold="4294967294" FadeOut="400" Note="Дискотека+">57</Step>
-   <Step Number="4" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Дискотека-">45</Step>
-   <Step Number="5" FadeIn="1500" Hold="4294967294" FadeOut="500" Note="Занавес-">37</Step>
-   <Step Number="6" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Алиса прыгает с горки - ЗТМ">10</Step>
-   <Step Number="7" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Сцена 3, после ЗТМ">38</Step>
-   <Step Number="8" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Сцена 4, как только тени-">37</Step>
-   <Step Number="9" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Сцена 5, занавес+">63</Step>
-   <Step Number="10" FadeIn="0" Hold="4294967294" FadeOut="0">10</Step>
-   <Step Number="11" FadeIn="1500" Hold="4294967294" FadeOut="1500">60</Step>
-   <Step Number="12" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Сцена 6. Гусиница">46</Step>
-   <Step Number="13" FadeIn="0" Hold="4294967294" FadeOut="0">10</Step>
-   <Step Number="14" FadeIn="0" Hold="4294967294" FadeOut="0">53</Step>
-   <Step Number="15" FadeIn="1500" Hold="4294967294" FadeOut="500">45</Step>
+   <Step Number="3" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Занавес-,  Кролик">37</Step>
+   <Step Number="4" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Занавес+">45</Step>
+   <Step Number="5" FadeIn="400" Hold="4294967294" FadeOut="400" Note="Дискотека+">57</Step>
+   <Step Number="6" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Дискотека-">45</Step>
+   <Step Number="7" FadeIn="1500" Hold="4294967294" FadeOut="500" Note="Занавес-">37</Step>
+   <Step Number="8" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Алиса прыгает с горки - ЗТМ">10</Step>
+   <Step Number="9" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Сцена 3, после ЗТМ">38</Step>
+   <Step Number="10" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Сцена 4, как только тени-">37</Step>
+   <Step Number="11" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Сцена 5, занавес+">63</Step>
+   <Step Number="12" FadeIn="0" Hold="4294967294" FadeOut="0">10</Step>
+   <Step Number="13" FadeIn="1500" Hold="4294967294" FadeOut="1500">60</Step>
+   <Step Number="14" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Сцена 6. Гусиница">46</Step>
+   <Step Number="15" FadeIn="0" Hold="4294967294" FadeOut="0">10</Step>
    <Step Number="16" FadeIn="0" Hold="4294967294" FadeOut="0">53</Step>
-   <Step Number="17" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Занавес-">37</Step>
-   <Step Number="18" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Сцена 8 Чаепитие">48</Step>
-   <Step Number="19" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Сцена 9">37</Step>
-   <Step Number="20" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Король и Королева идут! Король! И Королева!">65</Step>
-   <Step Number="21" FadeIn="1500" Hold="4294967294" FadeOut="1500">60</Step>
-   <Step Number="22" FadeIn="400" Hold="4294967294" FadeOut="400">57</Step>
-   <Step Number="23" FadeIn="1500" Hold="4294967294" FadeOut="400" Note="Сцена 10">45</Step>
-   <Step Number="24" FadeIn="400" Hold="4294967294" FadeOut="500" Note="Рубите ей голову! ">50</Step>
-   <Step Number="25" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Тени-">10</Step>
-   <Step Number="26" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Занавес-, Сцена 11">60</Step>
-   <Step Number="27" FadeIn="400" Hold="4294967294" FadeOut="400" Note="Новый год встречай! Улыбайся!">57</Step>
-   <Step Number="28" FadeIn="1500" Hold="4294967294" FadeOut="1500">60</Step>
-   <Step Number="29" FadeIn="0" Hold="4294967294" FadeOut="0">10</Step>
-   <Step Number="30" FadeIn="1500" Hold="4294967294" FadeOut="1500">68</Step>
-   <Step Number="31" FadeIn="1500" Hold="4294967294" FadeOut="1500">70</Step>
+   <Step Number="17" FadeIn="1500" Hold="4294967294" FadeOut="500">45</Step>
+   <Step Number="18" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Занавес-">37</Step>
+   <Step Number="19" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Сцена 8 Чаепитие">48</Step>
+   <Step Number="20" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Сцена 9">37</Step>
+   <Step Number="21" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Король и Королева идут! Король! И Королева!">65</Step>
+   <Step Number="22" FadeIn="1500" Hold="4294967294" FadeOut="1500">60</Step>
+   <Step Number="23" FadeIn="400" Hold="4294967294" FadeOut="400">57</Step>
+   <Step Number="24" FadeIn="1500" Hold="4294967294" FadeOut="400" Note="Сцена 10">45</Step>
+   <Step Number="25" FadeIn="400" Hold="4294967294" FadeOut="500" Note="Рубите ей голову! ">50</Step>
+   <Step Number="26" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Тени-">10</Step>
+   <Step Number="27" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Занавес-, Сцена 11">60</Step>
+   <Step Number="28" FadeIn="1500" Hold="4294967294" FadeOut="1500">65</Step>
+   <Step Number="29" FadeIn="400" Hold="4294967294" FadeOut="400" Note="Новый год встречай! Улыбайся!">57</Step>
+   <Step Number="30" FadeIn="1500" Hold="4294967294" FadeOut="1500">60</Step>
+   <Step Number="31" FadeIn="0" Hold="4294967294" FadeOut="0">10</Step>
    <Step Number="32" FadeIn="1500" Hold="4294967294" FadeOut="1500">68</Step>
-   <Step Number="33" FadeIn="0" Hold="4294967294" FadeOut="0">10</Step>
+   <Step Number="33" FadeIn="1500" Hold="4294967294" FadeOut="1500">70</Step>
+   <Step Number="34" FadeIn="1500" Hold="4294967294" FadeOut="1500">68</Step>
+   <Step Number="35" FadeIn="0" Hold="4294967294" FadeOut="0">10</Step>
   </Function>
   <Function ID="9" Type="Scene" Name="Monsoon Off" Path="Effects/Monsoon">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -784,7 +789,7 @@
    <FixtureVal ID="5">0,180</FixtureVal>
    <FixtureVal ID="10">0,180</FixtureVal>
   </Function>
-  <Function ID="65" Type="Collection" Name="Вход королевы +  Обший + зд">
+  <Function ID="65" Type="Collection" Name="Пол + Обший + зд">
    <Step Number="0">5</Step>
    <Step Number="1">64</Step>
    <Step Number="2">29</Step>
@@ -833,7 +838,7 @@
   </Function>
   <Function ID="72" Type="Scene" Name="Snow On" Path="Effects/Snow Machine">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="4">0,255,1,0,2,0,3,0,4,75,5,255,6,135,7,255</FixtureVal>
+   <FixtureVal ID="4">0,255,1,0,2,0,3,0,4,75,5,255,6,150,7,255</FixtureVal>
   </Function>
   <Function ID="73" Type="Scene" Name="Snow Off" Path="Effects/Snow Machine">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -877,7 +882,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="True" X="0" Y="0" Width="785" Height="1225"/>
+    <WindowState Visible="True" X="0" Y="0" Width="785" Height="1260"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
@@ -2060,6 +2065,7 @@
       </Appearance>
       <Function ID="72"/>
       <Action>Toggle</Action>
+      <Key>T</Key>
       <Intensity Adjust="False">100</Intensity>
      </Button>
      <Button Caption="Snow Off" ID="4" Icon="">
