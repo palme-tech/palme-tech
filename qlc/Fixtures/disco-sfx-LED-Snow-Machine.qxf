@@ -3,23 +3,53 @@
 <FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
  <Creator>
   <Name>Q Light Controller Plus</Name>
-  <Version>4.12.6</Version>
+  <Version>4.13.0</Version>
   <Author>Hemul</Author>
  </Creator>
  <Manufacturer>disco sfx</Manufacturer>
  <Model>LED Snow Machine</Model>
  <Type>Hazer</Type>
- <Channel Name="led">
+ <Channel Name="LED">
   <Group Byte="0">Intensity</Group>
+  <Capability Min="0" Max="255"></Capability>
+ </Channel>
+ <Channel Name="LED Red">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Red</Colour>
+  <Capability Min="0" Max="255">Snow</Capability>
+ </Channel>
+ <Channel Name="LED Blue">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Blue</Colour>
+  <Capability Min="0" Max="255">Snow</Capability>
+ </Channel>
+ <Channel Name="LED Green">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Green</Colour>
+  <Capability Min="0" Max="255">Snow</Capability>
+ </Channel>
+ <Channel Name="LED Effect">
+  <Group Byte="0">Effect</Group>
+ </Channel>
+ <Channel Name="LED Effect Speed">
+  <Group Byte="0">Speed</Group>
   <Capability Min="0" Max="255"></Capability>
  </Channel>
  <Channel Name="Snow Intensity">
   <Group Byte="0">Shutter</Group>
-  <Capability Min="0" Max="255">Snow</Capability>
+ </Channel>
+ <Channel Name="Snow On">
+  <Group Byte="0">Effect</Group>
  </Channel>
  <Mode Name="main">
-  <Channel Number="0" ActsOn="0">led</Channel>
-  <Channel Number="1" ActsOn="1">Snow Intensity</Channel>
+  <Channel Number="0" ActsOn="0">LED</Channel>
+  <Channel Number="1" ActsOn="1">LED Red</Channel>
+  <Channel Number="2" ActsOn="2">LED Blue</Channel>
+  <Channel Number="3" ActsOn="3">LED Green</Channel>
+  <Channel Number="4" ActsOn="4">LED Effect</Channel>
+  <Channel Number="5" ActsOn="5">LED Effect Speed</Channel>
+  <Channel Number="6" ActsOn="6">Snow Intensity</Channel>
+  <Channel Number="7" ActsOn="7">Snow On</Channel>
  </Mode>
  <Physical>
   <Bulb Type="" Lumens="0" ColourTemperature="0"/>

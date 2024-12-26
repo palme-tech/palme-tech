@@ -11,7 +11,7 @@
    <BeatGenerator BeatType="Disabled" BPM="0"/>
    <Universe Name="Universe 1" ID="0">
     <Output Plugin="DMX USB" UID="FT232R USB UART (S/N: AQ02VCGU)" Line="0">
-     <PluginParameters UniverseChannels="41"/>
+     <PluginParameters UniverseChannels="47"/>
     </Output>
    </Universe>
    <Universe Name="Universe 2" ID="1"/>
@@ -66,7 +66,8 @@
    <Name>LED Snow Machine</Name>
    <Universe>0</Universe>
    <Address>39</Address>
-   <Channels>2</Channels>
+   <Channels>8</Channels>
+   <ForcedHTP>4,5,6,7</ForcedHTP>
   </Fixture>
   <Fixture>
    <Manufacturer>Generic</Manufacturer>
@@ -157,6 +158,7 @@
    <Universe>0</Universe>
    <Address>16</Address>
    <Channels>9</Channels>
+   <ForcedHTP>0,1,2,3,4,5,6,7,8</ForcedHTP>
   </Fixture>
   <Fixture>
    <Manufacturer>EasyDancing</Manufacturer>
@@ -167,6 +169,8 @@
    <Universe>0</Universe>
    <Address>25</Address>
    <Channels>7</Channels>
+   <ForcedHTP>4,5,6</ForcedHTP>
+   <ForcedLTP>3</ForcedLTP>
   </Fixture>
   <Fixture>
    <Manufacturer>EasyDancing</Manufacturer>
@@ -177,6 +181,8 @@
    <Universe>0</Universe>
    <Address>32</Address>
    <Channels>7</Channels>
+   <ForcedHTP>4,5,6</ForcedHTP>
+   <ForcedLTP>3</ForcedLTP>
   </Fixture>
   <FixtureGroup ID="0">
    <Name>Effects</Name>
@@ -281,16 +287,17 @@
    <Step Number="19" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Король и Королева идут! Король! И Королева!">65</Step>
    <Step Number="20" FadeIn="1500" Hold="4294967294" FadeOut="1500">60</Step>
    <Step Number="21" FadeIn="400" Hold="4294967294" FadeOut="400">57</Step>
-   <Step Number="22" FadeIn="1500" Hold="4294967294" FadeOut="1500">60</Step>
-   <Step Number="23" FadeIn="1500" Hold="4294967294" FadeOut="400" Note="Сцена 10">45</Step>
-   <Step Number="24" FadeIn="400" Hold="4294967294" FadeOut="500" Note="Рубите ей голову! ">50</Step>
-   <Step Number="25" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Тени-">10</Step>
-   <Step Number="26" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Занавес-, Сцена 11">60</Step>
-   <Step Number="27" FadeIn="400" Hold="4294967294" FadeOut="400" Note="Новый год встречай! Улыбайся!">57</Step>
-   <Step Number="28" FadeIn="1500" Hold="4294967294" FadeOut="1500">37</Step>
-   <Step Number="29" FadeIn="0" Hold="4294967294" FadeOut="0">10</Step>
-   <Step Number="30" FadeIn="1500" Hold="4294967294" FadeOut="1500">68</Step>
-   <Step Number="31" FadeIn="0" Hold="4294967294" FadeOut="0">10</Step>
+   <Step Number="22" FadeIn="1500" Hold="4294967294" FadeOut="400" Note="Сцена 10">45</Step>
+   <Step Number="23" FadeIn="400" Hold="4294967294" FadeOut="500" Note="Рубите ей голову! ">50</Step>
+   <Step Number="24" FadeIn="0" Hold="4294967294" FadeOut="0" Note="Тени-">10</Step>
+   <Step Number="25" FadeIn="1500" Hold="4294967294" FadeOut="1500" Note="Занавес-, Сцена 11">60</Step>
+   <Step Number="26" FadeIn="400" Hold="4294967294" FadeOut="400" Note="Новый год встречай! Улыбайся!">57</Step>
+   <Step Number="27" FadeIn="1500" Hold="4294967294" FadeOut="1500">60</Step>
+   <Step Number="28" FadeIn="0" Hold="4294967294" FadeOut="0">10</Step>
+   <Step Number="29" FadeIn="1500" Hold="4294967294" FadeOut="1500">68</Step>
+   <Step Number="30" FadeIn="1500" Hold="4294967294" FadeOut="1500">70</Step>
+   <Step Number="31" FadeIn="1500" Hold="4294967294" FadeOut="1500">68</Step>
+   <Step Number="32" FadeIn="0" Hold="4294967294" FadeOut="0">10</Step>
   </Function>
   <Function ID="9" Type="Scene" Name="Monsoon Off" Path="Effects/Monsoon">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -818,6 +825,22 @@
    <Step Number="0">52</Step>
    <Step Number="1">6</Step>
   </Function>
+  <Function ID="70" Type="Collection" Name="Дед Мороз Посох">
+   <Step Number="0">27</Step>
+   <Step Number="1">55</Step>
+  </Function>
+  <Function ID="71" Type="Collection" Name="Дед Мороз + off">
+   <Step Number="0">67</Step>
+   <Step Number="1">9</Step>
+  </Function>
+  <Function ID="72" Type="Scene" Name="Snow On" Path="Effects/Snow Machine">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="4">0,255,1,0,2,0,3,0,4,75,5,255,6,135,7,255</FixtureVal>
+  </Function>
+  <Function ID="73" Type="Scene" Name="Snow Off" Path="Effects/Snow Machine">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="4">0,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0</FixtureVal>
+  </Function>
   <Monitor DisplayMode="1" ShowLabels="0">
    <Font>Arial,9,-1,5,50,0,0,0,0,0</Font>
    <ChannelStyle>0</ChannelStyle>
@@ -895,7 +918,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="80">
+      <Level LowLimit="0" HighLimit="255" Value="0">
        <Channel Fixture="0">0</Channel>
       </Level>
       <Playback>
@@ -925,7 +948,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="80">
+      <Level LowLimit="0" HighLimit="255" Value="0">
        <Channel Fixture="1">0</Channel>
       </Level>
       <Playback>
@@ -983,7 +1006,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="255">
+      <Level LowLimit="0" HighLimit="255" Value="0">
        <Channel Fixture="2">0</Channel>
       </Level>
       <Playback>
@@ -1029,7 +1052,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="255">
+      <Level LowLimit="0" HighLimit="255" Value="0">
        <Channel Fixture="13">0</Channel>
       </Level>
       <Playback>
@@ -1099,7 +1122,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="80">
+      <Level LowLimit="0" HighLimit="255" Value="0">
        <Channel Fixture="7">0</Channel>
       </Level>
       <Playback>
@@ -1163,7 +1186,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="80">
+      <Level LowLimit="0" HighLimit="255" Value="0">
        <Channel Fixture="8">0</Channel>
       </Level>
       <Playback>
@@ -1297,7 +1320,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="80">
+      <Level LowLimit="0" HighLimit="255" Value="0">
        <Channel Fixture="14">0</Channel>
       </Level>
       <Playback>
@@ -1327,7 +1350,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="80">
+      <Level LowLimit="0" HighLimit="255" Value="0">
        <Channel Fixture="15">0</Channel>
       </Level>
       <Playback>
@@ -1385,7 +1408,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="255">
+      <Level LowLimit="0" HighLimit="255" Value="0">
        <Channel Fixture="12">0</Channel>
       </Level>
       <Playback>
@@ -1429,7 +1452,7 @@
       </Appearance>
       <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="true">Level</SliderMode>
       <Reset/>
-      <Level LowLimit="0" HighLimit="255" Value="80">
+      <Level LowLimit="0" HighLimit="255" Value="0">
        <Channel Fixture="1">0</Channel>
       </Level>
       <Playback>
@@ -1447,7 +1470,7 @@
       </Appearance>
       <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="true">Level</SliderMode>
       <Reset/>
-      <Level LowLimit="0" HighLimit="255" Value="80">
+      <Level LowLimit="0" HighLimit="255" Value="0">
        <Channel Fixture="0">0</Channel>
       </Level>
       <Playback>
@@ -1467,7 +1490,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="80">
+      <Level LowLimit="0" HighLimit="255" Value="0">
        <Channel Fixture="0">0</Channel>
        <Channel Fixture="1">0</Channel>
       </Level>
@@ -1504,7 +1527,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="80">
+      <Level LowLimit="0" HighLimit="255" Value="0">
        <Channel Fixture="15">0</Channel>
       </Level>
       <Playback>
@@ -1522,7 +1545,7 @@
       </Appearance>
       <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="true">Level</SliderMode>
       <Reset/>
-      <Level LowLimit="0" HighLimit="255" Value="80">
+      <Level LowLimit="0" HighLimit="255" Value="0">
        <Channel Fixture="14">0</Channel>
       </Level>
       <Playback>
@@ -1542,7 +1565,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="80">
+      <Level LowLimit="0" HighLimit="255" Value="0">
        <Channel Fixture="14">0</Channel>
        <Channel Fixture="15">0</Channel>
       </Level>
@@ -1685,7 +1708,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="255">
+      <Level LowLimit="0" HighLimit="255" Value="0">
        <Channel Fixture="13">0</Channel>
       </Level>
       <Playback>
@@ -1705,7 +1728,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="255">
+      <Level LowLimit="0" HighLimit="255" Value="0">
        <Channel Fixture="12">0</Channel>
       </Level>
       <Playback>
@@ -1745,7 +1768,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="255">
+      <Level LowLimit="0" HighLimit="255" Value="0">
        <Channel Fixture="2">0</Channel>
       </Level>
       <Playback>
@@ -1937,7 +1960,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="80">
+      <Level LowLimit="0" HighLimit="255" Value="0">
        <Channel Fixture="7">0</Channel>
        <Channel Fixture="8">0</Channel>
       </Level>
@@ -1958,7 +1981,7 @@
       <Reset>
        <Key>Q</Key>
       </Reset>
-      <Level LowLimit="0" HighLimit="255" Value="80">
+      <Level LowLimit="0" HighLimit="255" Value="0">
        <Channel Fixture="7">0</Channel>
       </Level>
       <Playback>
@@ -1976,7 +1999,7 @@
       </Appearance>
       <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="true">Level</SliderMode>
       <Reset/>
-      <Level LowLimit="0" HighLimit="255" Value="80">
+      <Level LowLimit="0" HighLimit="255" Value="0">
        <Channel Fixture="8">0</Channel>
       </Level>
       <Playback>
@@ -2012,6 +2035,50 @@
       <Function>0</Function>
      </Playback>
     </Slider>
+    <SoloFrame Caption="Effects" ID="21" Page="1">
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <WindowState Visible="True" X="200" Y="630" Width="200" Height="295"/>
+     <AllowChildren>True</AllowChildren>
+     <AllowResize>True</AllowResize>
+     <ShowHeader>False</ShowHeader>
+     <ShowEnableButton>False</ShowEnableButton>
+     <Mixing>False</Mixing>
+     <Collapsed>False</Collapsed>
+     <Disabled>False</Disabled>
+     <Button Caption="Let It Snow" ID="1" Icon="">
+      <WindowState Visible="True" X="5" Y="5" Width="190" Height="115"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>4294967295</ForegroundColor>
+       <BackgroundColor>4280559675</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="72"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Snow Off" ID="22" Icon="">
+      <WindowState Visible="True" X="5" Y="175" Width="190" Height="115"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>4294967295</ForegroundColor>
+       <BackgroundColor>4280559675</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="73"/>
+      <Action>Toggle</Action>
+      <Key>Q</Key>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+    </SoloFrame>
    </Frame>
    <Frame Caption="Scenes" ID="163">
     <Appearance>
