@@ -1,0 +1,12 @@
+Scene 1
+1.1 	Band is ready 		Floor All ON
+1.2	Band finishes playing	Floor Spot ON
+1.3				(Rear Shadow ON)
+1.4	
+
+
+Scene 2 
+2.1	Band starts playing	Stairs, Floor & Band ON
+2.2	Tom comes to Stair 	Stairs only
+2.3	Tom walk onto Stage 	Stage+ ON
+2.4
