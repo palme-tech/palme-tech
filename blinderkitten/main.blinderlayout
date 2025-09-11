@@ -1,0 +1,226 @@
+{
+  "mainLayout": {
+    "type": 1,
+    "width": 1666,
+    "height": 940,
+    "direction": 2,
+    "shifters": [
+      {
+        "type": 1,
+        "width": 1666,
+        "height": 940,
+        "direction": 1,
+        "shifters": [
+          {
+            "type": 1,
+            "width": 572,
+            "height": 940,
+            "direction": 2,
+            "shifters": [
+              {
+                "type": 0,
+                "width": 572,
+                "height": 175,
+                "currentContent": "Input Panel",
+                "tabs": [
+                  {
+                    "name": "Input Panel"
+                  },
+                  {
+                    "name": "Interfaces"
+                  },
+                  {
+                    "name": "Channels config"
+                  },
+                  {
+                    "name": "Programmers"
+                  },
+                  {
+                    "name": "Fixture Types"
+                  }
+                ]
+              },
+              {
+                "type": 0,
+                "width": 572,
+                "height": 168,
+                "currentContent": "Encoders",
+                "tabs": [
+                  {
+                    "name": "Encoders"
+                  },
+                  {
+                    "name": "Multiplicators"
+                  },
+                  {
+                    "name": "Color Picker"
+                  }
+                ]
+              },
+              {
+                "type": 0,
+                "width": 572,
+                "height": 89,
+                "currentContent": "Group Grid",
+                "tabs": [
+                  {
+                    "name": "Groups"
+                  },
+                  {
+                    "name": "Group Grid"
+                  }
+                ]
+              },
+              {
+                "type": 0,
+                "width": 572,
+                "height": 341,
+                "currentContent": "Layout Viewer",
+                "tabs": [
+                  {
+                    "name": "Layout Viewer"
+                  }
+                ]
+              },
+              {
+                "type": 0,
+                "width": 572,
+                "height": 143,
+                "currentContent": "Fixture Grid",
+                "tabs": [
+                  {
+                    "name": "Fixture Grid"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": 1,
+            "width": 1088,
+            "height": 940,
+            "direction": 1,
+            "shifters": [
+              {
+                "type": 1,
+                "width": 686,
+                "height": 940,
+                "direction": 2,
+                "shifters": [
+                  {
+                    "type": 0,
+                    "width": 686,
+                    "height": 163,
+                    "currentContent": "Conductor Infos",
+                    "tabs": [
+                      {
+                        "name": "Effect Grid"
+                      },
+                      {
+                        "name": "Carousel Grid"
+                      },
+                      {
+                        "name": "Mapper Grid"
+                      },
+                      {
+                        "name": "Conductor Infos"
+                      }
+                    ]
+                  },
+                  {
+                    "type": 0,
+                    "width": 686,
+                    "height": 547,
+                    "currentContent": "Cuelist sheet",
+                    "tabs": [
+                      {
+                        "name": "Cuelist sheet"
+                      },
+                      {
+                        "name": "Fixtures"
+                      }
+                    ]
+                  },
+                  {
+                    "type": 0,
+                    "width": 686,
+                    "height": 134,
+                    "currentContent": "Virtual buttons grid",
+                    "tabs": [
+                      {
+                        "name": "Virtual buttons grid"
+                      },
+                      {
+                        "name": "Virtual faders grid"
+                      }
+                    ]
+                  },
+                  {
+                    "type": 0,
+                    "width": 686,
+                    "height": 78,
+                    "currentContent": "Cuelist Grid",
+                    "tabs": [
+                      {
+                        "name": "Layouts"
+                      },
+                      {
+                        "name": "Preset Grid"
+                      },
+                      {
+                        "name": "Presets"
+                      },
+                      {
+                        "name": "Curve Presets"
+                      },
+                      {
+                        "name": "Timing Presets"
+                      },
+                      {
+                        "name": "Cuelist Grid"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": 1,
+                "width": 396,
+                "height": 940,
+                "direction": 2,
+                "shifters": [
+                  {
+                    "type": 0,
+                    "width": 396,
+                    "height": 754,
+                    "currentContent": "Inspector",
+                    "tabs": [
+                      {
+                        "name": "Inspector"
+                      },
+                      {
+                        "name": "Encoders Overview"
+                      }
+                    ]
+                  },
+                  {
+                    "type": 0,
+                    "width": 396,
+                    "height": 180,
+                    "currentContent": "Logger",
+                    "tabs": [
+                      {
+                        "name": "Logger"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "windows": null
+}
