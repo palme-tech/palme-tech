@@ -681,8 +681,7 @@
   </Function>
   <Function ID="45" Type="Collection" Name="Боковой + monsoon off + зд">
    <Step Number="0">34</Step>
-   <Step Number="1">9</Step>
-   <Step Number="2">5</Step>
+   <Step Number="1">5</Step>
   </Function>
   <Function ID="46" Type="Collection" Name="Гусеница + зд">
    <Step Number="0">5</Step>
@@ -764,7 +763,6 @@
   <Function ID="60" Type="Collection" Name="Обший + зд+ monsoon off">
    <Step Number="0">5</Step>
    <Step Number="1">29</Step>
-   <Step Number="2">9</Step>
   </Function>
   <Function ID="61" Type="Scene" Name="Stage Front Right" Path="Groups">
    <Speed FadeIn="1500" FadeOut="1500" Duration="0"/>
